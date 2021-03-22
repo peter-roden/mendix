@@ -1,0 +1,44 @@
+{
+    "key": "group_604059bf2c3a9",
+    "title": "User",
+    "fields": [
+        {
+            "key": "field_60405a7e5cbdc",
+            "label": "Company Title \/ Role",
+            "name": "company_title__role",
+            "type": "text",
+            "instructions": "Used to display user's title \/ role - where supported.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "translations": "translate"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "user_form",
+                "operator": "==",
+                "value": "edit"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1614881261
+}

@@ -1,0 +1,53 @@
+.logoTicker {
+  padding-top: 24px;
+  &[data-columns="2"] .block {
+    flex: 0 1 100/2 * 1%;
+  }
+
+  &[data-columns="3"] .block {
+    flex: 0 1 100/3 * 1%;
+  }
+
+  &[data-columns="4"] .block {
+    flex: 0 1 100/4 * 1%;
+  }
+
+  &[data-columns="5"] .block {
+    flex: 0 1 100/5 * 1%;
+  }
+
+  &[data-columns="6"] .block {
+    flex: 0 1 100/6 * 1%;
+  }
+}
+
+.logoTicker__cell {
+  display: none;
+  height: 120px;
+  text-align: center;
+  transition: all 450ms ease;
+  transform: translate(0, -50px);
+  opacity: 0;
+  margin-top: 24px;
+
+  img {
+    height: 70%;
+    width: 70%;
+    object-position: center;
+    object-fit: contain;
+  }
+
+  &.in {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  &.out {
+    transform: translate(0, 50px);
+    opacity: 0;
+  }
+}
+
+.block {
+  display: block;
+}

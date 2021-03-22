@@ -1,0 +1,43 @@
+.social-svg {
+    padding: 0.5rem;
+
+    path {
+        fill: $black;
+        transition: fill 200ms;
+    }
+
+    &:hover,
+    &:focus {
+        path {
+            fill: $blue;
+        }
+    }
+
+    .youtubePlayButton {
+        fill: white;
+    }
+}
+
+.fat-footer {
+    .social-svg {
+        svg {
+            cursor: pointer;
+        }
+
+        path {
+            fill: white;
+            transition: fill 200ms;
+        }
+
+        &:hover,
+        &:focus {
+            path {
+                fill: $blue;
+            }
+        }
+
+        .youtubePlayButton {
+            fill: $black;
+        }
+    }
+}

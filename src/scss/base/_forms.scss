@@ -1,0 +1,163 @@
+.input,
+input:not([type='checkbox']),
+select,
+textarea {
+	font-family: $font-accent;
+	font-size: $font-size-body;
+	box-sizing: border-box;
+	width: 100%;
+	height: 2.875rem;
+	margin-bottom: 1.5rem;
+	padding-left: 1em;
+	color: $color-body;
+	border: 1px solid $gray-m;
+	border-radius: 4px;
+	background: #fff;
+
+	&::placeholder {
+		color: $color-body;
+		font-weight: 100;
+	}
+}
+
+textarea {
+	line-height: 1.6em;
+	padding-top: 1em;
+	line-height: 1.6em;
+	height: 128px;
+}
+
+select {
+	cursor: pointer;
+}
+
+select.changed {
+	color: $color-body;
+}
+
+input:focus {
+	border: 1px solid $blue;
+}
+
+button,
+input[type='submit'] {
+	background: transparent;
+	background: transparent;
+	display: inline-block;
+	cursor: pointer;
+	color: $color-heading;
+}
+
+form {
+	.chevron-down {
+		color: $gray-l;
+		pointer-events: none;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transform: scale(0.2);
+	}
+}
+
+.filter-select {
+	display: inline-block;
+	color: $blue;
+	position: relative;
+	font-size: $font-size-body;
+	margin: 0;
+	padding-left: 4.25em;
+	height: 55px;
+
+	&.de {
+		padding-left: 4.75em;
+	}
+}
+
+.filter-label {
+	z-index: 99;
+	color: $color-body;
+	font-size: $font-size-body;
+	margin: 0;
+	position: absolute;
+	transform: translate(1em, 15px);
+}
+
+.form-box {
+	background-color: white;
+	padding: 3rem;
+	border: 1px solid $gray-l;
+	box-shadow: 0 5px 10px rgba($black, 0.1);
+}
+
+.form-container {
+	max-width: 540px;
+	margin-right: auto;
+	margin-left: auto;
+	background: white;
+	border-radius: 4px;
+
+	padding: 1.5rem 1.5rem 2rem;
+
+	.mktoButtonRow {
+		margin-top: 2rem;
+	}
+}
+
+////// Gravite forms
+
+.gform_wrapper {
+	.gfield_label {
+		color: $black;
+		font-family: 'Patron';
+		font-size: 1.2em;
+		font-weight: bold;
+		margin-bottom: 0.2em;
+	}
+
+	[type='checkbox'] {
+		appearance: checkbox;
+	}
+}
+
+.ginput_container_consent {
+	position: relative;
+	padding-left: 2rem;
+
+	[type='checkbox'] {
+		position: absolute;
+		top: 0.25rem;
+		left: 0;
+	}
+}
+
+.gform_footer {
+	text-align: center;
+}
+
+.gform_button.button {
+	@include btn-base;
+	$color-2: #0baaf9;
+	$color-1: #0d2dd1;
+	$dark: mix(black, $color-1, 60%);
+
+	background-color: $color-1;
+	background-image: linear-gradient(
+		-46deg,
+		$dark 0%,
+		$color-1 50%,
+		$color-2 100%
+	);
+
+	color: white;
+	background-size: 250% 100%;
+	background-position: 10% 50%;
+	margin: 1rem auto;
+	width: auto;
+	transition: background-position 400ms ease;
+
+	&:hover,
+	&:focus {
+		color: white;
+		background-position: 90% 50%;
+	}
+}

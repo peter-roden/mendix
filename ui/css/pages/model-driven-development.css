@@ -1,0 +1,191 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+header .border-top {
+  border: none; }
+
+.hero--dynamic .cell {
+  width: 100%; }
+
+.hero--dynamic .mdd-hero-copy {
+  display: block;
+  float: left; }
+
+.hero--dynamic .mdd-hero-copy .left {
+  display: block;
+  float: left;
+  width: 50%;
+  font-size: 28px;
+  line-height: 36px; }
+
+.hero--dynamic .mdd-hero-copy .right {
+  display: block;
+  float: left;
+  width: 50%;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px; }
+
+@media (max-width: 63.9375em) {
+  .hero--dynamic .mdd-hero-copy .left {
+    width: 100%;
+    margin-bottom: 20px; }
+  .hero--dynamic .mdd-hero-copy .right {
+    width: 100%; } }
+
+#panel1 {
+  padding-top: 96px; }
+  #panel1 h2 {
+    color: black; }
+  #panel1 p {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: #666666;
+    text-align: center;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px; }
+  #panel1 p.header-text {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+  #panel1 span.header-text-span {
+    display: block;
+    width: 66.66%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center; }
+  #panel1 ul h6 {
+    margin-top: 30px;
+    color: black;
+    text-align: left;
+    font-family: Patron;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px; }
+  #panel1 ul p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: #666666;
+    text-align: left;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px; }
+  #panel1 ul a {
+    display: block;
+    float: left;
+    margin-top: 20px;
+    color: #0cabf9;
+    text-align: left;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px; }
+  @media (max-width: 63.9375em) {
+    #panel1 ul li {
+      margin-bottom: 20px; } }
+
+#panel2 {
+  padding-top: 96px; }
+  #panel2 .mdd-panel2-text {
+    display: block;
+    float: left;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 96px; }
+  #panel2 .mdd-panel2-text .left {
+    display: block;
+    float: left;
+    width: 50%;
+    padding-right: 20px; }
+  #panel2 .mdd-panel2-text .right {
+    display: block;
+    float: left;
+    width: 50%;
+    padding-left: 20px; }
+  #panel2 figure {
+    height: 100px;
+    width: auto; }
+  #panel2 h6 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  @media (max-width: 63.9375em) {
+    #panel2 ul li {
+      margin-bottom: 20px; }
+    #panel2 .mdd-panel2-text .left {
+      width: 100%;
+      margin-bottom: 20px; }
+    #panel2 .mdd-panel2-text .right {
+      width: 100%; } }
+
+#panel3 {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  height: 500px; }
+  #panel3 .mdd-panel3-text {
+    display: block;
+    float: left;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 96px; }
+  #panel3 .mdd-panel3-text .left {
+    display: block;
+    float: left;
+    width: 50%;
+    padding-right: 20px; }
+  #panel3 .mdd-panel3-text .right {
+    display: block;
+    float: left;
+    width: 50%;
+    padding-left: 20px; }
+  @media (max-width: 63.9375em) {
+    #panel3 #panel3 {
+      height: 900px; }
+    #panel3 .mdd-panel3-text .left {
+      width: 100%;
+      margin-bottom: 20px; }
+    #panel3 .mdd-panel3-text .right {
+      width: 100%;
+      padding-left: 0px; } }
+
+@media (max-width: 63.9375em) {
+  #panel3 {
+    height: 900px; } }
+
+#bottomCTA .large-9 {
+  width: 100%; }
+
+#bottomCTA .align-middle {
+  text-align: left; }
+
+#bottomCTA .align-center {
+  justify-content: left; }
+
+#bottomCTA a {
+  margin-top: -75px;
+  float: right; }
+
+@media (max-width: 63.9375em) {
+  #bottomCTA a {
+    margin-top: 25px;
+    float: left; } }

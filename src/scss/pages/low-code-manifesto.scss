@@ -1,0 +1,41 @@
+@import '../abstracts/dir';
+
+.lcm-header {
+	padding-top: $grid * 2;
+	background: $blue;
+	background-image: linear-gradient(135deg, $blue, #2d3593);
+
+	@media (min-width: $full-menu) {
+		padding-top: $grid * 7;
+	}
+}
+
+#largeCountedCards {
+	counter-reset: countedCards;
+	display: block;
+
+	figure {
+		.content-box {
+			position: relative;
+
+			&::before {
+				counter-increment: countedCards;
+				content: '0' counter(countedCards);
+				display: block;
+				position: absolute;
+				opacity: 0.15;
+				line-height: 1;
+				top: 8px;
+				left: 8px;
+				font-style: normal;
+				font-size: 6em;
+				font-family: 'Patron';
+				font-weight: bold;
+			}
+		}
+
+		svg {
+			position: relative;
+		}
+	}
+}

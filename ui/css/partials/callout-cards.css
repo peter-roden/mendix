@@ -1,0 +1,43 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+.callout-card {
+  background: white;
+  border: 1px solid #e6e7e9;
+  border-radius: 6px;
+  box-shadow: 5px 5px 18px #e6e6e6;
+  position: relative;
+  display: block; }
+  .callout-card:hover, .callout-card:focus {
+    outline: 1px solid #0CABF9; }
+  .callout-card a {
+    text-decoration: none; }
+    .callout-card a:focus, .callout-card a:hover {
+      text-decoration: none; }
+  .callout-card .featureImg {
+    display: block;
+    width: 100%;
+    margin: 0 auto; }
+  .callout-card h1 {
+    font-size: 16px;
+    line-height: 1.65;
+    margin-top: 1em;
+    padding-bottom: 2em;
+    color: #000003; }
+
+.callout-card__link-box {
+  display: flex;
+  justify-content: space-between; }

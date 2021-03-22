@@ -1,0 +1,358 @@
+@import '../abstracts/dir';
+@import '../abstracts/facetwp_filters';
+
+.customer-stories {
+	background: #181820;
+}
+
+.customer-stories-hero {
+	background-repeat: no-repeat;
+	background-color: #181820;
+	background-size: contain;
+
+	@media (min-width: $foundation-large) {
+		background-size: cover;
+		min-height: 628px;
+	}
+
+	.heading {
+		padding-top: 40px;
+		font-size: 51px;
+		line-height: 1;
+
+		@media (min-width: $foundation-large) {
+			line-height: 1.1;
+		}
+	}
+
+	.hero-text {
+		font-family: $font-accent;
+		font-size: 16px;
+		color: #ffffff;
+		letter-spacing: -0.13px;
+		line-height: 22px;
+	}
+
+	.filters {
+		padding-bottom: 10px;
+
+		@media (min-width: $foundation-large) {
+			padding-bottom: 30px;
+		}
+	}
+
+	.active-filters {
+		position: relative;
+	}
+
+	@media (min-width: $foundation-large) {
+		.facetwp-selections {
+			min-height: 75px;
+		}
+	}
+
+	.facetwp-selections:empty {
+		display: none;
+	}
+
+	.ajax-loading {
+		position: relative;
+		top: 40px;
+		left: 70px;
+		right: auto;
+		display: inline-block;
+		width: 22px;
+		margin-right: 15px;
+
+		@media (min-width: $foundation-large) {
+			top: 1px;
+			right: auto;
+			left: auto;
+			width: 32px;
+		}
+	}
+
+	.filter-by-label {
+		font-family: $font-body;
+		font-weight: bold;
+		font-size: 12px;
+		color: #ffffff;
+		margin-right: 5px;
+		margin-top: 30px;
+		margin-bottom: 5px;
+		display: block;
+
+		@media (min-width: $foundation-large) {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			text-align: right;
+			padding-right: 15px;
+		}
+	}
+
+	.customer-stories-heading {
+		font-family: $font-accent;
+		font-size: 24px;
+		color: #ffffff;
+		display: none;
+
+		@media (min-width: $foundation-large) {
+			display: inline-block;
+		}
+	}
+}
+
+.filter-options-toolbar {
+	z-index: 30;
+	position: relative;
+}
+
+// Sticky styles for filter bar
+.is-sticky {
+	.filter-options-toolbar {
+		background-color: rgba(0, 0, 0, 0.8);
+		transition: 0.3s ease-in-out background;
+		z-index: 30 !important;
+		border-bottom: 1px solid #777777;
+	}
+
+	.filters {
+		@media (min-width: $foundation-large) {
+			margin-top: 100px;
+		}
+	}
+}
+
+.customerCard {
+	border-radius: 2.4px;
+	box-shadow: 0px 2px 4px #000000;
+}
+
+.info-panel {
+	.btn-primary {
+		padding: 0.25em 1em;
+	}
+}
+
+// From Legacy Template
+.customerCard {
+	min-height: 380px;
+	@include brand-gradient;
+
+	.h2 > a {
+		color: #ffffff;
+	}
+
+	@media (min-width: $small-max) {
+		&:hover,
+		&:focus {
+			.customerCard__video {
+				opacity: 1;
+				display: block;
+			}
+		}
+	}
+
+	.customerCard__video {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		min-width: 110%;
+		min-height: 110%;
+		width: auto;
+		height: auto;
+		opacity: 0;
+		display: none;
+		overflow: hidden;
+	}
+
+	.indicator.toggle-data {
+		background-color: rgba($black, 0.4);
+		border: 1px solid rgba(white, 0.7);
+		border-radius: 30px;
+		width: 50px;
+		height: 50px;
+		display: flex;
+		align-content: center;
+		justify-content: center;
+		position: absolute;
+		right: 1rem;
+		bottom: 1rem;
+		z-index: 10;
+		pointer-events: none;
+		top: auto;
+		left: auto;
+
+		&::before {
+			content: '\203A';
+			font-weight: 100;
+			opacity: 0.7;
+			color: white;
+			font-size: 4rem;
+			line-height: 0.5;
+			transform: translate(-1px, 2px) rotate(90deg);
+			transform-origin: 50% 50%;
+			transition: transform 0.2s ease;
+		}
+	}
+
+	.toggle-data.active + .indicator {
+		&::before {
+			transform: rotate(-90deg);
+		}
+	}
+}
+
+.expanded-panel {
+	background: #ffffff;
+}
+
+.customerStories__intro__values {
+	border-left: 5px solid $blue;
+	padding: 0 1em 0 1em;
+}
+
+.customerStories__bullets {
+	list-style-type: disc;
+	margin: 1rem;
+}
+
+.toggle-data {
+	cursor: pointer;
+	width: 100%;
+	text-align: left;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.featured-post-tag {
+	background: $blue;
+	font-family: $font-body;
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: 1.25px;
+	text-align: center;
+	right: 30px;
+	line-height: 19.2px;
+	padding: 3px 10.5px;
+	text-transform: uppercase;
+}
+
+.story-options {
+	margin-right: 32px;
+	margin-bottom: 52px;
+	z-index: 10;
+
+	svg {
+		&:hover {
+			g {
+				stroke: $blue !important;
+			}
+		}
+	}
+}
+
+[aria-expanded='true'] {
+	.indicator::before {
+		transform: rotate(-90deg);
+	}
+}
+
+/* special max-width for logos that are weird aspect ratios */
+.customerCard__logo {
+	img {
+		max-width: 200px;
+		max-height: 80px;
+	}
+
+	[class*='avertra'] {
+		max-height: initial;
+		max-width: 85px;
+	}
+
+	[class*='knowsley'] {
+		max-height: initial;
+		max-width: 115px;
+	}
+
+	[class*='suez'] {
+		max-width: 115px;
+	}
+}
+
+.additional-stories-card {
+	height: 400px;
+	color: #ffffff;
+	padding: 25px;
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	@include brand-gradient;
+	position: relative;
+	border-radius: 2.4px;
+	box-shadow: 0px 2px 4px #000000;
+
+	.card-content {
+		position: relatve;
+		z-index: 2;
+	}
+
+	.customerCard__logo {
+		max-width: 200px;
+		margin-bottom: 2em;
+	}
+
+	.additional-stories-title {
+		font-size: 20px;
+		font-weight: bold;
+		color: #ffffff;
+	}
+
+	.additional-stories-excerpt {
+		margin-top: 16px;
+	}
+
+	.permalink {
+		margin-top: 30px;
+
+		.btn-primary {
+			padding: 0.25em 1em;
+		}
+	}
+
+	.background-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: #000000;
+		z-index: 1;
+		opacity: 0.8;
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+}
+
+.facetwp-facet-loader {
+	margin-bottom: 0 !important;
+	text-align: center;
+
+	button {
+		text-align: center;
+		@include btn-base;
+		$color-1: #0baaf9;
+		$color-2: #0d2dd1;
+		background-color: $color-1;
+		background-image: linear-gradient(90deg, $color-2, $color-1);
+		background-size: 200% 100%;
+		background-position: 5% 0%;
+		border: 1px solid transparent;
+		color: white;
+	}
+}

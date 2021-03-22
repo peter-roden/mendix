@@ -1,0 +1,126 @@
+{
+    "key": "group_5fbd5f247f9f3",
+    "title": "Partial Type Contact Us",
+    "fields": [
+        {
+            "key": "field_5fbd5f3f11d7d",
+            "label": "Heading",
+            "name": "contact_us_heading",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Contact an expert",
+            "placeholder": "Contact an expert",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "translations": "translate"
+        },
+        {
+            "key": "field_5fbd5f4511d7e",
+            "label": "Subheading",
+            "name": "contact_us_subheading",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Ready to get started with Mendix? Fill this out and we’ll reach out shortly.",
+            "placeholder": "Ready to get started with Mendix? Fill this out and we’ll reach out shortly.",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "translations": "translate"
+        },
+        {
+            "key": "field_5fbd5fef11d7f",
+            "label": "Marketo Form ID",
+            "name": "contact_us_form_id",
+            "type": "number",
+            "instructions": "4 number ID",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "translations": "copy_once"
+        },
+        {
+            "key": "field_5fbd79e0d454d",
+            "label": "Success Heading",
+            "name": "contact_us_success_heading",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Thank you",
+            "placeholder": "Thank you",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "translations": "translate"
+        },
+        {
+            "key": "field_5fbd79f6d454e",
+            "label": "Success Text",
+            "name": "contact_us_success_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "A member of our team will contact you shortly",
+            "placeholder": "A member of our team will contact you shortly",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "translations": "translate"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "mx_partial_type:contact-us"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1607043460
+}

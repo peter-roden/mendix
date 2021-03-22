@@ -1,0 +1,356 @@
+.column-padding {
+    padding-right: $foundation-column-padding;
+    padding-left: $foundation-column-padding;
+}
+
+.mw-content,
+.row-block {
+    max-width: $content-max-width;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.flex-column-wrap {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.grid-container-16 {
+    max-width: $content-xl;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row.full {
+    margin-right: -$foundation-column-padding;
+    margin-left: -$foundation-column-padding;
+}
+
+.grid-container-16 {
+    max-width: $content-xl;
+}
+
+.column-auto {
+    flex: 1 1 0px;
+}
+
+.grid-container.collapse {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.position-absolute {
+	position: absolute !important;
+}
+
+.position-relative {
+	position: relative !important;
+}
+
+.grid-x.collapse:not(.grid-container) {
+    margin-right: -1rem;
+    margin-left: -1rem;
+}
+
+@media screen and (max-width: $foundation-small-max) {
+    .small-only-align-right {
+        justify-content: flex-end;
+    }
+
+    .small-only-align-center {
+        justify-content: center;
+    }
+
+    .small-only-align-justify {
+        justify-content: space-between;
+    }
+
+    .small-only-align-spaced {
+        justify-content: space-around;
+    }
+
+    .small-only-align-top {
+        align-items: flex-start;
+    }
+
+    .small-only-align-self-top {
+        align-self: flex-start;
+    }
+
+    .small-only-align-bottom {
+        align-items: flex-end;
+    }
+
+    .small-only-align-self-bottom {
+        align-self: flex-end;
+    }
+
+    .small-only-align-middle {
+        align-items: center;
+    }
+
+    .small-only-align-self-middle {
+        align-self: center;
+    }
+
+    .small-only-align-stretch {
+        align-items: stretch;
+    }
+
+    .small-only-align-self-stretch {
+        align-self: stretch;
+    }
+
+    .small-only-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .small-only-column-auto {
+        flex: 1 1 0px;
+    }
+
+    .small-only-cell-pr1 .cell {
+        padding-right: $foundation-column-padding;
+    }
+
+    .small-only-cell-ph1 .cell {
+        padding-right: $foundation-column-padding;
+        padding-left: $foundation-column-padding;
+    }
+}
+
+@media screen and (min-width: $foundation-medium) {
+    .medium-align-left {
+        justify-content: initial;
+    }
+
+    .medium-align-right {
+        justify-content: flex-end;
+    }
+
+    .medium-align-center {
+        justify-content: center;
+    }
+
+    .medium-align-justify {
+        justify-content: space-between;
+    }
+
+    .medium-align-spaced {
+        justify-content: space-around;
+    }
+
+    .medium-align-top {
+        align-items: flex-start;
+    }
+
+    .medium-align-self-top {
+        align-self: flex-start;
+    }
+
+    .medium-align-bottom {
+        align-items: flex-end;
+    }
+
+    .medium-align-self-bottom {
+        align-self: flex-end;
+    }
+
+    .medium-align-middle {
+        align-items: center;
+    }
+
+    .medium-align-self-middle {
+        align-self: center;
+    }
+
+    .medium-align-stretch {
+        align-items: stretch;
+    }
+
+    .medium-align-self-stretch {
+        align-self: stretch;
+    }
+
+
+    .medium-column-auto {
+        flex: 1 1 0px;
+    }
+
+    .medium-column-count-2 {
+        column-count: 2;
+        column-gap: $foundation-column-padding * 2;
+    }
+
+    .medium-column-count-3 {
+        column-count: 3;
+        column-gap: $foundation-column-padding * 2;
+    }
+
+    .medium-cell-pr1 .cell {
+        padding-right: $foundation-column-padding;
+    }
+
+    .medium-cell-ph1 .cell {
+        padding-right: $foundation-column-padding;
+        padding-left: $foundation-column-padding;
+    }
+}
+
+@media screen and (min-wih: $foundation-medium) and (max-width: $foundation-medium-max) {
+    .medium-only-align-left {
+        justify-content: initial;
+    }
+
+    .medium-only-align-right {
+        justify-content: flex-end;
+    }
+
+    .medium-only-align-center {
+        justify-content: center;
+    }
+
+    .medium-only-align-justify {
+        justify-content: space-between;
+    }
+
+    .medium-only-align-spaced {
+        justify-content: space-around;
+    }
+
+    .medium-only-align-top {
+        align-items: flex-start;
+    }
+
+    .medium-only-align-self-top {
+        align-self: flex-start;
+    }
+
+    .medium-only-align-bottom {
+        align-items: flex-end;
+    }
+
+    .medium-only-align-self-bottom {
+        align-self: flex-end;
+    }
+
+    .medium-only-align-middle {
+        align-items: center;
+    }
+
+    .medium-only-align-self-middle {
+        align-self: center;
+    }
+
+    .medium-only-align-stretch {
+        align-items: stretch;
+    }
+
+    .medium-only-align-self-stretch {
+        align-self: stretch;
+    }
+
+    .medium-only-text-left {
+        text-align: left;
+    }
+
+    .medium-only-text-right {
+        text-align: right;
+    }
+
+    .medium-only-text-center {
+        text-align: center;
+    }
+
+    .medium-only-text-justify {
+        text-align: justify;
+    }
+
+    .medium-only-cell-pr1 .cell {
+        padding-right: $foundation-column-padding;
+    }
+
+    .medium-only-cell-ph1 .cell {
+        padding-right: $foundation-column-padding;
+        padding-left: $foundation-column-padding;
+    }
+}
+
+@media screen and (min-width: $foundation-large) {
+    .large-align-left {
+        justify-content: initial;
+    }
+
+    .large-align-right {
+        justify-content: flex-end;
+    }
+
+    .large-align-center {
+        justify-content: center;
+    }
+
+    .large-align-justify {
+        justify-content: space-between;
+    }
+
+    .large-align-spaced {
+        justify-content: space-around;
+    }
+
+    .large-align-top {
+        align-items: flex-start;
+    }
+
+    .large-align-self-top {
+        align-self: flex-start;
+    }
+
+    .large-align-bottom {
+        align-items: flex-end;
+    }
+
+    .large-align-self-bottom {
+        align-self: flex-end;
+    }
+
+    .large-align-middle {
+        align-items: center;
+    }
+
+    .large-align-self-middle {
+        align-self: center;
+    }
+
+    .large-align-stretch {
+        align-items: stretch;
+    }
+
+    .large-align-self-stretch {
+        align-self: stretch;
+    }
+
+    .large-column-auto {
+        flex: 1 1 0px;
+    }
+
+    .large-column-count-2 {
+        column-count: 2;
+        column-gap: $foundation-column-padding * 2;
+    }
+
+    .large-column-count-3 {
+        column-count: 3;
+        column-gap: $foundation-column-padding * 2;
+    }
+
+    .large-cell-pr1 .cell {
+        padding-right: $foundation-column-padding;
+    }
+
+    .large-cell-ph1 .cell {
+        padding-right: $foundation-column-padding;
+        padding-left: $foundation-column-padding;
+    }
+
+}

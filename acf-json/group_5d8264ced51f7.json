@@ -1,0 +1,189 @@
+{
+    "key": "group_5d8264ced51f7",
+    "title": "Component Heading Subheading",
+    "fields": [
+        {
+            "key": "field_5d8264ceeb603",
+            "label": "Heading \/ Subheading",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5d82664d9bc46",
+            "label": "Heading Subheading Group",
+            "name": "heading_subheading_group",
+            "type": "group",
+            "instructions": "Choose the heading size. \r\nSubheading size is bigger than default body text.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_5d8a3dff34d1b",
+                    "label": "Options",
+                    "name": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placement": "top",
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_5d8264cef3426",
+                    "label": "Text Align",
+                    "name": "text_align",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "left": "Left",
+                        "center": "Center",
+                        "right": "Right"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "",
+                    "layout": "horizontal",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_5d85447e24f8e",
+                    "label": "Heading Size",
+                    "name": "heading_size",
+                    "type": "radio",
+                    "instructions": "The font size will not effect the markup, i.e. selecting \"h1\" will not output a h1 tag. This is for outline and HTML semantic purposes.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "h1": "h1",
+                        "h2": "h2",
+                        "h3": "h3"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "h2",
+                    "layout": "horizontal",
+                    "return_format": "value",
+                    "translations": "copy_once",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_5f22375767c70",
+                    "label": "Sub Heading Size",
+                    "name": "sub_heading_size",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "sh1": "sh1",
+                        "sh2": "sh2",
+                        "sh3": "sh3",
+                        "sh4": "sh4"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "h2",
+                    "layout": "horizontal",
+                    "return_format": "value",
+                    "translations": "copy_once",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_5d8a5985bbd8c",
+                    "label": "Heading",
+                    "name": "heading",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5d8a598bbbd8d",
+                    "label": "Subheading",
+                    "name": "subheading",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 4,
+                    "new_lines": "br"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "Component Group: Heading Text CTA with style and position options",
+    "modified": 1596156684
+}

@@ -1,0 +1,51 @@
+@import '../abstracts/dir';
+
+.faq {
+
+    .is-active {
+        .chevron-right::before {
+            transform: rotate(-45deg);
+            top: .4em
+        }
+    }
+
+    .accordion-title {
+        text-decoration: none;
+    }
+
+    [class*='chevron-'] {
+        position: absolute;
+        margin-left: 2%;
+        margin-top: 3px;
+
+        &::before {
+            border-width: .1rem .1rem 0 0;
+            height: .6rem;
+            transform: rotate(135deg);
+            width: .6rem;
+        }
+    }
+
+    .accordion-title {
+        position: relative;
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+
+    .accordion-title:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: $foundation-small-max) {
+    .faq__header {
+        border-bottom: 3px solid $black;
+    }
+}
+
+@media (min-width: $foundation-medium) {
+    .faq__questions {
+        border-left: 14px solid $black;
+    }
+}

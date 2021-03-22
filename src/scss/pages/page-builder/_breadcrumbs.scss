@@ -1,0 +1,23 @@
+.pb_breadcrumbs {
+    margin-bottom: $grid * 2;
+}
+
+.pb_breadcrumbs__item {
+    text-transform: uppercase;
+    display: inline;
+    margin-right: $grid;
+
+    a {
+        color: $color-body;
+
+        .white & {
+            font-weight: bold;
+            color: white;
+        }
+    }
+
+    &:not(:last-of-type)::after {
+        margin-left: 0.5em;
+        content: '/';
+    }
+}

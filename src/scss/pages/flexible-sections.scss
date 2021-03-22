@@ -1,0 +1,34 @@
+//TODO this is for one page only. There should be a way to get to get these named
+@import '../abstracts/dir';
+
+#cloudNativeArchitecture {
+	.ctaBanner__text {
+		margin-top: 3rem;
+	}
+
+	@media (min-width: $large) {
+        position: relative;
+
+        .cloud-native-architecture {
+            position: absolute;
+            right: 0;
+            top: 64px;
+        }
+
+        .ctaBanner__text {
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+	}
+	
+	@media (min-width: 110em) {
+		.cloud-native-architecture {
+			right: 10vw;
+		}
+	}
+	@media (min-width: 140em) {
+		.cloud-native-architecture {
+			right: 20vw;
+		}
+	}
+}

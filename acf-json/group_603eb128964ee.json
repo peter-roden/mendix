@@ -1,0 +1,137 @@
+{
+    "key": "group_603eb128964ee",
+    "title": "MX Live",
+    "fields": [
+        {
+            "key": "field_6041a9f3475ea",
+            "label": "Broadcast Type",
+            "name": "broadcast_type",
+            "type": "select",
+            "instructions": "Is this broadcast a future live event or past broadcast?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Live": "Live",
+                "Past Broadcast": "Past Broadcast"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "translations": "copy_once",
+            "placeholder": ""
+        },
+        {
+            "key": "field_6041b019d25f5",
+            "label": "Video ID",
+            "name": "video_id",
+            "type": "text",
+            "instructions": "Provide the video ID\r\nExample: https:\/\/www.twitch.tv\/videos\/123456789\r\n123456789 is the ID",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6041a9f3475ea",
+                        "operator": "==",
+                        "value": "Past Broadcast"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "translations": "translate"
+        },
+        {
+            "key": "field_603ecf4e05a7e",
+            "label": "Air Date",
+            "name": "air_date",
+            "type": "date_time_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "F j, Y g:i a",
+            "return_format": "j F | g:i A",
+            "first_day": 1,
+            "translations": "copy_once"
+        },
+        {
+            "key": "field_603ee9b82aa16",
+            "label": "Description",
+            "name": "description",
+            "type": "textarea",
+            "instructions": "Summary of the broadcast.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "",
+            "translations": "translate"
+        },
+        {
+            "key": "field_603ee9d62aa17",
+            "label": "Hosts",
+            "name": "hosts",
+            "type": "user",
+            "instructions": "Select associated hosts for this podcasts. Hosts must be WordPress users.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "role": "",
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "object",
+            "translations": "copy_once"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "live"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1615815053
+}

@@ -1,0 +1,1 @@
+<?php include_once locate_template('/pages/search-results.php'); ?>

@@ -1,0 +1,263 @@
+{
+    "key": "group_5dee9df9b972e",
+    "title": "Category Platform Blog",
+    "fields": [
+        {
+            "key": "field_5dee9df9d98c7",
+            "label": "Shortened Title",
+            "name": "shortened_title",
+            "type": "text",
+            "instructions": "Shortened title that will appear on the blog landing page. Otherwise the title will be truncated to 70 characters with ellipsis…",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "translations": "translate"
+        },
+        {
+            "key": "field_5dee9df9d9910",
+            "label": "Content Group",
+            "name": "blog_content_group",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Product": "Product",
+                "Marketplace": "Marketplace",
+                "Digital Transformation": "Digital Transformation",
+                "Agile": "Agile",
+                "Mobile\/MC": "Mobile\/MC",
+                "Emerging Technology": "Emerging Technology",
+                "UX": "UX",
+                "Cloud\/DevOps": "Cloud\/DevOps",
+                "Corporate\/Events": "Corporate\/Events",
+                "Insurance": "Insurance",
+                "Legacy": "Legacy"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5dee9df9d9954",
+            "label": "Show Release Blog Fields",
+            "name": "release_blog",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "No": "No",
+                "Yes": "Yes"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "No",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5dee9df9d9992",
+            "label": "Release Details",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5dee9df9d9954",
+                        "operator": "==",
+                        "value": "Yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5dee9df9d99cc",
+            "label": "Release Number",
+            "name": "release_number",
+            "type": "text",
+            "instructions": "i.e. 'Mendix 7.13'",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5dee9df9d9954",
+                        "operator": "==",
+                        "value": "Yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5dee9df9d9a08",
+            "label": "Release Title",
+            "name": "release_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5dee9df9d9954",
+                        "operator": "==",
+                        "value": "Yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5dee9df9d9a43",
+            "label": "Release Blurb",
+            "name": "release_blurb",
+            "type": "textarea",
+            "instructions": "To fit the template, this should be just one short paragraph.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5dee9df9d9954",
+                        "operator": "==",
+                        "value": "Yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": ""
+        },
+        {
+            "key": "field_5dee9df9d9a80",
+            "label": "Documentation Link",
+            "name": "documentation_link",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5dee9df9d9954",
+                        "operator": "==",
+                        "value": "Yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5dee9df9d9abc",
+            "label": "Algolia Noindex",
+            "name": "algolia_noindex",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Noindex": "Noindex",
+                "Keep Page in Site Search Index": "Keep Page in Site Search Index"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "Keep Page in Site Search Index",
+            "layout": "horizontal",
+            "return_format": "value"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_category",
+                "operator": "==",
+                "value": "category:blog"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1614283931
+}

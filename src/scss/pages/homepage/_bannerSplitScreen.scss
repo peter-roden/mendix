@@ -1,0 +1,218 @@
+@import '../abstracts/_dir';
+
+$contentXMovementDistance: 12rem;
+$baseAnimTime : 1000ms;
+$slideBackgroundMovementX: 7%;
+
+.bannerSplit {
+    overflow: hidden;
+}
+
+.bannerSplit__overlay {
+    @include absolute-stack;
+    pointer-events: none;
+    background-color: $black;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    opacity: 0.6;
+}
+
+/* for modern browsers */
+.bannerSplitDynamic {
+
+	@include hero100VH; 
+
+    .bannerSplitDynamic__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        transition: transform $baseAnimTime ease;
+        width: 105vw;
+        height: 100%;
+        max-width: none;
+        object-fit: cover;
+    }
+
+    .bannerSplitDynamic__content {
+        position: relative;
+    }
+
+    @media (max-width: $large) {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+
+        .bannerSplitDynamic__line,
+        .bannerSplitDynamic__slide--2 {
+            display: none !important;
+        }
+    }
+
+    @media (min-width: $large) {
+        overflow: hidden;
+
+        $minHeight: 50rem;
+        $maxHeight: 75rem;
+        $topRightX: 43%;
+        $bottomLeftX: 30%;
+
+        @media (max-height: $minHeight) {
+            min-height: $minHeight;
+        }
+
+        @media (max-height: $maxHeight) {
+            height: 100vh;
+        }
+
+        @media (min-height: $maxHeight) {
+            min-height: $maxHeight;
+        }
+
+        .bannerSplitDynamic__slide--2 {
+            clip-path: polygon($topRightX 0, 100% 0%, 100% 100%, $bottomLeftX 100%);
+        }
+
+        .bannerSplitDynamic__line {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: white;
+            width: 100%;
+            height: 100%;
+            clip-path: polygon($topRightX 0, $topRightX+.1% 0%, $bottomLeftX+0.1% 100%, $bottomLeftX 100%);
+        }
+
+        .bannerSplitDynamic__content {
+            opacity: 0.35;
+        }
+
+
+        /* after text height has been analyzed by the js, the text is shown in its initial position and we can add animation easing */
+        .bannerSplitDynamic__content.loaded {
+            opacity: 1;
+            transition: opacity 1s;
+        }
+
+        /* removing the .animated from __content will start the blocks in the 'out' position */
+        .bannerSplitDynamic__content.animated {
+            /* playing out animation...	*/
+
+            transition: opacity 800ms ease 200ms, transform 900ms $easeOutCubic 200ms;
+
+            .bannerSplitDynamic__content__heading,
+            .bannerSplitDynamic__content__link {
+                /* out animation */
+                transition: transform 600ms $easeInOutCubic 200ms;
+            }
+        }
+
+        .bannerSplitDynamic__content__body {
+            opacity: 0;
+            /* out animation timing */
+            transition: opacity 500ms ease 200ms;
+        }
+
+        .bannerSplitDynamic__slide {
+
+            @include absolute-stack;
+
+            .bannerSplit__overlay {
+                opacity: 0.8;
+                transition: opacity 1000ms ease;
+            }
+
+            &.active {
+
+                .bannerSplitDynamic__background {
+                    transform: translateX(0);
+                }
+
+                .bannerSplitDynamic__content.animated {
+                    opacity: 1;
+                    transform: translateX(0);
+                    /* in animation timing */
+                    transition: opacity 800ms ease 200ms, transform 1100ms ease 0ms;
+                }
+
+                .bannerSplitDynamic__content__body {
+                    opacity: 1;
+                    /* in animation timing */
+                    transition-delay: 600ms;
+                }
+
+                .bannerSplitDynamic__content__heading,
+                .bannerSplitDynamic__content__link {
+                    /* in animation timing */
+                    transition: transform 500ms $easeInOutCubic 400ms;
+                }
+
+                .bannerSplit__overlay {
+                    opacity: 0.4;
+                }
+            }
+        }
+
+        .bannerSplitDynamic__slide--1 {
+            .bannerSplitDynamic__background {
+                transform: translateX(-$slideBackgroundMovementX);
+            }
+
+            /* removing the .animated from __content will start the blocks in the 'out' position*/
+            .bannerSplitDynamic__content.animated {
+                transform: translateX(-$contentXMovementDistance);
+            }
+        }
+
+        .bannerSplitDynamic__line,
+        .bannerSplitDynamic__slide--2 {
+            transition-property: clip-path;
+            transition-timing-function: $easeOutCubic;
+            transition-duration: $baseAnimTime;
+        }
+
+        .bannerSplitDynamic__slide--2 {
+            .bannerSplitDynamic__background {
+                transform: translateX($slideBackgroundMovementX);
+            }
+
+            /* removing the .animated from __content will start the blocks in the 'out' position*/
+            .bannerSplitDynamic__content.animated {
+                transform: translateX($contentXMovementDistance);
+            }
+        }
+    }
+}
+
+.bannerSplitStatic {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+    .bannerSplitStatic__background {
+        @include absolute-stack;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    @media (max-width: $large) {
+
+        .bannerSplitStatic__background:nth-of-type(1),
+        .bannerSplitStatic__content:nth-of-type(1) {
+            display: none;
+        }
+    }
+
+    @media (min-width: $large) {
+        padding-top: 12rem;
+        padding-bottom: 18rem;
+
+        .bannerSplitStatic__background {
+            width: 50%;
+        }
+
+        .bannerSplitStatic__background:nth-of-type(2) {
+            right: 0;
+            left: auto;
+        }
+    }
+}

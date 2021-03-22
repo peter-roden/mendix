@@ -1,0 +1,19 @@
+.fat-footer {
+	padding-top: 1rem;
+    background-color: $charcoal;
+
+    a,
+    button {
+        color: white;
+
+        &:focus,
+        &:hover {
+            color: $blue;
+            text-decoration: none;
+        }
+	}
+
+	.trending-topics {
+		background-color: black;//do not make $black;
+	}
+}

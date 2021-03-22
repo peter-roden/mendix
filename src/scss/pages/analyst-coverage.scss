@@ -1,0 +1,10 @@
+@import '../abstracts/dir';
+
+@media (min-width: $large) {
+
+    .first-reports {
+        position: relative;
+        margin-top: -4rem;
+        margin-bottom: -4rem;
+    }
+}

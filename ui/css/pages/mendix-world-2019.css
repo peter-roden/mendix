@@ -1,0 +1,447 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+.row .row {
+  margin-right: 0;
+  margin-left: 0; }
+
+.agenda-link, .agenda-row {
+  padding: 24px 24px 16px; }
+  @media (min-width: 40em) {
+    .agenda-link, .agenda-row {
+      padding-right: 54px;
+      padding-left: 54px; }
+      .agenda-link:first-of-type, .agenda-row:first-of-type {
+        border-right: 2px solid white; } }
+
+::-moz-selection {
+  background: #F99B1D; }
+
+::selection {
+  background: #F99B1D; }
+
+body {
+  background-color: #000ba4;
+  background-image: linear-gradient(to right, #000ba4, #0071ca); }
+
+a:focus,
+a:hover {
+  text-decoration: none; }
+
+input[type="submit"] {
+  display: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700; }
+
+div[id^=mktoCheckbox] label {
+  color: #fff; }
+  div[id^=mktoCheckbox] label a {
+    color: #fff;
+    text-decoration: underline; }
+
+.accommodation-price {
+  color: #CBD3EE;
+  font-size: 18px; }
+
+.agenda-desc {
+  max-width: 37em;
+  line-height: 1.5em; }
+
+.agenda-link {
+  background: #000051;
+  border-bottom: 6px solid #000051;
+  color: white;
+  transition: border-color 250ms, color 250ms; }
+  .agenda-link .agenda-link__day {
+    transform: translate(0, 2px); }
+  .agenda-link:hover, .agenda-link:focus, .agenda-link.is-active {
+    border-bottom: 6px solid #F99B1D;
+    color: #F99B1D; }
+  @media (min-width: 40em) {
+    .agenda-link:first-of-type {
+      border-right: 2px solid white; } }
+
+.agenda-link {
+  background: #000051;
+  border-bottom: 6px solid #000051;
+  color: white;
+  transition: border-color 250ms, color 250ms; }
+  .agenda-link b {
+    transform: translate(0, 2px); }
+  .agenda-link:hover, .agenda-link:focus, .agenda-link.active {
+    border-bottom: 6px solid #F99B1D;
+    color: #F99B1D; }
+  @media (min-width: 40em) {
+    .agenda-link {
+      padding-right: 54px;
+      padding-left: 54px; }
+      .agenda-link:first-of-type {
+        border-right: 2px solid white; } }
+
+.agenda-table {
+  width: 100%;
+  background: #e7eaec;
+  margin: 0; }
+  .agenda-table .agenda-row {
+    transition: opacity 400ms; }
+  .agenda-table:not(.active) {
+    display: none; }
+  .agenda-table.faded .agenda-row {
+    opacity: 0; }
+  .agenda-table ul {
+    margin-top: 8px;
+    margin-left: 30px; }
+    .agenda-table ul li {
+      list-style-type: disc; }
+
+.agenda-title {
+  font-weight: bold; }
+
+.agenda-row {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  flex-flow: row wrap;
+  position: relative;
+  border: 1px solid white;
+  text-align: left; }
+  @media (max-width: 39.9375em) {
+    .agenda-row td {
+      flex: 0 0 100%; }
+    .agenda-row td:nth-child(2) {
+      margin-top: 54px; }
+    .agenda-row td:nth-child(2),
+    .agenda-row td:nth-child(4) {
+      order: 2; } }
+  @media (min-width: 40em) {
+    .agenda-row td:nth-child(1),
+    .agenda-row td:nth-child(3) {
+      flex: 1 1 50%; }
+    .agenda-row td:nth-child(2),
+    .agenda-row td:nth-child(4) {
+      flex: 0 0 175px;
+      text-align: right; }
+      .agenda-row td:nth-child(2)::before,
+      .agenda-row td:nth-child(4)::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 32px;
+        width: 2px;
+        background-color: white; }
+    .agenda-row td:nth-child(2)::before {
+      top: 0; }
+    .agenda-row td:nth-child(4)::before {
+      bottom: 0; } }
+
+.blue-wrapper {
+  background-color: #000051; }
+
+.mw100,
+.row.mw100 {
+  max-width: 100%; }
+
+.row {
+  max-width: 90rem; }
+
+.line-height-0 {
+  line-height: 0; }
+
+.hero-background {
+  width: 100%;
+  overflow: hidden; }
+  .hero-background .hero {
+    z-index: 2;
+    color: #fff;
+    background: transparent; }
+    .hero-background .hero h1 {
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 1.2em; }
+      @media (max-width: 39.9375em) {
+        .hero-background .hero h1 {
+          font-size: 36px;
+          line-height: 1.2em; } }
+    .hero-background .hero ul.slash-list li {
+      float: left;
+      font-size: 15px;
+      line-height: 1.3rem; }
+    .hero-background .hero .btn {
+      font-size: 1em; }
+
+p,
+ul {
+  font-size: 18px; }
+
+.h1 {
+  font-size: 60px; }
+  @media (max-width: 39.9375em) {
+    .h1 {
+      font-size: 36px;
+      line-height: 1.2em; } }
+
+.hero-icons {
+  position: absolute;
+  right: 2rem;
+  bottom: 88px;
+  text-align: center; }
+
+.h2 {
+  font-size: 40px;
+  color: #171717; }
+
+.h2.white {
+  color: #fff; }
+
+.heading5.h5-alt {
+  color: #B1CBEB; }
+
+.header-slashes {
+  display: table;
+  margin: 0 auto;
+  padding: 0 0 0 55px;
+  background-image: url("/wp-content/themes/mendix/ui/svg/header-slashes.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 43px; }
+
+.column-icon {
+  width: auto;
+  height: 160px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
+.icon-globe {
+  background-image: url(/wp-content/uploads/icon-globe.svg); }
+
+.icon-light-bulb {
+  background-image: url(/wp-content/uploads/icon-light-bulb.svg); }
+
+.icon-microphone {
+  background-image: url(/wp-content/uploads/icon-microphone.svg); }
+
+.speaker-photo {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  overflow: hidden;
+  cursor: default;
+  background-repeat: no-repeat;
+  background-size: cover !important; }
+  .speaker-photo:hover::after, .speaker-photo:focus::after {
+    transform: skewY(20deg) translateY(60%); }
+
+.hotel-table,
+.agenda-table {
+  display: table;
+  width: 100%;
+  background-color: #F2F5F8; }
+
+.hotel-cell,
+.agenda-cell {
+  display: table-cell;
+  text-align: left;
+  width: 100%; }
+
+.hotel-cell {
+  width: 50%; }
+
+.hotel-cell {
+  font-size: 35px; }
+
+.hotel-cell span {
+  display: block;
+  font-size: 15px;
+  line-height: 1.5rem; }
+
+.hero-text .h4 {
+  font-weight: lighter;
+  font-size: 22px; }
+
+.mt15 {
+  margin-top: 1.5rem; }
+
+.mw-header__link {
+  color: #fff;
+  text-transform: uppercase; }
+  .mw-header__link:focus, .mw-header__link:hover {
+    color: #F99B1D; }
+
+.speaker {
+  padding: 24px 1rem; }
+
+.speakers-show-button {
+  margin-top: 1rem; }
+
+.speakers__list {
+  overflow: hidden; }
+
+#accommodations a {
+  color: #fff; }
+  #accommodations a:focus, #accommodations a:hover {
+    text-decoration: underline; }
+
+#mendix-world-footer {
+  font-size: 15px; }
+
+#location-photos {
+  position: relative;
+  z-index: 100;
+  margin-bottom: -5rem; }
+
+#location-map {
+  margin: 0 auto;
+  width: 98%;
+  margin-left: 4px;
+  margin-right: 4px; }
+  @media (min-width: 40em) {
+    #location-map {
+      margin-left: 8px;
+      margin-right: 8px; } }
+  @media (min-width: 64em) {
+    #location-map {
+      margin-left: 16px;
+      margin-right: 16px; } }
+
+@media screen and (max-width: 39.9375em) {
+  h2.h2 {
+    font-size: 28px; }
+  .speaker {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px; }
+  .hero-text .h4 {
+    font-size: 18px; }
+  #accommodations .small-4.pr1.pl0 {
+    padding-right: 2rem;
+    padding-left: 2rem; }
+  #location-photos .small-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%; }
+  #location-photos .small-4.pr1 {
+    padding-right: 5px; }
+  #location-photos .small-4.pr1:last-child {
+    padding-right: 0; } }
+
+.time {
+  font-weight: 400; }
+
+.sessions {
+  background-color: #F2F5F8; }
+  .sessions .accordion-content {
+    display: none; }
+  .sessions .is-active .sessions-title::before {
+    transform: rotate(-90deg);
+    top: -15px; }
+
+.sessions-item {
+  border-bottom: 1px solid white;
+  position: relative; }
+
+.sessions-title {
+  color: #000003;
+  line-height: 1.5;
+  padding: 1rem 0;
+  display: block;
+  position: relative;
+  transition: all .5s ease; }
+  .sessions-title.accordion-title::before {
+    content: ' \232A';
+    color: #9b9b9b;
+    font-size: 2em;
+    position: absolute;
+    right: 1rem;
+    transform: rotate(90deg);
+    top: 0; }
+  .sessions-title .icon {
+    padding-left: 3px;
+    padding-right: 3px;
+    width: 30px; }
+
+.sessions-title--breakout {
+  position: relative; }
+
+.sessions-content {
+  padding: 1rem 0rem 3rem; }
+  @media (min-width: 64em) {
+    .sessions-content {
+      padding: 1rem 5rem 5rem 3rem; } }
+
+.sessions-icon {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  position: absolute;
+  top: .8rem;
+  left: 2rem; }
+
+@media (min-width: 64em) {
+  .sessions-copy {
+    padding-right: 5rem; } }
+
+.sessions-featured {
+  padding: 1rem; }
+  @media (min-width: 64em) {
+    .sessions-featured {
+      box-shadow: #F99B1D 8px 8px 0;
+      background-color: white;
+      padding: 2.5rem 3rem; } }
+  .sessions-featured dt,
+  .sessions-featured dd {
+    margin-bottom: 1rem; }
+  .sessions-featured dd {
+    font-size: 95%;
+    background: url("/wp-content/themes/mendix/ui/svg/header-slashes.svg") no-repeat 0 5px;
+    background-size: 14px;
+    padding-left: 1.4rem; }
+
+.sessions-item--secondary {
+  position: relative; }
+  .sessions-item--secondary::before {
+    content: ' \232A';
+    color: #9b9b9b;
+    font-size: 2em;
+    position: absolute;
+    top: 0;
+    left: -3rem;
+    transform: rotate(90deg); }
+
+.sessions-title--secondary {
+  color: #000003; }
+  .sessions-title--secondary .icon {
+    padding-right: 3px;
+    padding-left: 3px;
+    width: 28px; }
+
+.is-active.sessions-item--secondary::before {
+  top: -15px;
+  transform: rotate(-90deg); }
+
+@media (max-width: 39.9375em) {
+  #sessions .h5 {
+    font-size: 16px; } }
+
+@media (min-width: 64em) {
+  #bear-speaker {
+    background: url("/wp-content/uploads/bg-bear.jpg") no-repeat; } }

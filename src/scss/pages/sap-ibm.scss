@@ -1,0 +1,302 @@
+@import '../abstracts/dir';
+
+.big-partner-logo {
+    max-width: 250px
+}
+
+.heading5>p {
+    margin-top: 1rem;
+}
+
+.bg-gradient-sap {
+    background-color: #dcecf3;
+    background-image: linear-gradient(90deg, #dcecf3, rgba(255, 255, 255, 0) 40%);
+}
+
+.b--sap {
+    border-color: #dcecf3;
+}
+
+.flex-0040 {
+    height: 42px;
+    flex: 0 0 40px;
+}
+
+.max-row-copy {
+    max-width: $content-max-width;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mw-123 {
+    width: 123px;
+}
+
+.popup p {
+    margin-top: 0.5rem;
+    text-align: left;
+}
+ 
+
+.press-release-focus {}
+
+@media screen and (max-width:840px) {
+    .video-container {
+        display: none;
+    }
+
+    .enexis-overlay {
+        display: none;
+    }
+}
+
+@media screen and (max-width: $foundation-medium-max) {
+    .popup {
+        padding: 1rem 2rem 0;
+
+        .heading5 {
+            font-size: $font-size-body;
+            cursor: pointer;
+            color: $color-heading;
+        }
+
+        .heading5::after {
+            margin-left: 0.5rem;
+            content: url('/ui/svg/caret-blue.svg');
+        }
+
+        p {
+            display: none;
+        }
+
+        &.active p {
+            display: block;
+        }
+    }
+}
+
+@media screen and (min-width: $foundation-large) {
+    .banner-padding {
+        height: 700px;
+    }
+
+    .popup h5 {
+        text-align: left;
+    }
+
+    .sideways-header {
+        position: absolute;
+        top: 50%;
+        left: 2rem;
+        padding-top: 0;
+        transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    }
+
+    .hover-icon {
+        font-size: $font-size-body;
+        line-height: 1;
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        transform: translate(.4em, .05em);
+        color: white;
+        border-radius: 50%;
+        background: #ccc;
+
+        &::after {
+            content: '+';
+        }
+    }
+
+    .popup {
+        position: absolute;
+        z-index: 99;
+        top: 50%;
+        right: -70%;
+        width: 300px;
+        padding: 1.5rem;
+        transition: all 500ms ease;
+        transform: translateY(-50%);
+        pointer-events: none;
+        opacity: 0;
+        background: white;
+        box-shadow: 20px 0 0 rgba(0, 0, 0, 0);
+
+        &::before {
+            font-size: 48px;
+            position: absolute;
+            top: 50%;
+            left: -34px;
+            content: '\25C0';
+            transform: translateY(-50%);
+            color: white;
+            text-shadow: -5px 0 8px rgba(0, 0, 0, 0.35);
+        }
+    }
+
+    .popup--left {
+        right: 0;
+        left: -70%;
+        box-shadow: -20px 0 0 rgba(0, 0, 0, 0);
+
+        &::before {
+            position: absolute;
+            right: -40px;
+            left: auto;
+            content: '\25BA';
+            text-shadow: 5px 0 8px rgba(0, 0, 0, 0.35);
+        }
+    }
+
+    .popup.active {
+        pointer-events: auto;
+        opacity: 1;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.35);
+    }
+}
+
+.tabs-title {
+    background-color: $gray-l;
+    padding: 1.8rem 0 1rem;
+    position: relative;
+
+    * {
+        color: $black;
+    }
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+        padding: 0 .8rem 0 1.2rem;
+        display: block;
+        &:focus,
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &:focus,
+    &:hover {
+        background: darken($gray-l, 5%);
+
+        &::before {
+            background: darken($gray-l, 5%)
+        }
+    }
+
+    @media screen and (min-width: $foundation-large) {
+        &.is-active {
+            background: white;
+            z-index: 5;
+
+            &::before {
+                background: white;
+            }
+        }
+    }
+}
+
+.tabs-panel {
+    display: none;
+
+    &.is-active {
+        display: block;
+    }
+}
+
+.partner-quote {
+    background-color: $aqua-l;
+    padding: 2rem 2rem 4rem;
+
+    * {
+        color: $black;
+    }
+
+    @media screen and (min-width: $foundation-large) {
+        padding: 8rem;
+    }
+
+    &::before,
+    &::after {
+        display: block;
+        position: absolute;
+    }
+
+    &::before {
+        content: url('/wp-content/themes/mendix/ui/svg/icon-quote-lt-lg.svg');
+        width: 267px;
+        height: 181px;
+        top: -5px;
+        left: -5px;
+    }
+
+    &::after {
+        content: url('/wp-content/themes/mendix/ui/svg/icon-quote-rt-lg.svg');
+        width: 124px;
+        height: 85px;
+        bottom: 0;
+        right: 2rem;
+    }
+}
+
+.partner-quote__video {
+    background-color: $black;
+    background-position: 50% 50%;
+    margin-bottom: 2rem;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: $foundation-large) {
+        width: 600px;
+        height: 365px;
+        position: absolute;
+        top: 12%;
+        right: 84%;
+    }
+
+}
+
+cite span {
+    color: $black;
+    display: block;
+    margin-top: 0 !important;
+}
+
+.cta-card {
+    margin-bottom: 2rem;
+}
+
+.card {
+    text-align: left;
+    background-color: white;
+
+    .btn-play {
+        margin: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.card-figure {
+    height: 180px;
+    overflow: hidden;
+}
+
+.slick-slide {
+    .icon {
+        display: inline-block;
+    }
+}
+
+.arrow-link {
+	color: $body;
+}
+
+.slick-dots {
+    position: relative;
+}

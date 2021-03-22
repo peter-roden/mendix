@@ -1,0 +1,97 @@
+{
+    "key": "group_5d923d3d67621",
+    "title": "Component Column Options",
+    "fields": [
+        {
+            "key": "field_5d923d3d73d85",
+            "label": "Column Options",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5d923d3d73dd1",
+            "label": "Column Options Group",
+            "name": "column_options_group",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5d923ef336513",
+                    "label": "Grid Count",
+                    "name": "grid_count",
+                    "type": "range",
+                    "instructions": "Number of grid columns the text will occupy. Relates to the Foundation grid 12 column layout the site is built upon.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 12,
+                    "min": 1,
+                    "max": 12,
+                    "step": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_5d923d3d80c67",
+                    "label": "Column Count",
+                    "name": "column_count",
+                    "type": "range",
+                    "instructions": "Number of columns the text will auto-divide itself into at large screen sizes.\r\nNote, this uses the CSS property \"column-count\" and is not the design system columns.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 1,
+                    "min": 1,
+                    "max": 3,
+                    "step": "",
+                    "prepend": "",
+                    "append": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "Component: background color or image with overlay)",
+    "modified": 1574198792
+}

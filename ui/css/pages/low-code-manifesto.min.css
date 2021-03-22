@@ -1,0 +1,46 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+.lcm-header {
+  padding-top: 16px;
+  background: #0CABF9;
+  background-image: linear-gradient(135deg, #0CABF9, #2d3593); }
+  @media (min-width: 1025px) {
+    .lcm-header {
+      padding-top: 56px; } }
+
+#largeCountedCards {
+  counter-reset: countedCards;
+  display: block; }
+  #largeCountedCards figure .content-box {
+    position: relative; }
+    #largeCountedCards figure .content-box::before {
+      counter-increment: countedCards;
+      content: "0" counter(countedCards);
+      display: block;
+      position: absolute;
+      opacity: 0.15;
+      line-height: 1;
+      top: 8px;
+      left: 8px;
+      font-style: normal;
+      font-size: 6em;
+      font-family: 'Patron';
+      font-weight: bold; }
+  #largeCountedCards figure svg {
+    position: relative; }
+
+/*# sourceMappingURL=low-code-manifesto.min.css.map */

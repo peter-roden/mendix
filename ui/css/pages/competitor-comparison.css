@@ -1,0 +1,63 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+body {
+  background: white; }
+
+#platformCompare {
+  margin-top: 32px; }
+  #platformCompare td,
+  #platformCompare th {
+    width: 33.3333333%;
+    padding: 1.5rem 1.5rem 2rem;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #d7d7d7; }
+  #platformCompare thead th {
+    border: 0; }
+  #platformCompare thead .theCapability {
+    color: #383841;
+    background: #d7d7d7; }
+  #platformCompare thead .mendixCapability {
+    color: white;
+    border-right: 1px solid #d7d7d7;
+    background: #0CABF9; }
+  #platformCompare thead .competitorCapability {
+    color: white;
+    border-right: 1px solid #d7d7d7;
+    background: #383841; }
+  #platformCompare td.mendixCapability {
+    background: #e6f4fb; }
+  #platformCompare td.competitorCapability {
+    background: #E7EDF3; }
+
+@media only screen and (max-width: 900px) {
+  #platformCompare {
+    border-top: 1px solid #d7d7d7; }
+    #platformCompare thead th {
+      display: none; }
+    #platformCompare tr {
+      border: 1px solid #0CABF9; }
+    #platformCompare td {
+      display: block;
+      width: 100%;
+      padding: 16px 16px 32px;
+      border: 0; } }
+
+@media only screen and (min-width: 901px) {
+  td.competitorCapability > p:first-child,
+  td.mendixCapability > p:first-child {
+    padding-top: 40px; } }

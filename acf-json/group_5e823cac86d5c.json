@@ -1,0 +1,95 @@
+{
+    "key": "group_5e823cac86d5c",
+    "title": "Parent is Solutions Gallery",
+    "fields": [
+        {
+            "key": "field_5e823cb913901",
+            "label": "post-thumbnail",
+            "name": "solution_thumbnail",
+            "type": "image",
+            "instructions": "Image for the Solutions gallery homepage\/grid.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "post-thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5e823d6313904",
+            "label": "Industry",
+            "name": "solution_tag",
+            "type": "taxonomy",
+            "instructions": "Select the industry for the solution from the tags. If the tag is not available, please enter the tag through the WP sidebar (posts > tags).",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "post_tag",
+            "field_type": "checkbox",
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "translations": "copy_once",
+            "multiple": 0,
+            "allow_null": 0
+        },
+        {
+            "key": "field_5e823cf113903",
+            "label": "Vendor Logo",
+            "name": "solution_vendor_logo",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "post-thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_parent",
+                "operator": "==",
+                "value": "55744"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1612296160
+}

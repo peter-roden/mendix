@@ -1,0 +1,149 @@
+$closeAnimationDuration: 500ms;
+$dropdownZ: 99;
+
+.pb_dropdown {
+	width: 100%;
+	position: relative;
+	z-index: $dropdownZ;
+}
+
+.pb_dropdown__toggle {
+	z-index: 2;
+	position: relative;
+	width: 100%;
+	background: white;
+	padding: $grid * 2;
+	text-align: left;
+	border: 2px solid transparent;
+
+	&:hover,
+	&:focus,
+	&:focus-within {
+		border-color: $blue;
+	}
+
+	&.active::before {
+		content: "";
+		position: fixed;
+		display: block;
+		width: 100vw;
+		top: 0;
+		z-index: $dropdownZ + 1;
+		left: 0;
+		height: 100vh;
+	}
+
+	&::after {
+		content: "►";
+		position: absolute;
+		right: $grid * 2;
+		opacity: 0.5;
+		top: 51%;
+		// transition: transform 300ms ease;
+		transform: translateY(-50%) rotate(90deg);
+	}
+
+	&.active::after {
+		transform: translateY(-50%) rotate(-90deg);
+	}
+}
+
+.pb_dropdown__pane {
+	width: 100%;
+	z-index: $dropdownZ + 2;
+	position: absolute;
+	top: 0;
+	pointer-events: none;
+	left: 0;
+	color: $body;
+	border: 1px solid transparent;
+
+	&.active {
+		border-color: $blue;
+		pointer-events: auto;
+		box-shadow: $box-shadow;
+		label {
+			opacity: 1;
+			transform: translate(0, 0);
+		}
+
+		@for $i from 1 through 20 {
+			label:nth-child(#{$i}) {
+				transition-delay: $i * 12ms;
+			}
+		}
+	}
+
+	&.selected {
+		input:checked + label {
+			animation-name: blink;
+			animation-duration: $closeAnimationDuration;
+		}
+	}
+}
+
+.pb_select {
+	input {
+		position: fixed;
+		left: -999px;
+		top: -999px;
+	}
+
+	label {
+		cursor: pointer;
+		opacity: 0;
+		background: white;
+		width: 100%;
+		padding: $grid;
+		padding-left: $grid * 2;
+		display: block;
+		transition: opacity 50ms, transform 300ms ease;
+		transform: translate(0, -1rem);
+	}
+
+	label:last-child {
+		padding-bottom: $grid * 2;
+	}
+
+	label:hover {
+		background-color: $blue;
+		color: white;
+	}
+
+	input:focus + label {
+		background-color: $blue;
+		color: white;
+	}
+}
+
+@keyframes blink {
+	0% {
+		background-color: $blue;
+		color: white;
+	}
+
+	20% {
+		background-color: white;
+		color: $blue;
+	}
+
+	40% {
+		background-color: $blue;
+		color: white;
+	}
+
+	60% {
+		background-color: white;
+		color: $blue;
+	}
+
+	80% {
+		background-color: white;
+		color: $blue;
+	}
+
+	100% {
+		background-color: $blue;
+		color: white;
+	}
+}

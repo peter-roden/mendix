@@ -1,0 +1,141 @@
+@import '../abstracts/dir';
+
+.breakout__blocks__item {
+	background: white;
+	padding: $grid * 4;
+	margin-top: $grid * 2;
+}
+
+.breakout__blocks__item__text {
+	text-transform: uppercase;
+}
+
+.breakout__blocks__item__title {
+	font-weight: bold;
+	font-size: 32px;
+	display: block;
+}
+
+@media (min-width: $foundation-medium) {
+	.breakout__blocks__item__title {
+		font-size: 54px;
+	}
+}
+@media (max-width: $foundation-medium-max) {
+	.breakout__blocks {
+		margin-top: 16px;
+	}
+
+	.breakout__blocks__item {
+		margin-top: $grid * 2;
+		display: inline-block;
+	}
+}
+
+//***********//
+
+.hero__hr {
+	border-top: 1px solid white;
+	margin-top: $grid * 7;
+}
+
+.hero__logo {
+	height: 42px;
+}
+
+@media (min-width: $foundation-large) {
+	.hero__logo {
+		height: 77px;
+	}
+}
+
+//***********//
+
+.four-block {
+	position: relative;
+	display: inline-block;
+	float: left;
+	width: 100%;
+	padding-top: 40%;
+
+	&:hover,
+	&:focus {
+		.four-block__overlay {
+			opacity: 1;
+		}
+	}
+}
+
+.four-block__overlay {
+	$start: rgba(#0cabf9, 0.8);
+	$end: rgba(#0d2ed1, 0.8);
+	background-image: linear-gradient(90deg, $start, $end);
+	transition: opacity 250ms ease;
+	opacity: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+
+.four-block__overlay__text {
+	font-size: 14px;
+	color: white;
+	padding: $grid * 2;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+
+	.title {
+		font-weight: bold;
+	}
+}
+
+@media (min-width: $foundation-medium) {
+	.four-block {
+		width: 50%;
+		padding-top: 30%;
+	}
+}
+
+/* ****************** */
+
+.tabs-title {
+	padding-bottom: 8px;
+	border-bottom: 5px solid transparent;
+	a {
+		text-decoration: none;
+	}
+
+	&:hover,
+	&:focus {
+		border-color: $gray;
+	}
+
+	&.is-active {
+		border-color: $black;
+	}
+}
+.tabs-panel {
+	position: relative;
+	display: block;
+}
+
+@media (max-width: $foundation-small-max) {
+
+.tabs-title {
+	display: none;
+}
+
+}
+@media (min-width: $foundation-medium) {
+	.tabs__customer_logo {
+		max-width: 255px;
+	}
+
+	.tabs-panel:not(.is-active) {
+		display: none;
+	}
+}

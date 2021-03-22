@@ -1,0 +1,67 @@
+@import "../abstracts/_mixins";
+
+/* Position */
+.absolute {
+	position: absolute;
+}
+
+.relative {
+	position: relative;
+}
+
+.absolute-cover {
+	@include absolute-cover;
+}
+
+// absolute positioning shortcuts
+.bottom {
+	bottom: 0;
+}
+
+.left {
+	left: 0;
+}
+
+.right {
+	right: 0;
+}
+
+.top {
+	top: 0;
+}
+
+/* Background Positioning */
+.cover {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg-fixed {
+	background-attachment: fixed;
+	background-position: center;
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+figure.cover {
+	height: 100%;
+	width: 100%;
+}
+
+.cover>img,
+img.cover {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+
+.contain>img,
+img.contain {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+	object-position: center;
+}

@@ -1,0 +1,148 @@
+@import 'abstracts/dir';
+
+.acf-field-true-false {
+	display: flex;
+	align-items: center;
+
+	input[type='checkbox'] {
+		margin-left: 16px;
+		transform: scale(1.25);
+	}
+
+	& > div {
+		flex: 0 1 auto;
+	}
+}
+
+.acf-image-uploader .image-wrap img {
+	border: 2px solid black !important;
+	background-color: #999 !important;
+}
+
+[id^='acf-group_'] {
+	background: $gray-l;
+
+	.acf-range-wrap input[type='number'] {
+		min-width: 4em;
+	}
+	
+	.collapse {
+		z-index: 9;
+		top: -10px;
+		right: 0;
+		padding: 8px;
+
+		&:hover,
+		&:focus {
+			border-color: $blue;
+		}
+	}
+
+	.acf-field,
+	.acf-fields {
+		padding: 8px !important;
+		border: 0 !important;
+	}
+
+	.acf-field.acf-field-message label {
+		color: red;
+		display: none;
+	}
+
+	.acf-repeater {
+		.acf-row {
+			background: mix($blue, white, 45%);
+		}
+
+		.acf-row:nth-child(2n) {
+			background: mix($blue, white, 75%);
+		}
+
+		.acf-row-handle.order,
+		.acf-row-handle.order + td {
+			background: rgba(white, 0.1);
+		}
+
+		.acf-fields.-left > .acf-field::before {
+			display: none;
+		}
+
+		.acf-accordion {
+			background: transparent;
+			border: 2px solid rgba(black, 0.1) !important;
+		}
+
+		.acf-accordion-title {
+			background: rgba(white, 0.1);
+
+			&:hover,
+			&:focus {
+				background: $blue;
+			}
+		}
+
+		.acf-fields {
+			background: rgba(white, 0.1);
+		}
+
+		.acf-flexible-content .layout {
+			background: rgba(white, 0.1);
+		}
+
+		.acf-row-handle.order {
+			color: black;
+			font-weight: bold;
+			font-size: 1.5em;
+			text-shadow: none;
+			font-family: 'Patron';
+		}
+
+		.acf-field .acf-label label {
+			color: black;
+		}
+
+		p.description {
+			color: black;
+		}
+	}
+}
+
+#wpadminbar,
+#adminmenuwrap,
+#adminmenu,
+#adminmenuback {
+	background-color: $black !important;
+}
+
+.update-plugins {
+	background-color: $red !important;
+}
+
+#adminmenu .wp-submenu-head {
+	&:hover,
+	&:focus {
+		color: $blue;
+		background: $black;
+	}
+}
+
+.menu-top {
+	&:hover,
+	&:focus {
+		background-color: $blue !important;
+		color: white !important;
+	}
+}
+
+a.wp-has-current-submenu {
+	background-color: $blue !important;
+}
+
+.wp-submenu {
+	color: white !important;
+	background-color: mix(white, $black, 10%) !important;
+}
+
+.attachment .thumbnail {
+	background: LightGray;
+}

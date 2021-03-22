@@ -1,0 +1,29 @@
+.heading-and-subtext-with-repeatable-text-blocks {
+	border-bottom: 1px solid #979797;
+
+	.content-blocks {
+		.inner-content-block-container {
+
+			&:last-child {
+				margin-bottom: 2em;
+			}
+		}
+
+		.content-block-icon {
+			max-width: 100%;
+		}
+
+		.content-block-heading {
+			color: #08080D;
+		}
+
+		.content-block-text {
+			@import '../editor-style';
+		}
+
+		.content-block-link {
+			margin-top: 21px;
+			text-transform: uppercase;
+		}
+	}
+}

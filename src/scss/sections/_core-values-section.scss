@@ -1,0 +1,110 @@
+@import '../abstracts/dir';
+
+.core-values-section {
+	@include background-blue;
+	color: #ffffff;
+
+	.item-type-header-text {
+		margin-left: 42px;
+		margin-right: 42px;
+		text-align: center;
+		margin-bottom: 32px;
+
+		.header {
+			display: block;
+		}
+
+		@media (min-width: $foundation-large) {
+			max-width: 331px;
+			text-align: left;
+			padding: 0;
+			margin-bottom: 0px;
+		}
+	}
+
+	.item-type-panel-with-text {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 500px;
+		margin-bottom: 32px;
+
+		.panel-title {
+			background: #183344;
+			color: #ffffff;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 8px 42px;
+			letter-spacing: -0.24px;
+			font-weight: bold;
+			font-size: 20px;
+
+		}
+
+		.panel-text {
+			max-width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+
+			@media (min-width: $foundation-large) {
+				max-width: 100%;
+			}
+		}
+
+		@media (min-width: $foundation-large) {
+			max-width: 331px;
+			margin-bottom: 0;
+			margin-left: 42px;
+			margin-right: 42px;
+		}
+
+		@media (max-width: 1400px) {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	.slide-page {
+		max-width: 1250px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.slick-dots {
+		position: relative;
+		margin-top: 75px;
+
+		li {
+			height: 15px;
+			width: 15px;
+
+
+			button {
+				opacity: 1;
+
+				&:before {
+					background: transparent;
+					border: 1px solid #ffffff;
+					width: 100%;
+					height: 100%;
+					border-radius: 50%;
+				}
+			}
+
+			&.slick-active {
+				button {
+					&:before {
+						background: #ffffff;
+						width: 100%;
+						height: 100%;
+						border-radius: 50%;
+					}
+				}
+			}
+		}
+
+		@media (min-width: $foundation-large) {
+			margin-top: 55px;
+		}
+	}
+}

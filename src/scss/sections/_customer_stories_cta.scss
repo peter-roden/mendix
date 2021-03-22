@@ -1,0 +1,7 @@
+@import '../abstracts/dir';
+
+.top-border {
+	border-top: 1px solid #0CABF9;
+	border-image: linear-gradient(to right, white 5%, #979797 5%, #979797 75%, white 75%);
+	border-image-slice: 1;
+}

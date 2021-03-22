@@ -1,0 +1,362 @@
+{
+    "key": "group_5d812610e7f63",
+    "title": "Sections Flexible Content",
+    "fields": [
+        {
+            "key": "field_5d812992961eb",
+            "label": "Sections Flexible Content",
+            "name": "sections_flexible_content",
+            "type": "flexible_content",
+            "instructions": "Add a clone of an ACF section to the page.\r\nBackend pulls in template from 'partials\/sections\/' matching a layout's 'Name' field. \r\nSee 'Industries Single' page template PHP for an example of setting up the flexible content repeater to pull in these templates.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_5e5d514080c54": {
+                    "key": "layout_5e5d514080c54",
+                    "name": "accordion_two_columns",
+                    "label": "Accordion Two Columns",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e5d514a80c55",
+                            "label": "Accordion Two Columns Clone",
+                            "name": "accordion_two_columns_clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5d56c7e4ea3aa"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5d813876c9ee1": {
+                    "key": "layout_5d813876c9ee1",
+                    "name": "cards",
+                    "label": "Cards",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5d81387cc9ee2",
+                            "label": "Cards Clone",
+                            "name": "cards_clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5d36373248b73"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5d962dc2f28e0": {
+                    "key": "layout_5d962dc2f28e0",
+                    "name": "cta_banner",
+                    "label": "CTA Banner",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5d962dc6f28e1",
+                            "label": "CTA Banner Clone",
+                            "name": "cta_banner_clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5d9629831c4f2"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5d814320c0a1d": {
+                    "key": "layout_5d814320c0a1d",
+                    "name": "customer_success_metrics",
+                    "label": "Customer Success Metrics",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5d814327c0a1e",
+                            "label": "Customer Success Metrics Clone",
+                            "name": "customer_success_metrics_clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5d8140b623d04"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5d9243e685533": {
+                    "key": "layout_5d9243e685533",
+                    "name": "hero_and_copy",
+                    "label": "Hero And Copy",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5d9243f385534",
+                            "label": "Hero And Copy Clone",
+                            "name": "hero_and_copy_clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5d9241fd9536b"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5da0c1fae21b0": {
+                    "key": "layout_5da0c1fae21b0",
+                    "name": "heading_copy_columns",
+                    "label": "Heading Copy Columns",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5da0c203e21b1",
+                            "label": "Heading Copy Columns Clone",
+                            "name": "heading_copy_columns_clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5da0beb815524"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5d94ebbb1e41c": {
+                    "key": "layout_5d94ebbb1e41c",
+                    "name": "image_and_copy_columns",
+                    "label": "Image and Copy Columns",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5d94ebbb1e41d",
+                            "label": "Image and Copy Columns Clone",
+                            "name": "image_and_copy_columns_clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5d94e2ea49451"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5d8156cf07247": {
+                    "key": "layout_5d8156cf07247",
+                    "name": "tabbed_billboard",
+                    "label": "Tabbed Billboard",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5d8156d407248",
+                            "label": "Tabbed Billboard",
+                            "name": "tabbed_billboard_clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5d557fbdb76f4"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5d9518aa6f50c": {
+                    "key": "layout_5d9518aa6f50c",
+                    "name": "tabbed_image_grid",
+                    "label": "Tabbed Image Grid",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5d9518aa6f50d",
+                            "label": "Tabbed Image Grid Clone",
+                            "name": "tabbed_image_grid_clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5d814f39293d7"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5d8156ef07249": {
+                    "key": "layout_5d8156ef07249",
+                    "name": "tabbed_multi_column_content",
+                    "label": "Tabbed Multi Column Content",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5d8156fc0724a",
+                            "label": "Tabbed Multi Column Content Clone",
+                            "name": "tabbed_multi_column_content_clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5d8155e242bf0"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Section",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "pages\/flexible-sections.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": true,
+    "description": "Flexible Content field to add all the various designed section templates",
+    "modified": 1613498289
+}

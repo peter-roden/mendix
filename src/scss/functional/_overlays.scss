@@ -1,0 +1,33 @@
+//TODO are these functional or components? 
+.overlay:not([class*=gradient]) {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        z-index: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        content: '';
+        transition: background 250ms ease;
+
+        background: rgba(0, 0, 0, 0.5);
+    }
+    
+}
+
+
+[class*=gradient].overlay {
+    opacity: 0.8;
+}
+
+.overlay--bittersweet {
+    @extend .overlay:not([class*=gradient]); 
+    &::before {
+        background: rgba(255, 119, 119, 0.95);
+    }  
+    
+}

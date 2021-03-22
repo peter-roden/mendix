@@ -1,0 +1,81 @@
+@import '../abstracts/dir';
+
+body {
+    background: white;
+}
+
+#platformCompare {}
+
+#platformCompare {
+    margin-top: $spacing-2;
+
+    td,
+    th {
+        width: 33.3333333%;
+        padding: 1.5rem 1.5rem 2rem;
+        text-align: left;
+        vertical-align: top;
+        border: 1px solid #d7d7d7;
+    }
+
+    thead th {
+        border: 0;
+    }
+
+    thead .theCapability {
+        color: $color-body;
+        background: #d7d7d7;
+    }
+
+    thead .mendixCapability {
+        color: white;
+        border-right: 1px solid #d7d7d7;
+        background: $blue;
+    }
+
+    thead .competitorCapability {
+        color: white;
+        border-right: 1px solid #d7d7d7;
+        background: $color-body;
+    }
+
+    td.mendixCapability {
+        background: #e6f4fb;
+    }
+
+    td.competitorCapability {
+        background: $blue-xxxl;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #platformCompare {
+        border-top: 1px solid #d7d7d7;
+
+        thead th {
+            display: none;
+        }
+
+        tr {
+            border: 1px solid $blue;
+        }
+
+        td {
+            display: block;
+            width: 100%;
+            padding: $spacing-1 $spacing-1 $spacing-2;
+            border: 0;
+        }
+    }
+}
+
+@media only screen and (min-width: 901px) {
+
+    td.competitorCapability,
+    td.mendixCapability {
+        >p:first-child {
+            padding-top: 40px;
+        }
+    }
+
+}

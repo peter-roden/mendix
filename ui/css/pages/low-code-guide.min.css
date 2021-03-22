@@ -1,0 +1,142 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+@media (max-width: 63.9375em) {
+  .lcg-tabs {
+    display: none; } }
+
+@media (min-width: 64em) {
+  .lcg-tabs-panel:not(.is-active) {
+    display: none; }
+  .lcg-tabs .tabs-title {
+    margin-top: 8px;
+    font-size: 24px;
+    font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    border-bottom: 5px solid transparent;
+    padding-bottom: 16px; }
+    .lcg-tabs .tabs-title a {
+      text-decoration: none;
+      color: black; }
+    .lcg-tabs .tabs-title.is-active {
+      border-color: black; } }
+
+.bg-black {
+  background: black; }
+
+.development-panel {
+  transform: translate(0, -55px); }
+  .development-panel .card-title {
+    margin-top: 32px; }
+  @media screen and (max-width: 63.9375em) {
+    .development-panel {
+      transform: translate(0, 0); } }
+
+[id*='low-code-card-'] [class*='heading'].card-title {
+  color: white;
+  font-weight: 400;
+  font-size: 2rem; }
+
+[id*='low-code-card-'] .mt1 {
+  margin-bottom: 2rem; }
+
+.tab-nav {
+  background: black; }
+
+.tab-nav__item {
+  background-color: inherit !important;
+  border-right: 1px solid white; }
+  .tab-nav__item:last-of-type {
+    border-right: none; }
+  .tab-nav__item:hover, .tab-nav__item:focus {
+    background: blue; }
+  .tab-nav__item a {
+    background: inherit;
+    color: white; }
+
+.tab-nav__item.anchor-link:last-child {
+  border-right: none !important; }
+
+ul.development-benefits {
+  margin-left: 1rem; }
+  ul.development-benefits li {
+    list-style: inherit; }
+
+#manifesto {
+  counter-reset: countedCards; }
+  #manifesto .principlesCard {
+    display: flex;
+    position: relative; }
+  #manifesto .principlesCard__figure {
+    flex: 0 0 100px;
+    position: relative; }
+  #manifesto .principlesCard__text {
+    flex: 0 0 1;
+    position: relative; }
+  #manifesto .principlesCard::before {
+    counter-increment: countedCards;
+    content: "0" counter(countedCards);
+    display: block;
+    position: absolute;
+    line-height: 1;
+    top: 8px;
+    left: 8px;
+    font-style: normal;
+    font-size: 6em;
+    font-family: 'Patron';
+    font-weight: bold;
+    opacity: 0.15; }
+
+.magic-quadrant-panel .main-heading {
+  margin-bottom: 1rem; }
+  .magic-quadrant-panel .main-heading:after {
+    content: '';
+    border-bottom: 0.25rem solid white;
+    width: 25%;
+    display: block; }
+
+.valueCard {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 24px 16px;
+  height: 100%; }
+
+.valueCard__title {
+  text-transform: uppercase;
+  font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: bold; }
+
+.valueCard__number {
+  display: block;
+  font-size: 310%;
+  font-weight: 400; }
+
+#news-cards a.arrow-link {
+  color: black; }
+  #news-cards a.arrow-link::after {
+    color: #0CABF9; }
+
+.outside-card-icon {
+  flex: 0 1 60px;
+  margin-right: 1rem;
+  text-align: center; }
+
+.outside-card-text {
+  flex: 1; }
+
+#essentials {
+  background-image: linear-gradient(90deg, #2291d2, #3c4bcb); }
+
+/*# sourceMappingURL=low-code-guide.min.css.map */

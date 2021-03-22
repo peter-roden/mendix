@@ -1,0 +1,79 @@
+/* Color Usage */
+$color-heading: $black;
+$color-body: $body;
+$color-border: $gray;
+$color-link: $blue;
+$color-shadow: rgba($black, 0.2);
+$gray-input-bg: #e6e6e6;
+$gray-light: #b5b5b5;
+/* Style Defaults */
+$box-shadow: 0 4px 10px $color-shadow;
+$font-size-body: 16px;
+//TODO find stray line-heights
+$line-height-body: 1.5;
+/* Spacing */
+$grid: 8px;
+$foundation-column-padding: $grid * 2;
+$spacing-25: $grid * 0.5;
+$spacing-50: $grid;
+$spacing-1: $grid * 2;
+$spacing-2: $grid * 4;
+$spacing-3: $grid * 8;
+$spacing-4: $grid * 12;
+$spacing-5: $grid * 16;
+/* Breakpoints */
+$foundation-small-max: 39.9375em;
+$foundation-medium: 40em;
+$foundation-medium-max: 63.9375em;
+$foundation-large: 64em;
+
+$small-max: $foundation-small-max;
+$medium: $foundation-medium;
+$medium-max: $foundation-medium-max;
+$large: $foundation-large;
+
+/// Enables flexbox for components that support it.
+/// @type Boolean
+$global-flexbox: true !default;
+
+/// Sets the text direction of the CSS. Can be either `ltr` or `rtl`.
+/// @type Keyword
+$global-text-direction: ltr !default;
+
+// Internal variables used for text direction
+$global-left: if($global-text-direction == rtl, right, left);
+$global-right: if($global-text-direction == rtl, left, right);
+
+$content-max: 78;
+$content-max-width: $content-max * 1em;
+$column-max-width: $content-max / 12;
+$content-xl: $content-max-width + $column-max-width * 4em;
+
+$full-menu: 1025px; //$foundation-medium-max;
+$small-menu-max: 1024px;
+$mobile-menu-z-index: 101;
+
+$device-outline-overlay-hue: mix(black, $blue, 95%);
+$device-outline-overlay-color: rgba($device-outline-overlay-hue, 0.7);
+//font and fallbacks
+//TODO find the correct unicode range for latin + puncatuion marks so you can see the correct quotations
+$font-accent: 'Patron', 'Open Sans', Helvetica, Arial, sans-serif;
+$font-body: 'Open Sans', Helvetica, Arial, sans-serif;
+
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+$x-height-offset--heading5: 7px;
+/* Easings*/
+$easeInBack: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+$easeInCubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$easeInQuad: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+$easeInQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
+$easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+$easeOutExpo: cubic-bezier(0.19, 1, 0.22, 1);
+$easeOutCubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+$easeOutQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
+$easeInOutCubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+$easeInOutQuint: cubic-bezier(0.86, 0, 0.07, 1);

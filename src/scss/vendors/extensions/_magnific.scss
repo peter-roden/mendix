@@ -1,0 +1,18 @@
+.mfp-iframe-holder .mfp-iframe-scaler .mfp-close {
+    line-height: 28px;
+    top: -44px;
+    right: -12px;
+    width: 28px;
+    height: 28px;
+    padding-left: 6px;
+    font-size: 30px;
+    transition: all 150ms ease;
+    text-align: center;
+    opacity: 1;
+    border-radius: 50%;
+    background: #0595db;
+}
+
+.mfp-iframe-holder .mfp-close:hover {
+    background: #62b1d6;
+}

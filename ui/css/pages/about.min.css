@@ -1,0 +1,76 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+.facts-box {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1.75rem 1.5rem 2.5rem; }
+
+.facts-box__icon {
+  position: absolute;
+  right: 16px;
+  top: 16px; }
+  @media (max-width: 39.9375em) {
+    .facts-box__icon {
+      display: none; } }
+
+@media (max-width: 39.9375em) {
+  .facts-box__info {
+    font-size: .875rem;
+    margin-top: .5rem; } }
+
+.facts-box__main {
+  display: flex;
+  height: 80%;
+  line-height: 1; }
+  @media (max-width: 39.9375em) {
+    .facts-box__main {
+      height: 50%; } }
+  .facts-box__main img {
+    max-height: 29px; }
+
+#aboutLeadership .leader-photo {
+  background: #000003;
+  border: 1px solid white;
+  margin: 0;
+  overflow: hidden;
+  width: 100%; }
+
+#aboutLeadership .leader-photo img {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s; }
+  #aboutLeadership .leader-photo img:focus, #aboutLeadership .leader-photo img:hover {
+    opacity: 1;
+    transform: scale(1.05); }
+
+#aboutLeadership .leader-info {
+  bottom: 5%;
+  color: white;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 1; }
+  @media (max-width: 39.9375em) {
+    #aboutLeadership .leader-info {
+      font-size: .875rem;
+      padding: 0 .5rem; } }
+
+.logo-box:not(:last-child) {
+  border-right: 1px solid #e6e7e9; }
+
+/*# sourceMappingURL=about.min.css.map */

@@ -1,0 +1,106 @@
+.copy li {
+    padding-left: 1rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.bullets li {
+    position: relative;
+    padding-left: 1rem;
+
+    &::before {
+        content: '•';
+        position: absolute;
+        font-size: 1.5em;
+        left: 0rem;
+        top: -.25em;
+    }
+}
+
+ul.copy li,
+.copy ul li {
+    &::before {
+        content: '•';
+        position: absolute;
+        font-size: 1em;
+        left: -2px;
+        top: 0;
+    }
+}
+
+.copy ol {
+
+    //half of one column
+    margin-left: 2rem;
+
+    li {
+        list-style-type: decimal;
+    }
+}
+
+.copy ol.parentheses {
+    margin-left: 0;
+    padding-left: 0;
+    counter-reset: list;
+    > li {
+        list-style: none;
+        padding-left: 1.5rem;
+        position: relative;
+        &:before {
+            content: counter(list, decimal) ") ";
+            counter-increment: list;
+            position: absolute;
+            left: 0;
+        }
+    }
+}
+
+.copy ol.underscore {
+    margin-left: 0;
+    counter-reset: list;
+    > li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        &:before {
+            content: counter(list, decimal) "_";
+            counter-increment: list;
+            position: static;
+        }
+    }
+}
+
+
+.list-checkmarks,
+.list-checkmarks-circled,
+.copy.list-checkmarks,
+.copy.list-checkmarks-circled {
+    padding: 0;
+
+    li {
+        padding-left: 2rem;
+        margin-top: 1rem;
+        position: relative;
+    }
+
+    li::before {
+        content: url(../svg/checkmark.svg);
+        position: absolute;
+        top: 2px;
+        left: -1px;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+
+.copy.list-checkmarks-circled,
+.list-checkmarks-circled {
+
+    li::before {
+        content: url(../svg/checkmark-circled.svg);
+    }
+}

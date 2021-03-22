@@ -1,0 +1,45 @@
+@import '../abstracts/dir';
+
+#importance {
+  background: $blue;
+}
+
+.attribution {
+  text-indent: -12px;
+  padding-left: 12px;
+  font-size: 1rem;
+  font-family: $font-accent;
+}
+
+.steps {
+  color: $blue !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tabs-panel:not(.is-active) {
+    display: none;
+}
+
+.tabs-title__heading {
+    display: inline-block;
+    border-bottom: 4px solid transparent;
+}
+
+.tabs-title.is-active {
+    .tabs-title__heading {
+        border-bottom-color: $color-heading;
+    }
+}
+
+.tabs-title__a {
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+
+        .tabs-title__heading {
+            color: $blue;
+        }
+    }
+}

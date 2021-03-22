@@ -1,0 +1,23 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+.stories-carousel__slide {
+  height: 500px; }
+  @media screen and (min-width: 64em) {
+    .stories-carousel__slide {
+      height: 500px; } }
+
+/*# sourceMappingURL=industries-single-2020.min.css.map */

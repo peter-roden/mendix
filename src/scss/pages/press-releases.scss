@@ -1,0 +1,31 @@
+@import '../abstracts/dir';
+
+body {
+    background-color: $gray-l;
+}
+
+.pressCard {
+	@include cardBase;
+	padding: 2rem 2rem 4rem;
+
+	.arrow-link {
+		position: absolute;
+		bottom: 2rem;
+	}
+}
+
+.recentReleases {
+	padding: $grid * 4;
+}
+
+.recentReleases__list {
+	li {
+		margin-top: 1rem;
+	}
+}
+
+.subtitle {
+	font-size: 1.5rem;
+	line-height: 1.3333;
+	margin-bottom: 1.5em;
+}

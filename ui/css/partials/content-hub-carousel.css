@@ -1,0 +1,120 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+.contentHubCarousel {
+  position: relative; }
+  @media (max-width: 1380px) {
+    .contentHubCarousel {
+      overflow-x: hidden;
+      padding-bottom: 2rem; } }
+
+.contentHubCarousel__bullets {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  text-align: center;
+  padding: 0; }
+
+.contentHubCarousel__bullets li {
+  display: inline-block; }
+
+.contentHubCarousel__bullets__link {
+  width: 4rem;
+  display: inline-block;
+  background: transparent;
+  margin: 0 0.25rem;
+  padding: 20px 0; }
+  .contentHubCarousel__bullets__link::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #e6e7e9;
+    transition: background 200ms; }
+  .contentHubCarousel__bullets__link:hover::after, .contentHubCarousel__bullets__link:focus::after {
+    background-color: #d9eaf8; }
+  .contentHubCarousel__bullets__link.active::after {
+    background-color: #0CABF9; }
+
+@media (max-width: 63.9375em) {
+  .contentHubCarousel__chevrons {
+    display: none; }
+  .contentHubCarousel__bullets {
+    display: none; }
+  .contentHubCarousel {
+    height: auto !important; } }
+
+@media (min-width: 64em) {
+  .contentHubCarousel__item {
+    position: absolute;
+    pointer-events: none;
+    max-width: 75rem;
+    z-index: 1;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%); }
+    .contentHubCarousel__item .contentHubCarousel__item__left {
+      opacity: 0;
+      max-width: 42%;
+      transform: translate(-100px, 0);
+      transition: opacity 300ms, transform 600ms ease; }
+    .contentHubCarousel__item .contentHubCarousel__item__right > * {
+      opacity: 0;
+      transition: opacity 300ms, transform 600ms ease;
+      transform: translate(100px, 0); }
+    .contentHubCarousel__item.active {
+      pointer-events: auto; }
+      .contentHubCarousel__item.active .contentHubCarousel__item__left {
+        opacity: 1;
+        transform: translate(0, 0);
+        transition: opacity 300ms, transform 400ms ease; }
+      .contentHubCarousel__item.active .contentHubCarousel__item__right > * {
+        opacity: 1;
+        transform: translate(0, 0);
+        transition: opacity 300ms, transform 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+      .contentHubCarousel__item.active .contentHubCarousel__item__right > *:nth-child(2) {
+        transition-delay: 70ms; }
+      .contentHubCarousel__item.active .contentHubCarousel__item__right > *:nth-child(3) {
+        transition-delay: 210ms; }
+      .contentHubCarousel__item.active .contentHubCarousel__item__right > *:nth-child(4) {
+        transition-delay: 350ms; }
+  .contentHubCarousel__chevrons {
+    z-index: 9;
+    pointer-events: none;
+    position: absolute;
+    height: 100%;
+    max-width: 78rem;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%); }
+    .contentHubCarousel__chevrons .chevron-left,
+    .contentHubCarousel__chevrons .chevron-right {
+      pointer-events: auto;
+      transition: color 300ms ease;
+      top: 50%;
+      transform: translateY(-100%); }
+      .contentHubCarousel__chevrons .chevron-left:hover, .contentHubCarousel__chevrons .chevron-left:focus,
+      .contentHubCarousel__chevrons .chevron-right:hover,
+      .contentHubCarousel__chevrons .chevron-right:focus {
+        color: #0CABF9; }
+    .contentHubCarousel__chevrons .chevron-left {
+      position: absolute;
+      left: 1rem; }
+    .contentHubCarousel__chevrons .chevron-right {
+      position: absolute;
+      right: 1rem; } }

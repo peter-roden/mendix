@@ -1,0 +1,70 @@
+@import '../abstracts/dir';
+
+@mixin absolute_match_columns($column-size, $column-total: 12) {
+    $column-percentage: 1/($column-total/$column-size);
+    width: $column-percentage * 100%;
+    left: (1 - $column-percentage) * 100%;
+}
+
+.second-carousel-background-cover {
+    @include absolute-cover;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+
+    @media (min-width: $foundation-medium) {
+        @include absolute_match_columns(8);
+    }
+
+    @media (min-width: $foundation-large) {
+        @include absolute_match_columns(6);
+    }
+
+}
+
+.case-study {
+    height: 655px;
+}
+
+li.slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 655px;
+
+    .cell {
+        z-index: 10;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: $foundation-small-max) {
+
+    &.case-study {
+        height: 48rem;
+    }
+
+    li.slide {
+        background-position: 10% center;
+        height: 300px;
+    }
+
+    .second-carousel-background-cover {
+        bottom: auto;
+        height: 100rem;
+        top: 300px;
+    }
+
+    .slick-list {
+        height: 100%;
+    }
+
+    .slide-content {
+        top: 300px;
+    }
+
+    .slick-dots {
+        text-align: left;
+        padding-left: $spacing-1 * 1.50;
+    }
+
+}

@@ -1,0 +1,12 @@
+@import "../abstracts/dir";
+
+@media screen and (min-width: $large) {
+	.blogCarousel {
+		overflow: hidden;
+		height: 332px;
+	}
+
+	.blogCarousel__item {
+		height: 332px;
+	}
+}

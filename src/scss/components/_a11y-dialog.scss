@@ -1,0 +1,60 @@
+@import '../abstracts/dir';
+
+#drift-widget-container {
+    display: none;
+}
+
+
+.a11y-dialog__close,
+.mfp-close {
+    font-size: 32px;
+    position: absolute;
+    background: none;
+    top: -2px;
+    right: -2px;
+    color: $body;
+}
+
+.a11y-dialog__modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: white;
+    border-radius: 4px;
+    text-align: left;
+    padding: $spacing-2;
+    transform: translate(-50%, -50%);
+}
+
+#formSuccessDialog {
+    .a11y-dialog__modal {
+        min-width: 288px;
+        max-width: 456px;
+        padding: 3em 1em 2em;
+        text-align: center;
+        border-radius: 8px;
+        background: white;
+    }
+
+    @media screen and (min-width: 420px) {
+        .a11y-dialog__modal {
+            min-width: 360px;
+            padding-right: 2em;
+            padding-left: 2em;
+        }
+    }
+
+    @media screen and (min-width: 560px) {
+        .a11y-dialog__modal {
+            min-width: 456px;
+            padding-right: 4em;
+            padding-left: 4em;
+        }
+    }
+}
+
+#formSuccessDialog.reveal {
+	max-width: 28rem;
+	padding: 3em 1em 2em;
+	border-radius: 4px;
+}

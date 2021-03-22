@@ -1,0 +1,44 @@
+@import '../abstracts/dir';
+
+header {
+	.border-top {
+		border: none;
+	}
+}
+
+#search-results {
+	background-color: red;
+	.pagination {
+		text-align: center;
+		margin: 0 auto;
+		padding-top: 30px;
+		padding-bottom: 60px;
+	}
+	.pagination a {
+		text-align: left;
+		padding: 5px 10px 5px 10px;
+		border: 1px solid grey;
+		color: #000000;
+	}
+	.pagination a:hover {
+		color: #FFFFFF;
+		background-color: #0CABF9;
+		text-decoration: none;
+	}
+	.pagination a.prev {
+		width: auto;
+	}
+	.pagination a.next {
+		width: auto;
+	}
+	.pagination span {
+		text-align: left;
+		padding: 5px 10px 5px 10px;
+		border: 1px solid grey;
+		color: #000000;
+	}
+	.pagination span.current {
+		color: #ffffff;
+		background-color: #171F30;
+	}
+}

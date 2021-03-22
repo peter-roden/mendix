@@ -1,0 +1,58 @@
+@font-face {
+	font-family: 'Patron';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Patron Bold'), local('PatronWEB-Bold'),
+		url('/wp-content/themes/mendix/ui/fonts/PatronWEB-Bold.woff2')
+			format('woff2'),
+		url('/wp-content/themes/mendix/ui/fonts/PatronWEB-Bold.woff')
+			format('woff');
+	/* Latin glyphs */
+	unicode-range: none;
+}
+
+@font-face {
+	font-family: 'Patron';
+	font-style: normal;
+	font-weight: 100;
+	src: local('Patron Thin'), local('PatronWEB-Thin'),
+		url('/wp-content/themes/mendix/ui/fonts/PatronWEB-Thin.woff2')
+			format('woff2'),
+		url('/wp-content/themes/mendix/ui/fonts/PatronWEB-Thin.woff')
+			format('woff');
+	/* Latin glyphs */
+	unicode-range: none;
+}
+
+@font-face {
+	font-family: 'Patron';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Patron Regular'), local('PatronWEB-Regular'),
+		url('/wp-content/themes/mendix/ui/fonts/PatronWEB-Regular.woff2')
+			format('woff2'),
+		url('/wp-content/themes/mendix/ui/fonts/PatronWEB-Regular.woff')
+			format('woff');
+	/* Latin glyphs */
+	unicode-range: none;
+}
+
+@font-face {
+	font-family: 'Patron';
+	font-style: italic;
+	font-weight: 400;
+	src: local('Patron Italic'), local('PatronWEB-Italic'),
+		url('/wp-content/themes/mendix/ui/fonts/PatronWEB-Italic.woff2')
+			format('woff2'),
+		url('/wp-content/themes/mendix/ui/fonts/PatronWEB-Italic.woff')
+			format('woff');
+	/* Latin glyphs */
+	unicode-range: none;
+}
+
+// BASE
+body {
+	color: $color-body;
+	font-family: $font-body;
+	font-weight: 400;
+}

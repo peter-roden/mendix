@@ -1,0 +1,106 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+.acf-field-true-false {
+  display: flex;
+  align-items: center; }
+  .acf-field-true-false input[type='checkbox'] {
+    margin-left: 16px;
+    transform: scale(1.25); }
+  .acf-field-true-false > div {
+    flex: 0 1 auto; }
+
+.acf-image-uploader .image-wrap img {
+  border: 2px solid black !important;
+  background-color: #999 !important; }
+
+[id^='acf-group_'] {
+  background: #f5f5f5; }
+  [id^='acf-group_'] .acf-range-wrap input[type='number'] {
+    min-width: 4em; }
+  [id^='acf-group_'] .collapse {
+    z-index: 9;
+    top: -10px;
+    right: 0;
+    padding: 8px; }
+    [id^='acf-group_'] .collapse:hover, [id^='acf-group_'] .collapse:focus {
+      border-color: #0CABF9; }
+  [id^='acf-group_'] .acf-field,
+  [id^='acf-group_'] .acf-fields {
+    padding: 8px !important;
+    border: 0 !important; }
+  [id^='acf-group_'] .acf-field.acf-field-message label {
+    color: red;
+    display: none; }
+  [id^='acf-group_'] .acf-repeater .acf-row {
+    background: #92d9fc; }
+  [id^='acf-group_'] .acf-repeater .acf-row:nth-child(2n) {
+    background: #49c0fb; }
+  [id^='acf-group_'] .acf-repeater .acf-row-handle.order,
+  [id^='acf-group_'] .acf-repeater .acf-row-handle.order + td {
+    background: rgba(255, 255, 255, 0.1); }
+  [id^='acf-group_'] .acf-repeater .acf-fields.-left > .acf-field::before {
+    display: none; }
+  [id^='acf-group_'] .acf-repeater .acf-accordion {
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.1) !important; }
+  [id^='acf-group_'] .acf-repeater .acf-accordion-title {
+    background: rgba(255, 255, 255, 0.1); }
+    [id^='acf-group_'] .acf-repeater .acf-accordion-title:hover, [id^='acf-group_'] .acf-repeater .acf-accordion-title:focus {
+      background: #0CABF9; }
+  [id^='acf-group_'] .acf-repeater .acf-fields {
+    background: rgba(255, 255, 255, 0.1); }
+  [id^='acf-group_'] .acf-repeater .acf-flexible-content .layout {
+    background: rgba(255, 255, 255, 0.1); }
+  [id^='acf-group_'] .acf-repeater .acf-row-handle.order {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-shadow: none;
+    font-family: 'Patron'; }
+  [id^='acf-group_'] .acf-repeater .acf-field .acf-label label {
+    color: black; }
+  [id^='acf-group_'] .acf-repeater p.description {
+    color: black; }
+
+#wpadminbar,
+#adminmenuwrap,
+#adminmenu,
+#adminmenuback {
+  background-color: #000003 !important; }
+
+.update-plugins {
+  background-color: #f9352f !important; }
+
+#adminmenu .wp-submenu-head:hover, #adminmenu .wp-submenu-head:focus {
+  color: #0CABF9;
+  background: #000003; }
+
+.menu-top:hover, .menu-top:focus {
+  background-color: #0CABF9 !important;
+  color: white !important; }
+
+a.wp-has-current-submenu {
+  background-color: #0CABF9 !important; }
+
+.wp-submenu {
+  color: white !important;
+  background-color: #1a1a1c !important; }
+
+.attachment .thumbnail {
+  background: LightGray; }
+
+/*# sourceMappingURL=admin.min.css.map */

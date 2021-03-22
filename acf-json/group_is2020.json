@@ -1,0 +1,223 @@
+{
+	"key" : "group_is2020",
+	"title" : "Industries Single 2020",
+	"fields" : [
+		{
+			"key" : "field_is2020_build_accordion",
+			"label" : "You Build with Mendix",
+			"type" : "accordion"
+		},
+		{
+			"key" : "field_is2020_build_body",
+			"name" : "field_is2020_build_body",
+			"label" : "Body",
+			"type" : "wysiwyg",
+			"media_upload" : 0,
+			"translations" : "translate"
+		},
+		{
+			"key" : "field_is2020_build_tag",
+			"name" : "field_is2020_build_tag",
+			"label" : "Tag",
+			"type" : "text",
+			"translations" : "translate"
+		},
+		{
+			"key" : "field_is2020_accordion_stories",
+			"label" : "Customer Stories",
+			"type" : "accordion"
+		},
+		{
+			"key" : "field_is2020_stories",
+			"name" : "is2020_stories",
+			"label" : "Stories Repeater",
+			"type" : "repeater",
+			"button_label" : "Add Story",
+			"sub_fields" : [
+				{
+					"key" : "field_is2020_stories_background",
+					"name" : "is2020_stories_background",
+					"label" : "Background",
+					"type" : "image",
+					"preview_size" : "post-thumbnail",
+					"default_value" : 60904
+				},
+				{
+					"key" : "field_is2020_stories_heading",
+					"name" : "is2020_stories_heading",
+					"label" : "Heading",
+					"type" : "textarea",
+					"translations" : "translate"
+				},
+				{
+					"key" : "field_is2020_stories_body",
+					"name" : "is2020_stories_body",
+					"label" : "Body",
+					"type" : "textarea",
+					"translations" : "translate"
+				},
+				{
+					"key" : "field_is2020_stories_link",
+					"name" : "is2020_stories_link",
+					"label" : "Link",
+					"type" : "link"
+				}
+			]
+		},
+		{
+			"key" : "field_is2020_accordion_solutions",
+			"label" : "Solutions",
+			"type" : "accordion"
+		},
+		{
+			"key" : "field_is2020_solutions_heading",
+			"name" : "is2020_solutions_heading",
+			"label" : "Heading",
+			"type" : "text",
+			"translations" : "translate",
+			"default_value" : "Build what you need faster.", 
+			"placeholder" : "Build what you need faster." 
+		},
+		{
+			"key" : "field_is2020_solutions_subheading",
+			"name" : "is2020_solutions_subheading",
+			"label" : "Subheading",
+			"type" : "text",
+			"translations" : "translate",
+			"default_value" : "Discover the art of the possible with Mendix.", 
+			"placeholder" : "Discover the art of the possible with Mendix." 
+		},
+		{
+			"key" : "field_is2020_solutions_cards",
+			"name" : "is2020_solutions_cards",
+			"label" : "Solutions",
+			"type" : "repeater",
+			"sub_fields" : [
+				{
+					"key" : "field_is2020_solutions_cards_image",
+					"name" : "image",
+					"label" : "Image",
+					"type" : "image",
+					"preview_size" : "post-thumbnail",
+					"default_value" : 60916
+				},
+				{
+					"key" : "field_is2020_solutions_cards_heading",
+					"name" : "heading",
+					"label" : "Heading",
+					"type" : "textarea",
+					"translations" : "translate"
+				},
+				{
+					"key" : "field_is2020_solutions_cards_body",
+					"name" : "body",
+					"label" : "Body",
+					"type" : "textarea",
+					"translations" : "translate"
+				},
+				{
+					"key" : "field_is2020_solutions_cards_link",
+					"name" : "link",
+					"label" : "Link",
+					"type" : "link"
+				}
+			]
+		},
+		{
+			"key" : "field_is2020_accordion_connect",
+			"label" : "Connect",
+			"type" : "accordion"
+		},
+		{
+			"key" : "field_is2020_connect_heading",
+			"name" : "is2020_connect_heading",
+			"label" : "Heading",
+			"type" : "text",
+			"translations" : "translate",
+			"default_value" : "Learn, connect, and grow with Mendix.", 
+			"placeholder" : "Learn, connect, and grow with Mendix." 
+		},
+		{
+			"key" : "field_is2020_connect_cards",
+			"name" : "is2020_connect_cards",
+			"label" : "Conect Cards",
+			"type" : "repeater",
+			"sub_fields" : [
+				{
+					"key" : "field_is2020_connect_cards_image",
+					"name" : "image",
+					"label" : "Image",
+					"type" : "image",
+					"preview_size" : "post-thumbnail",
+					"default_value" : 60916
+				},
+				{
+					"key" : "field_is2020_connect_cards_heading",
+					"name" : "heading",
+					"label" : "Heading",
+					"type" : "textarea",
+					"translations" : "translate"
+				},
+				{
+					"key" : "field_is2020_connect_cards_body",
+					"name" : "body",
+					"label" : "Body",
+					"type" : "textarea",
+					"translations" : "translate"
+				},
+				{
+					"key" : "field_is2020_connect_cards_link",
+					"name" : "link",
+					"label" : "Link",
+					"type" : "link"
+				}
+			]
+		},
+		{
+			"key" : "field_is2020_accordion_cta",
+			"label" : "CTA",
+			"type" : "accordion"
+		},
+		{
+			"key" : "field_is2020_cta_background",
+			"name" : "is2020_cta_background",
+			"label" : "Background",
+			"type" : "image",
+			"preview_size" : "post-thumbnail",
+			"default_value" : 60928
+		},
+		{
+			"key" : "field_is2020_cta_heading",
+			"name" : "is2020_cta_heading",
+			"label" : "Heading",
+			"type" : "text",
+			"translations" : "translate",
+			"default_value" : "Sign up for the Platform and kick these tech tires.",
+			"placeholder" : "Sign up for the Platform and kick these tech tires."
+		},
+		{
+			"key" : "field_is2020_cta_body",
+			"name" : "is2020_cta_body",
+			"label" : "Body",
+			"type" : "text",
+			"translations" : "translate"
+		}
+
+	],
+	"location" : [
+		[
+			{
+				"param" : "page_template",
+				"operator" : "==",
+				"value" : "pages/industries-single-2020.php"
+			}
+		]
+	],
+	"menu_order" : 0,
+	"position" : "normal",
+	"style" : "default",
+	"label_placement" : "top",
+	"instruction_placement" : "label",
+    "description": "",
+    "modified": 1611931478
+}

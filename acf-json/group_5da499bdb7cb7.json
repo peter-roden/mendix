@@ -1,0 +1,86 @@
+{
+    "key": "group_5da499bdb7cb7",
+    "title": "Header Footer Select",
+    "fields": [
+        {
+            "key": "field_5ed53d309e68d",
+            "label": "Header Selection",
+            "name": "header_selection",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "full": "Full",
+                "full-dark": "Full (Dark)",
+                "mini": "Mini",
+                "none": "None",
+                "mxworld2019": "MxWorld 2019",
+                "mxworld2020": "MxWorld 2020"
+            },
+            "allow_null": 0,
+            "default_value": "full",
+            "layout": "vertical",
+            "return_format": "value",
+            "translations": "copy_once"
+        },
+        {
+            "key": "field_5ed53d649e68e",
+            "label": "Footer Selection",
+            "name": "footer_selection",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "match": "Match Header Selection",
+                "full": "Full",
+                "mini": "Mini",
+                "none": "None"
+            },
+            "allow_null": 0,
+            "default_value": "match",
+            "layout": "vertical",
+            "return_format": "value",
+            "translations": "copy_once"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "landing_page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "author"
+    ],
+    "active": true,
+    "description": "",
+    "modified": 1606321878
+}

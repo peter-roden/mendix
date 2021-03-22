@@ -1,0 +1,45 @@
+//classes related to the different BOM types
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+@media print,
+screen and (max-width: $foundation-small-max) {
+    .small-only-block {
+        display: block;
+    }
+
+    .small-only-inline-block {
+        display: inline-block;
+    }
+}
+
+@media print,
+screen and (min-width: $foundation-medium) {
+    .medium-block {
+        display: block;
+    }
+
+    .medium-inline-block {
+        display: inline-block;
+    }
+}
+
+@media print,
+screen and (min-width: $foundation-large) {
+    .large-block {
+        display: block;
+    }
+
+    .large-inline-block {
+        display: inline-block;
+    }
+}

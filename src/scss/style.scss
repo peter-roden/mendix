@@ -1,0 +1,24 @@
+@charset 'UTF-8';
+
+//abstracts/
+@import 'abstracts/dir';
+//vendors/
+@import 'vendors/dir';
+//base/
+@import 'base/*';
+//functional
+@import 'functional/*';
+//components/
+@import 'components/*';
+//sections/
+@import 'sections/*';
+
+//partials/
+@import 'partials/pb-tabbedNav';
+@import 'partials/slider';
+
+// Removes FUOC see: https://stackoverflow.com/questions/3221561/eliminate-flash-of-unstyled-content
+html {
+    visibility: visible;
+    opacity: 1;
+}

@@ -1,0 +1,39 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+#cloudNativeArchitecture .ctaBanner__text {
+  margin-top: 3rem; }
+
+@media (min-width: 64em) {
+  #cloudNativeArchitecture {
+    position: relative; }
+    #cloudNativeArchitecture .cloud-native-architecture {
+      position: absolute;
+      right: 0;
+      top: 64px; }
+    #cloudNativeArchitecture .ctaBanner__text {
+      margin-top: 4rem;
+      margin-bottom: 4rem; } }
+
+@media (min-width: 110em) {
+  #cloudNativeArchitecture .cloud-native-architecture {
+    right: 10vw; } }
+
+@media (min-width: 140em) {
+  #cloudNativeArchitecture .cloud-native-architecture {
+    right: 20vw; } }
+
+/*# sourceMappingURL=flexible-sections.min.css.map */

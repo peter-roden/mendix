@@ -1,0 +1,12 @@
+@import '../abstracts/dir';
+
+.testimonial__screenshot {
+	padding-top: $spacing-3; 
+}
+
+@media (min-width:$medium) {
+    .testimonial__screenshot {
+		padding-top: 0; 
+        transform: translate(0, -4rem);
+    }
+}

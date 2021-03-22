@@ -1,0 +1,103 @@
+@import '../abstracts/_dir';
+
+.partial-contact-us {
+	$formBorder: $blue;
+	$formBackground: white;
+	$formColor: black;
+	$formLabelColor: black;
+	$formHighlightSize: 5px;
+	$formHighlightColor: mix(white, $blue, 50%);
+	
+	background: $blue;
+	background-image: linear-gradient(45deg, $blue 70%, $aqua);
+	*::placeholder {
+		opacity: 0.8;
+	}
+	
+	.mktoFormRow {
+		margin-top: -1px;
+	}
+
+	.rowPhone, 
+	.mktoRequiredField {
+		background: $formBackground;
+		border: 0;
+		border-bottom: 0px solid $formBorder;
+		border: 1px solid $formBorder;
+
+		label {
+			padding: 8px 0 0 17px;
+			margin: 0;
+			margin-left: 2px;
+			font-family: 'NotoMono', monospace;
+			
+			strong	{
+				display: none;
+			}
+		}
+	}
+
+	.mktoCheckboxList {
+		display: flex !important;
+		align-items: center;
+
+		input,
+		label {
+			flex: 0 1 auto;
+		}
+	}
+
+	button {
+		background: white !important;
+		color: black !important;
+		box-shadow: 1px 3px 6px rgba(black, 0);
+
+		&:hover, &:focus { 
+			transform: translate(0, -1px);
+			background: white !important;
+			color: black !important;
+			box-shadow: 1px 3px 6px rgba(black, .5);
+		}
+	}
+
+	input[type],
+	select,
+	textarea {
+		padding: 0;
+		background-color: transparent;
+		border-radius: 0;
+		border: 0;
+		margin: 0;
+		border-bottom: $formHighlightSize solid transparent;
+		font-size: 18px;
+		font-weight: lighter;
+		padding: 0 16px 8px 19px;
+
+		option {
+			background-color: black;
+			color: white;
+		}
+
+		&:focus {
+			border-bottom: $formHighlightSize solid $formHighlightColor;
+		}
+	}
+
+	.mktoInstruction {
+		display: none;
+	}
+	.mktoSELECT, .mktoSelect {
+		position: relative;
+
+		&::after {
+			content: '‹ ›';
+			color: $formLabelColor;
+			transform: rotate(90deg);
+			font-weight: bold;
+			display: block;
+			position: absolute;
+			right: 20px;
+			bottom: 20px;
+		}
+	}
+}

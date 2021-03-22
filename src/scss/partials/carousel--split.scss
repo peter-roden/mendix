@@ -1,0 +1,68 @@
+@import '../abstracts/_dir';
+
+
+@mixin absolute_match_columns($column-size, $column-total: 12) {
+    $column-percentage: 1/($column-total/$column-size);
+    width: $column-percentage * 100%;
+    left: (1- $column-percentage) * 100%;
+}
+
+
+#carousel--split {
+    height: 560px;
+    background-color: $black; // rgba(13, 49, 210, 1);
+    overflow: hidden;
+
+    @media (min-width: $large) {
+        height: 655px;
+    }
+}
+
+.carousel--split-bg {
+	width: 100%;
+	height: 100%;
+	position: absolute; 
+	top: 0;
+	left: 0;
+
+	background-size: cover;
+	
+	opacity: 0;
+    transition: opacity 2s, transform 8s ease-in;
+    transform: scale(1.05);
+
+    &.active {
+        transform: scale(1);
+        transition: opacity 2s, transform 4s ease-out;
+        opacity: 1;
+    }
+}
+
+.carousel--split-overlay {
+
+    @include absolute-cover;
+
+    background-color: rgba(13, 49, 210, 0.75);
+    background-image: linear-gradient(44deg, transparent, rgba(12, 171, 249, 1));
+    width: 100%;
+    left: 0;
+
+    @media (min-width: $foundation-medium) {
+        @include absolute_match_columns(8);
+    }
+
+    @media (min-width: $foundation-large) {
+        @include absolute_match_columns(6);
+    }
+}
+
+
+
+@media (min-width: $foundation-medium) {
+    #carousel--split-text {
+        .slick-dots {
+            text-align: left;
+        }
+    }
+
+}

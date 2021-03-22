@@ -1,0 +1,149 @@
+@import '../abstracts/dir';
+
+body {
+	background-color: #e7eaec;
+}
+
+.breadcrumbLink {
+	position: relative;
+
+	&::before {
+		content: '< ';
+		position: relative;
+		display: inline-block;
+		padding-right: 0.5rem;
+		transition: transform 300ms ease;
+	}
+
+	&:focus,
+	&:active,
+	&:hover {
+		text-decoration: none;
+
+		&::before {
+			transform: translate(-0.25rem, 0);
+		}
+	}
+}
+
+.blog {
+	padding-top: 40px;
+	margin-bottom: $spacing-3;
+	background-color: white;
+
+	.vidyard-lightbox-thumbnail {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+}
+
+.blog__author {
+	padding: 2rem 0;
+}
+
+.blog__content {
+	@import '../editor-style';
+
+	padding-top: 2rem;
+}
+
+.blog__social {
+	padding-top: 2rem;
+}
+
+.blog__title {
+	margin-top: 2rem;
+	padding-bottom: 2rem;
+	position: relative;
+
+	&::after {
+		content: '';
+		background-color: $black;
+		bottom: 0;
+		height: 10px;
+		left: 0;
+		position: absolute;
+		width: 136px;
+	}
+}
+
+.featuredEvent {
+	background: white;
+	padding: 1rem;
+}
+
+.subscribe {
+	padding: 2rem 1rem;
+}
+
+.sidebarArticles {
+	background-color: white;
+	padding: 2rem 1rem 1rem;
+}
+
+.sidebarArticles__link {
+	color: $color-body;
+	transition: color 200ms;
+
+	&:hover,
+	&:focus {
+		text-decoration-color: $blue;
+	}
+}
+
+.blogCTA {
+	margin-top: 2rem;
+}
+
+.blog__content,
+.blog__social,
+.blog__author,
+.blog__title,
+.blogCTA {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+@media screen and (min-width: $large) {
+	.blog {
+		margin-bottom: $spacing-4;
+	}
+
+	.blog__author,
+	.blog__content,
+	.blog__social,
+	.blog__title,
+	.blogCTA {
+		margin-left: 3rem;
+		margin-right: 3rem;
+	}
+
+	.blog__title {
+		padding-bottom: 3rem;
+	}
+}
+
+@media screen and (min-height: 30rem) and (min-width: $large) {
+	.hero--tall {
+		height: 44rem;
+		position: relative;
+		overflow: hidden;
+		background-position: top;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.blog__content__thumbnail {
+		display: none;
+	}
+
+	.hero--tall-overlap {
+		transform: translateY(-24rem);
+		margin-bottom: -24rem;
+		padding: 0 16px;
+	}
+
+	.blog {
+		padding-top: 0;
+	}
+}

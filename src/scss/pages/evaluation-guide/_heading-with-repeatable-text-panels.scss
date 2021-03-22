@@ -1,0 +1,23 @@
+.heading-with-repeatable-text-panels {
+	width: 100%;
+
+	.panel {
+		padding: 45px 40px;
+		background: #F5F5F5;
+		margin-top: 20px;
+
+		.content-block-heading {
+			margin-top: 35px;
+		}
+
+		.content-block-text {
+			@import '../editor-style';
+			margin-top: 20px;
+		}
+
+		.content-block-link {
+			margin-top: 21px;
+			text-transform: uppercase;
+		}
+	}
+}

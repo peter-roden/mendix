@@ -1,0 +1,173 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+#video-banner__text {
+  opacity: 0;
+  transform: translate(0, 2rem);
+  transition: transform 1000ms ease, opacity 500ms;
+  pointer-events: none; }
+  #video-banner__text.active {
+    pointer-events: all;
+    transform: none;
+    opacity: 1; }
+
+.tab-link {
+  text-align: left; }
+
+#platform-accordion .caret {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%); }
+
+#platform-accordion .accordion-item.is-active .caret {
+  transform: translate(0, -50%) rotate(-180deg); }
+
+#platform-accordion .accordion-item:last-of-type {
+  border-bottom: 1px solid #e6e7e9; }
+
+#platform-accordion .accordion-title {
+  border-top: 1px solid #e6e7e9;
+  display: block;
+  padding-bottom: 1.5rem;
+  position: relative;
+  padding-top: 1rem;
+  width: 100%; }
+  #platform-accordion .accordion-title:hover, #platform-accordion .accordion-title:focus {
+    text-decoration: none; }
+    #platform-accordion .accordion-title:hover .cell, #platform-accordion .accordion-title:focus .cell {
+      color: #0CABF9; }
+
+.btn-play {
+  transform: scale(0.5); }
+
+.btn-play-group {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .btn-play-group:hover, .btn-play-group:focus {
+    text-decoration: none; }
+    .btn-play-group:hover .btn-play-group__text, .btn-play-group:focus .btn-play-group__text {
+      border-bottom: 2px solid #0CABF9; }
+    .btn-play-group:hover .btn-play, .btn-play-group:focus .btn-play {
+      transform: scale(0.6);
+      opacity: 1; }
+
+.btn-play-group__text {
+  border-bottom: 2px solid transparent;
+  transition: transform 250ms ease, opacity 250ms, border-color 250ms ease;
+  font-size: 1.15rem; }
+
+.definitions {
+  text-align: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
+  .definitions dt {
+    padding: 0.5rem;
+    margin-top: 1rem;
+    background: white;
+    border: 1px solid #000003; }
+  .definitions dd {
+    padding: 0.5rem;
+    margin-top: 0;
+    background: white;
+    border: 1px solid #000003;
+    border-top: none; }
+
+.multi-channel-nav__text {
+  border-bottom: 4px solid transparent;
+  margin-left: 1rem;
+  transition: border-color 250ms;
+  vertical-align: middle; }
+
+.device_outline__screen--mobile {
+  max-width: 324px;
+  margin: 0 auto; }
+
+.multi-channel-icon {
+  height: 36px; }
+
+.progress-ring__circle {
+  stroke-dasharray: 332 332;
+  transition: stroke-dashoffset 2000ms ease;
+  stroke-dashoffset: 332; }
+
+.progress-ring__text {
+  opacity: 0;
+  transition: opacity 2s ease 500ms; }
+
+@media (max-width: 63.9375em) {
+  .caret {
+    height: 16px; }
+  .multi-channel-nav a {
+    pointer-events: none; }
+  .progress-ring {
+    max-width: 320px;
+    display: block;
+    margin: 0 auto; } }
+
+@media (max-width: 39.9375em) {
+  .caret {
+    height: 10px; } }
+
+@media (min-width: 64em) {
+  .integrate-logos {
+    width: 11% !important; } }
+
+@media (min-width: 64em) {
+  #tabsMultiChannel {
+    position: relative;
+    padding-bottom: 540px; }
+    #tabsMultiChannel .tab-link {
+      cursor: pointer; }
+    #tabsMultiChannel .tab-link:hover,
+    #tabsMultiChannel .tab-link:focus {
+      text-decoration: none; }
+      #tabsMultiChannel .tab-link:hover .multi-channel-nav__text,
+      #tabsMultiChannel .tab-link:focus .multi-channel-nav__text {
+        border-bottom-color: #0CABF9; }
+    #tabsMultiChannel .tab-link.active .multi-channel-nav__text {
+      border-bottom-color: #000003; }
+    #tabsMultiChannel .multi-channel-nav__text {
+      margin-top: 1.5rem;
+      margin-left: 0;
+      display: inline-block;
+      margin-bottom: 2rem;
+      white-space: nowrap; }
+    #tabsMultiChannel .tabMultiChannel {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transition: opacity 500ms ease 400ms; }
+      #tabsMultiChannel .tabMultiChannel .tabMultiChannel__text {
+        transition: transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 400ms; }
+      #tabsMultiChannel .tabMultiChannel .tabMultiChannel__image {
+        transition: transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 400ms; }
+    #tabsMultiChannel .tabMultiChannel:not(.active) {
+      opacity: 0;
+      transition: opacity 550ms ease;
+      pointer-events: none; }
+      #tabsMultiChannel .tabMultiChannel:not(.active) .tabMultiChannel__text {
+        transition: transform 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transform: translate(-100px, 0); }
+      #tabsMultiChannel .tabMultiChannel:not(.active) .tabMultiChannel__image {
+        transition: transform 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transform: translate(100px, 0); } }
+
+.progress-ring.active .progress-ring__text {
+  opacity: 1; }
+
+/*# sourceMappingURL=platform.min.css.map */

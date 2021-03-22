@@ -1,0 +1,146 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+.bg-blue-light {
+  background-color: #eef9fe;
+  margin-top: 32px;
+  margin-bottom: 64px; }
+
+.box {
+  border: 1px solid #7d7;
+  background-color: #e4f8e4;
+  padding: 32px 16px; }
+  .box li {
+    transform: translate(-5px, 0); }
+
+@media (max-width: 63.9375em) {
+  .edition {
+    text-align: center;
+    padding: 16px;
+    cursor: pointer;
+    transition: all 250ms ease;
+    border: 1px solid #000003; }
+    .edition:hover, .editionfocus {
+      background-color: #94c6e0; }
+  .edition a {
+    text-decoration: none;
+    color: #383841; }
+  .edition.is-active {
+    background-color: #0CABF9; }
+  .edition.is-active a {
+    color: white; }
+  .icon-cell {
+    flex: 0 1 27px;
+    text-align: center; }
+  .icon-type-bk {
+    color: #e6e7e9; }
+  .pricing-tabbed__item {
+    padding: 4px 0;
+    position: relative; }
+  .secondRow {
+    display: none; }
+  .tabs-panel {
+    display: none; }
+  .tabs-panel.is-active {
+    display: block; } }
+
+@media (min-width: 40em) {
+  .box {
+    padding: 3rem 0; } }
+
+@media (min-width: 64em) {
+  td,
+  th {
+    padding: 16px;
+    vertical-align: middle;
+    text-align: center;
+    text-align: center; }
+  td {
+    border: 1px solid #ccc; }
+  td:first-of-type,
+  th:first-of-type {
+    font-weight: bold;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    text-align: left; }
+  td:nth-of-type(3),
+  td:nth-of-type(4) {
+    background: #dde1e3; }
+  td:nth-of-type(5) {
+    background: #E7EDF3; }
+  th:not(.edition) {
+    padding-top: 64px; }
+  .edition:first-of-type {
+    border: 0; }
+  .edition:nth-of-type(2) {
+    border: 1px solid #ccc; }
+  .edition:nth-of-type(3),
+  .edition:nth-of-type(4) {
+    color: white;
+    background: #000003; }
+  .edition:nth-of-type(3) {
+    border-right: 1px solid white; }
+  .edition:nth-of-type(5) {
+    color: white;
+    background: #0CABF9; }
+  .price:not(:first-of-type) {
+    vertical-align: middle; }
+  .pricing-tabbed__card {
+    display: none; }
+  .secondRow {
+    display: block;
+    font-weight: lighter;
+    font-size: 0.8em; }
+  .box .text-height {
+    height: 180px; } }
+
+/*****************************************
+	CTA for ROI Calculator
+******************************************/
+.ROICalculatorCTA {
+  background: #06145c;
+  overflow: hidden; }
+  .ROICalculatorCTA .btn-primary {
+    color: #06145c; }
+  .ROICalculatorCTA .btn-primary:hover,
+  .ROICalculatorCTA .btn-primary:focus {
+    background: #ff6161;
+    color: #06145c; }
+  @media screen and (max-width: 39.9375em) {
+    .ROICalculatorCTA .ROICalculatorCTA__grid,
+    .ROICalculatorCTA .ROICalculatorCTA__lines {
+      display: none; } }
+  @media screen and (min-width: 40em) {
+    .ROICalculatorCTA {
+      background-image: none !important; }
+      .ROICalculatorCTA .ROICalculatorCTA__grid {
+        left: 29%;
+        width: 803px;
+        position: absolute;
+        right: 0;
+        bottom: 0; }
+      .ROICalculatorCTA .ROICalculatorCTA__lines {
+        bottom: 0;
+        height: 100%;
+        left: 39%;
+        min-width: 559px;
+        position: absolute;
+        width: auto; } }
+  @media screen and (min-width: 64em) {
+    .ROICalculatorCTA .ROICalculatorCTA__grid {
+      left: 39%; }
+    .ROICalculatorCTA .ROICalculatorCTA__lines {
+      left: 45%; } }

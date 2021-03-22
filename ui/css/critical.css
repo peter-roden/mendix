@@ -1,0 +1,285 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+.fat-footer {
+  padding-top: 1rem;
+  background-color: #181819; }
+  .fat-footer a,
+  .fat-footer button {
+    color: white; }
+    .fat-footer a:focus, .fat-footer a:hover,
+    .fat-footer button:focus,
+    .fat-footer button:hover {
+      color: #0CABF9;
+      text-decoration: none; }
+  .fat-footer .trending-topics {
+    background-color: black; }
+
+.mfp-hide {
+  display: none !important; }
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  /* 1 */
+  -webkit-clip-path: inset(50%) !important;
+          clip-path: inset(50%) !important;
+  /* 2 */
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+  /* 3 */ }
+
+/*
+	Use in conjunction with .sr-only to only display content when it's focused.
+	@note Useful for skip links 
+	@see http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
+	@note Based on a HTML5 Boilerplate technique, included in Bootstrap
+	@note Fixed a bug with position: static on iOS 10.0.2 + VoiceOver
+		@author Sylvain Pigeard
+		@see https://github.com/twbs/bootstrap/issues/20732
+*/
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+  clip: auto !important;
+  -webkit-clip-path: none !important;
+          clip-path: none !important;
+  height: auto !important;
+  margin: auto !important;
+  overflow: visible !important;
+  width: auto !important;
+  white-space: normal !important; }
+
+.visually-hidden {
+  /*https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html*/
+  position: absolute !important;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  border: 0 !important; }
+
+.btn-header {
+  display: inline-block;
+  padding: 0.75em 3em;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  position: relative;
+  font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+  transition: all 300ms ease;
+  color: white;
+  padding: 0.5em 2.5em;
+  border: 1px solid white;
+  white-space: nowrap; }
+  .btn-header:hover, .btn-header:focus {
+    text-decoration: none; }
+  .btn-header:hover, .btn-header:focus {
+    color: white;
+    border-color: #0CABF9;
+    background-color: #0CABF9; }
+
+.header__logo {
+  opacity: 1;
+  transition: all 300ms ease; }
+  .header__logo:hover .header__logo__fill, .header__logo:focus .header__logo__fill {
+    fill: #0CABF9 !important; }
+
+.header__logo__fill {
+  transition: fill 250ms; }
+
+#siteHeader {
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: all;
+  z-index: 9999; }
+  .admin-bar #siteHeader {
+    top: 46px !important; }
+    @media screen and (min-width: 783px) {
+      .admin-bar #siteHeader {
+        top: 32px !important; } }
+  #siteHeader.dark #siteHeader__bar,
+  #siteHeader:hover #siteHeader__bar {
+    background-color: rgba(0, 0, 0, 0.8); }
+  #siteHeader:focus-within #siteHeader__bar {
+    background-color: rgba(0, 0, 0, 0.8); }
+
+#siteHeader.out-of-view,
+#siteHeader.sticky {
+  position: fixed; }
+  #siteHeader.out-of-view #siteHeader__bar,
+  #siteHeader.sticky #siteHeader__bar {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 1000ms ease; }
+
+.siteHeader-height-observer,
+.siteHeader-sticky-observer {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 1px;
+  z-index: 999; }
+
+.siteHeader-height-observer {
+  height: 16rem; }
+
+/**
+* header__gutter divs have mouse interaction and thus
+* need some amount of sizing on them.
+*/
+.header__gutter {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.siteHeader__toggle__line {
+  transition: border-color 250ms;
+  display: block;
+  width: 32px;
+  margin-top: 6px;
+  border-bottom: 2px solid white; }
+
+.link-svg {
+  display: inline-block;
+  text-align: center;
+  padding: 0 0.5rem;
+  min-width: 40px; }
+
+@media (max-width: 1024px) {
+  #siteHeader {
+    position: fixed;
+    z-index: 101; }
+  .header__logo {
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+  #siteHeader__navigation {
+    display: none; }
+  .show-for-full-navigation {
+    display: none; }
+  #siteHeader.active:hover #siteHeader__bar {
+    background-color: white; }
+  #siteHeader.active:focus-within #siteHeader__bar {
+    background-color: white; } }
+
+@media (min-width: 1025px) {
+  #siteHeader {
+    position: absolute;
+    transition: transform 300ms ease;
+    width: 100%;
+    z-index: 100; }
+  #siteHeader.out-of-view,
+  #siteHeader.sticky {
+    margin-top: -5rem;
+    transition: transform 500ms ease; }
+    #siteHeader.out-of-view #siteHeader__bar,
+    #siteHeader.sticky #siteHeader__bar {
+      transition: none; }
+  #siteHeader.out-of-view {
+    transform: translate(0, 0); }
+  #siteHeader.sticky {
+    transform: translate(0, 5rem); }
+  .header-sticky-observer {
+    height: 75vh; }
+  .header-navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+  .siteHeader__toggle {
+    display: none; }
+  .hide-for-full-navigation {
+    display: none; }
+  .navigation-sub-menu {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute; }
+  .navigation-top-level__button {
+    color: white;
+    padding: 2rem 1rem;
+    margin: 0 0.5rem;
+    font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: normal; } }
+
+.from-opacity-0 {
+  -webkit-animation-name: from-opacity-0;
+          animation-name: from-opacity-0;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+@-webkit-keyframes from-opacity-0 {
+  from {
+    opacity: 0; } }
+
+@keyframes from-opacity-0 {
+  from {
+    opacity: 0; } }
+
+@media screen and (max-width: 600px) {
+  #wpadminbar {
+    position: fixed !important; } }
+
+.skip-navigation {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+@font-face {
+  font-family: 'Patron';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Patron Bold"), local("PatronWEB-Bold"), url("/wp-content/themes/mendix/ui/fonts/PatronWEB-Bold.woff2") format("woff2"), url("/wp-content/themes/mendix/ui/fonts/PatronWEB-Bold.woff") format("woff");
+  /* Latin glyphs */
+  unicode-range: none; }
+
+@font-face {
+  font-family: 'Patron';
+  font-style: normal;
+  font-weight: 100;
+  src: local("Patron Thin"), local("PatronWEB-Thin"), url("/wp-content/themes/mendix/ui/fonts/PatronWEB-Thin.woff2") format("woff2"), url("/wp-content/themes/mendix/ui/fonts/PatronWEB-Thin.woff") format("woff");
+  /* Latin glyphs */
+  unicode-range: none; }
+
+@font-face {
+  font-family: 'Patron';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Patron Regular"), local("PatronWEB-Regular"), url("/wp-content/themes/mendix/ui/fonts/PatronWEB-Regular.woff2") format("woff2"), url("/wp-content/themes/mendix/ui/fonts/PatronWEB-Regular.woff") format("woff");
+  /* Latin glyphs */
+  unicode-range: none; }
+
+@font-face {
+  font-family: 'Patron';
+  font-style: italic;
+  font-weight: 400;
+  src: local("Patron Italic"), local("PatronWEB-Italic"), url("/wp-content/themes/mendix/ui/fonts/PatronWEB-Italic.woff2") format("woff2"), url("/wp-content/themes/mendix/ui/fonts/PatronWEB-Italic.woff") format("woff");
+  /* Latin glyphs */
+  unicode-range: none; }
+
+body {
+  color: #383841;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400; }

@@ -1,0 +1,278 @@
+@import '../abstracts/dir';
+
+$hover-width: 85%;
+$other-width: 15%;
+$color-left: #0CABF9;
+$speed: 1000ms;
+$white: #ffffff;
+$size: 74px;
+
+@keyframes fadeIn {
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+	0%   { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@keyframes moveRight {
+	0% {
+		left: 0;
+		transform: translateX(0);
+	}
+	100% {
+		left: 80%;
+		transform: translateX(-80%);
+	}
+}
+
+#top-phone-row {
+	@media screen and (min-width: $foundation-medium) {
+		margin-top: -125px;
+	}
+}
+
+.bottom-cta {
+	.btn-primary {
+		transition: all .3s ease;
+
+		&:focus,
+		&:hover {
+			background-color: #2091d3;
+			background-image: linear-gradient(90deg, #2091d3, #3253cd);
+
+			&::before {
+				opacity: 1;
+				transition: opacity 100ms ease, transform 350ms ease;
+				transform: translate(-50%, -50%) scaleX(1);
+			}
+		}
+	}
+}
+
+.panel-split-container {
+	@media (min-width: $foundation-large) {
+		display: flex;
+	}
+}
+
+.panel-title {
+	background-color: lighten($body, 15%);
+	@media (min-width: $foundation-large) {
+		margin: auto;
+		width: auto;
+		display: inline-block;
+		position: absolute;
+		top: 8%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.panel-split-container {
+	.large-heading1 {
+		@media (min-width: 64em) {
+			font-size: 2.625em;
+		}
+	}
+
+	@media (max-width: 1024px) {
+		.panel-extra-container {
+			margin: auto;
+			display: flex;
+		}
+	}
+
+	@media (max-width: 1024px) {
+		.copy-sm {
+			text-align: left;
+			margin-left: 1em;
+		}
+	}
+}
+
+.panel-split {
+	width: 100%;
+	@media (min-width: $foundation-large) {
+		border: 1px solid $white;
+		width: 25%;
+		display: flex;
+		overflow: hidden;
+		transition: $speed all ease-in-out;
+	}
+
+	&.panel-left, &.panel-right {
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+		.headingleft {text-align: center;}
+	}
+	&.panel-left {
+		border-width: 0 1px 0 0;
+		width: 100%;
+		&::before {
+			background-color: #f5f5f5;
+		}
+	}
+	&.panel-right {
+		border-width: 0 0 0 1px;
+		&::before {
+			background-color: #4a4a4a;
+		}
+	}
+}
+
+.panel-content {
+	@media (min-width: $foundation-large) {
+		width: 1	px;
+	}
+}
+
+.panel-entry {
+	@media (min-width: $foundation-large) {
+		max-height: 0;
+		transition: max-height $speed ease-in-out;
+		&.expanded {
+			max-height: 250px;
+		}
+	}
+}
+
+.panel-extras {
+	margin-top: 2em;
+	transition: $speed opacity ease-in-out;
+	@media (min-width: $foundation-large) {
+		&.fade-in {
+			animation: fadeIn $speed 0.25s;
+		}
+		&.fade-out {
+			opacity: 0;
+		}
+	}
+
+	@media (min-width: 1500px) {
+		margin-top: 0;
+	}
+}
+
+.panel-hover-left, .panel-hover-right {
+	.panel-split:not(.is-active) {
+		@media (min-width: 1024px) {
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+			}
+		}
+	}
+}
+
+.panel-hover-left {
+	@media (min-width: 1024px) {
+		.panel-left {
+			width: $hover-width;
+		}
+	}
+	@media (min-width: 1024px) {
+		.panel-right {
+			width: $other-width;
+		}
+	}
+}
+
+.panel-hover-right {
+	@media (min-width: 1024px) {
+		.panel-left {
+			width: $other-width;
+		}
+	}
+	@media (min-width: 1024px) {
+		.panel-right {
+			width: $hover-width;
+		}
+	}
+}
+
+.pointer-control {
+	background-color: #0CABF9;
+	border-radius: 100%;
+	border: 10px solid rgba($black, .1);
+	margin-left: -$size / 2;
+	width: $size;
+	height: $size;
+	transition: all $speed ease-in-out;
+	display: none;
+	@media (min-width: $foundation-large) {
+		display: flex;
+	}
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 50%;
+	bottom: 50%;
+	left: 79%;
+
+	@media (min-width: 1024px) {
+		&.move-right {
+			left: $hover-width;
+			right: $other-width;
+		}
+
+		&.move-left {
+			left: $other-width;
+			right: $hover-width;
+		}
+	}
+}
+
+.section-copy-columns {
+	@media (min-width: $foundation-large) {
+		column-count: 2;
+		column-gap: 2rem;
+	}
+}
+
+.featured-specific {
+	min-height: 120px;
+}
+
+.panel-content {
+	@media (min-width: 1024px) { // Make layout column when under 1024px
+		flex-direction: column;
+	}
+	@media (min-width: 1500px) { // Make layout row
+		flex-direction: row;
+	}
+}
+
+// Responsive considerations
+
+.panel-right .panel-content {
+	align-content: flex-end;
+
+	@media (min-width: 1024px) { // Make layout column when under 1024px
+		.large-order-2 {
+			order: 1;
+		}
+	}
+	@media (min-width: 1500px) { // Make layout row
+		flex-direction: row;
+		.large-order-2 {
+			order: 2;
+		}
+	}
+}
+
+.panel-left .panel-content {
+	align-content: flex-start;
+}

@@ -1,0 +1,9 @@
+@import '../abstracts/dir';
+
+.stories-carousel__slide {
+	height: 500px;
+	
+	@media screen and (min-width: $foundation-large) {
+		height: 500px;
+	}
+}

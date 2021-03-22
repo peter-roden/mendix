@@ -1,0 +1,21 @@
+@import '../abstracts/dir';
+
+.pro-devs-feature {
+    position: relative;
+
+    @media screen and (min-width: $foundation-large) {
+        max-width: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .btn-play {
+        margin: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}

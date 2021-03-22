@@ -1,0 +1,64 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+.header {
+  background-image: url("https://www.mendix.com/wp-content/uploads/SanAntonio_background-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  padding-top: 4rem; }
+
+body {
+  background: #000000;
+  /*black*/ }
+
+.blue {
+  color: #00ffff; }
+
+div[id^=mktoCheckbox] [type=checkbox] {
+  vertical-align: middle;
+  display: inline-block;
+  transform: translate(0, 4px); }
+
+.mktoFieldDescriptor {
+  margin-top: -1.5rem; }
+
+.mktoErrorMsg {
+  font-size: 14px; }
+
+.mxw-form {
+  margin-top: 2rem; }
+  .mxw-form label {
+    color: #55c5fb;
+    font-size: 0.8rem;
+    transform: translate(0.5rem, 0.8em);
+    display: inline-block;
+    padding: 0 4px;
+    background: black; }
+  .mxw-form input,
+  .mxw-form select,
+  .mxw-form textarea {
+    background: black; }
+    .mxw-form input:focus,
+    .mxw-form select:focus,
+    .mxw-form textarea:focus {
+      border-color: #55c5fb; }
+
+.header .white a {
+  text-decoration: underline; }
+
+.copy li {
+  margin-top: .4em;
+  margin-bottom: 0; }

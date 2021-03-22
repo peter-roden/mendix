@@ -1,0 +1,90 @@
+@import '../abstracts/dir';
+
+.componentCTACard__type {
+	background-color: $black;
+	color: white;
+	display: inline-block;
+	margin-bottom: 0.25rem;
+	padding: 2px;
+}
+
+.componentCTACard__heading {
+	font-size: 1.2em;
+	margin-bottom: 0.25rem;
+}
+
+.tabbedMCC__copy {
+	h1,
+	h2,
+	h3 {
+		@include heading4;
+	}
+}
+
+.tabbedMCC__tab {
+	cursor: pointer;
+}
+
+.tabbedMCC__tab__icon {
+	width: 54px;
+	height: 54px;
+	position: relative;
+	border: 2px solid $color-body;
+	margin-bottom: 1rem;
+
+	img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.tabbedMCC__tab__heading {
+	display: inline-block;
+	padding-bottom: 1rem;
+
+	//when parent <li> is active from foundation tabs.js
+	.is-active & {
+		border-bottom: 4px solid $color-body;
+	}
+}
+
+.tabbedMCC__vidyard {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 54%;
+	position: relative;
+}
+
+.tabbedMCC__vidyard__button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.tabs-content {
+	position: relative;
+}
+
+@media (max-width: $large) {
+	.tabbedMCC__tab__icon {
+		flex: 0 0 60px;
+		margin-right: 1rem;
+		margin-bottom: 0;
+	}
+}
+
+@media (min-width: $large) {
+	.tabbedMCC {
+		.tabs-content {
+			min-height: 640px;
+		}
+
+		.tabs-panel:not(.is-active) {
+			display: none;
+		}
+	}
+}

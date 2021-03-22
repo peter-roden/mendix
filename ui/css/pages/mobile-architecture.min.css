@@ -1,0 +1,535 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+.mobile-architecture-page-template .intro {
+  background: #000000;
+  color: #ffffff; }
+  @media (min-width: 40em) {
+    .mobile-architecture-page-template .intro .column-1 {
+      padding-right: 100px; } }
+
+.mobile-architecture-page-template .callout {
+  background: #F5F5F5; }
+  .mobile-architecture-page-template .callout .container {
+    max-width: 1015px;
+    margin-left: auto;
+    margin-right: auto; }
+  .mobile-architecture-page-template .callout .callout-label {
+    color: #0CABF9;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px; }
+  @media (min-width: 64em) {
+    .mobile-architecture-page-template .callout .callout-heading {
+      font-size: 54px; } }
+  .mobile-architecture-page-template .callout .tagline {
+    font-size: 20px;
+    color: #666666; }
+  @media (min-width: 64em) {
+    .mobile-architecture-page-template .callout .column-1 {
+      padding-right: 10px; } }
+  @media (min-width: 64em) {
+    .mobile-architecture-page-template .callout .column-2 {
+      padding-left: 20px; } }
+  .mobile-architecture-page-template .callout .column-1, .mobile-architecture-page-template .callout .column-2 {
+    color: #666666; }
+  .mobile-architecture-page-template .callout .callout-images {
+    padding: 0 25px; }
+    .mobile-architecture-page-template .callout .callout-images .callout-image {
+      margin-bottom: 1em; }
+      @media (min-width: 64em) {
+        .mobile-architecture-page-template .callout .callout-images .callout-image {
+          margin-bottom: 0; } }
+    .mobile-architecture-page-template .callout .callout-images .image-description {
+      margin-top: 35px;
+      text-transform: uppercase;
+      font-size: 14px; }
+
+.mobile-architecture-page-template .featured-outside-content {
+  background: #F5F5F5; }
+  .mobile-architecture-page-template .featured-outside-content a {
+    text-decoration: none; }
+    .mobile-architecture-page-template .featured-outside-content a:hover .outside-card-text {
+      color: #0595DB; }
+  .mobile-architecture-page-template .featured-outside-content .featured-outside-content-header {
+    margin-bottom: 32px; }
+  .mobile-architecture-page-template .featured-outside-content .outside-card {
+    box-shadow: none;
+    margin-top: 12px;
+    height: 100%; }
+    .mobile-architecture-page-template .featured-outside-content .outside-card .outside-card-title {
+      text-transform: uppercase;
+      font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #57585B; }
+    .mobile-architecture-page-template .featured-outside-content .outside-card .outside-card-icon {
+      flex: 0 1 60px;
+      margin-right: 2rem;
+      text-align: center; }
+    .mobile-architecture-page-template .featured-outside-content .outside-card .outside-card-text {
+      flex: 1;
+      height: 100%;
+      font-size: 21px;
+      line-height: 27px;
+      color: #57585B; }
+    .mobile-architecture-page-template .featured-outside-content .outside-card .arrow {
+      color: #0595DB;
+      font-size: 30px; }
+
+.mobile-architecture-page-template .text-with-slider {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto; }
+  .mobile-architecture-page-template .text-with-slider .label {
+    color: #0CABF9;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 25px; }
+  .mobile-architecture-page-template .text-with-slider .text-with-slider-heading {
+    font-size: 54px; }
+  .mobile-architecture-page-template .text-with-slider .text-with-slider-slider-title {
+    font-family: Patron;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    line-height: 0; }
+  .mobile-architecture-page-template .text-with-slider .column-1 {
+    color: #666666;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2em; }
+    @media (min-width: 64em) {
+      .mobile-architecture-page-template .text-with-slider .column-1 {
+        padding-right: 75px;
+        padding-left: 0;
+        padding-top: 0;
+        padding-bottom: 0; } }
+  .mobile-architecture-page-template .text-with-slider .slider {
+    padding: 0 5px; }
+    .mobile-architecture-page-template .text-with-slider .slider .group {
+      margin-top: 82px; }
+      .mobile-architecture-page-template .text-with-slider .slider .group .slide-text {
+        color: #666666;
+        font-weight: bold;
+        margin-top: 16px; }
+      .mobile-architecture-page-template .text-with-slider .slider .group .slide-image img {
+        margin: auto; }
+    .mobile-architecture-page-template .text-with-slider .slider .slick-dots {
+      position: relative;
+      margin-top: 70px; }
+
+.mobile-architecture-page-template .responsive-design {
+  color: #ffffff;
+  background-image: linear-gradient(90deg, #2292D2 0%, #3C4ACB 100%);
+  padding: 1em; }
+  @media (min-width: 64em) {
+    .mobile-architecture-page-template .responsive-design {
+      padding: 0; } }
+  .mobile-architecture-page-template .responsive-design .image {
+    margin-bottom: 100px; }
+  .mobile-architecture-page-template .responsive-design .responsive-design-header {
+    font-size: 54px;
+    color: #ffffff;
+    margin-bottom: 28px; }
+  .mobile-architecture-page-template .responsive-design .text-columns {
+    max-width: 1000px;
+    font-size: 18px; }
+    @media (min-width: 64em) {
+      .mobile-architecture-page-template .responsive-design .text-columns .column-1 {
+        padding-right: 10px; } }
+    @media (min-width: 64em) {
+      .mobile-architecture-page-template .responsive-design .text-columns .column-2 {
+        padding-left: 20px; } }
+    .mobile-architecture-page-template .responsive-design .text-columns .column-1, .mobile-architecture-page-template .responsive-design .text-columns .column-2 {
+      text-align: left; }
+  .mobile-architecture-page-template .responsive-design .divider {
+    width: 182px;
+    background: white;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 45px; }
+    @media (min-width: 64em) {
+      .mobile-architecture-page-template .responsive-design .divider {
+        margin-top: 90px; } }
+
+.mobile-architecture-page-template .accordion-sections-with-image {
+  background-image: linear-gradient(90deg, #2292D2 0%, #3C4ACB 100%);
+  color: #ffffff; }
+  @media (min-width: 64em) {
+    .mobile-architecture-page-template .accordion-sections-with-image .grid-container {
+      overflow: hidden; } }
+  .mobile-architecture-page-template .accordion-sections-with-image .accordion-sections-with-image-heading {
+    color: #ffffff;
+    margin-bottom: 30px; }
+    @media (min-width: 64em) {
+      .mobile-architecture-page-template .accordion-sections-with-image .accordion-sections-with-image-heading {
+        font-size: 46px; } }
+  .mobile-architecture-page-template .accordion-sections-with-image .accordion-sections-with-image-text {
+    font-size: 24px; }
+    @media (min-width: 64em) {
+      .mobile-architecture-page-template .accordion-sections-with-image .accordion-sections-with-image-text {
+        margin-bottom: 95px; } }
+  .mobile-architecture-page-template .accordion-sections-with-image .accordion-two-column .border-top {
+    border-width: 1px;
+    padding-top: 40px; }
+  .mobile-architecture-page-template .accordion-sections-with-image .accordion__heading {
+    color: #ffffff; }
+
+.mobile-architecture-page-template .icon-with-header .icon-with-header-header {
+  margin-bottom: 35px; }
+  @media (min-width: 64em) {
+    .mobile-architecture-page-template .icon-with-header .icon-with-header-header {
+      font-size: 54px; } }
+
+.mobile-architecture-page-template .icon-with-header-text {
+  max-width: 810px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #666666;
+  padding: 1em; }
+  @media (min-width: 64em) {
+    .mobile-architecture-page-template .icon-with-header-text {
+      padding: 0;
+      margin-bottom: 50px; } }
+
+.mobile-architecture-page-template .icon-with-text-columns {
+  max-width: 1025px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #666666;
+  padding: 1em; }
+  @media (min-width: 64em) {
+    .mobile-architecture-page-template .icon-with-text-columns {
+      padding: 0em; }
+      .mobile-architecture-page-template .icon-with-text-columns .column-2 {
+        padding-left: 30px; } }
+
+.mobile-architecture-page-template .header-with-image-and-text-content {
+  background: #F5F5F5; }
+  .mobile-architecture-page-template .header-with-image-and-text-content .header-with-image-and-text-heading {
+    font-size: 54px;
+    margin-bottom: 95px; }
+    @media (max-width: 40em) {
+      .mobile-architecture-page-template .header-with-image-and-text-content .header-with-image-and-text-heading {
+        font-size: 36px;
+        margin-bottom: 55px; } }
+  .mobile-architecture-page-template .header-with-image-and-text-content .header-with-image-and-text-image {
+    margin-bottom: 100px; }
+  .mobile-architecture-page-template .header-with-image-and-text-content .header-with-image-and-text-image-columns {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #666666;
+    line-height: 24px;
+    padding-left: 1em;
+    padding-right: 1em; }
+    @media (min-width: 64em) {
+      .mobile-architecture-page-template .header-with-image-and-text-content .header-with-image-and-text-image-columns {
+        padding-left: 0;
+        padding-right: 0; } }
+    .mobile-architecture-page-template .header-with-image-and-text-content .header-with-image-and-text-image-columns .title {
+      font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+      letter-spacing: -0.38px;
+      font-weight: bold;
+      line-height: 40px;
+      color: #000000; }
+    .mobile-architecture-page-template .header-with-image-and-text-content .header-with-image-and-text-image-columns .p1 {
+      font-weight: lighter; }
+    @media (min-width: 64em) {
+      .mobile-architecture-page-template .header-with-image-and-text-content .header-with-image-and-text-image-columns .columns {
+        padding-right: 40px; } }
+    .mobile-architecture-page-template .header-with-image-and-text-content .header-with-image-and-text-image-columns .columns.column-2 {
+      margin-top: 1em; }
+      @media (min-width: 64em) {
+        .mobile-architecture-page-template .header-with-image-and-text-content .header-with-image-and-text-image-columns .columns.column-2 {
+          margin-top: 0;
+          padding-right: 55px; } }
+
+.mobile-architecture-page-template .comparison-slider {
+  max-height: 904px; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes moveRight {
+  0% {
+    left: 0;
+    transform: translateX(0); }
+  100% {
+    left: 80%;
+    transform: translateX(-80%); } }
+
+@keyframes moveRight {
+  0% {
+    left: 0;
+    transform: translateX(0); }
+  100% {
+    left: 80%;
+    transform: translateX(-80%); } }
+
+@media screen and (min-width: 40em) {
+  .mobile-architecture-page-template #top-phone-row {
+    margin-top: -125px; } }
+
+.mobile-architecture-page-template .bottom-cta .btn-primary {
+  transition: all .3s ease; }
+  .mobile-architecture-page-template .bottom-cta .btn-primary:focus, .mobile-architecture-page-template .bottom-cta .btn-primary:hover {
+    background-color: #2091d3;
+    background-image: linear-gradient(90deg, #2091d3, #3253cd); }
+    .mobile-architecture-page-template .bottom-cta .btn-primary:focus::before, .mobile-architecture-page-template .bottom-cta .btn-primary:hover::before {
+      opacity: 1;
+      transition: opacity 100ms ease, transform 350ms ease;
+      transform: translate(-50%, -50%) scaleX(1); }
+
+@media (min-width: 64em) {
+  .mobile-architecture-page-template .panel-split-container {
+    display: flex; } }
+
+.mobile-architecture-page-template .panel-title {
+  background-color: #000000;
+  font-family: Patron;
+  font-weight: 700;
+  font-size: 16.17px;
+  color: #FFFFFF;
+  letter-spacing: 2.31px;
+  text-align: center;
+  padding-top: 7px; }
+  @media (min-width: 64em) {
+    .mobile-architecture-page-template .panel-title {
+      margin: auto;
+      width: auto;
+      display: inline-block;
+      position: absolute;
+      top: 8%;
+      left: 50%;
+      transform: translateX(-50%); } }
+
+@media (min-width: 64em) {
+  .mobile-architecture-page-template .panel-split-container .large-heading1 {
+    font-size: 2.625em; } }
+
+@media (max-width: 1024px) {
+  .mobile-architecture-page-template .panel-split-container .panel-extra-container {
+    margin: auto;
+    display: flex; } }
+
+@media (max-width: 1024px) {
+  .mobile-architecture-page-template .panel-split-container .copy-sm {
+    text-align: left;
+    margin-left: 1em; } }
+
+.mobile-architecture-page-template .panel-split {
+  width: 100%; }
+  @media (min-width: 64em) {
+    .mobile-architecture-page-template .panel-split {
+      border: 1px solid #ffffff;
+      width: 50%;
+      display: flex;
+      overflow: hidden;
+      transition: 1000ms all ease-in-out; } }
+  .mobile-architecture-page-template .panel-split.panel-left::before, .mobile-architecture-page-template .panel-split.panel-right::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+  .mobile-architecture-page-template .panel-split.panel-left {
+    border-width: 0 1px 0 0; }
+    .mobile-architecture-page-template .panel-split.panel-left::before {
+      background-color: rgba(12, 171, 249, 0.55); }
+  .mobile-architecture-page-template .panel-split.panel-right {
+    border-width: 0 0 0 1px; }
+    .mobile-architecture-page-template .panel-split.panel-right::before {
+      background-color: rgba(0, 0, 3, 0.55); }
+
+@media (min-width: 64em) {
+  .mobile-architecture-page-template .panel-content {
+    width: 1400px;
+    min-width: 1400px; } }
+
+@media (min-width: 64em) {
+  .mobile-architecture-page-template .panel-entry {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1000ms ease-in-out; }
+    .mobile-architecture-page-template .panel-entry.expanded {
+      max-height: 250px; } }
+
+.mobile-architecture-page-template .panel-extras {
+  margin-top: 2em;
+  transition: 1000ms opacity ease-in-out; }
+  @media (min-width: 64em) {
+    .mobile-architecture-page-template .panel-extras.fade-in {
+      -webkit-animation: fadeIn 1000ms 0.25s;
+              animation: fadeIn 1000ms 0.25s; }
+    .mobile-architecture-page-template .panel-extras.fade-out {
+      opacity: 0; } }
+  @media (min-width: 1500px) {
+    .mobile-architecture-page-template .panel-extras {
+      margin-top: 0; } }
+
+@media (min-width: 1024px) {
+  .mobile-architecture-page-template .panel-hover-left .panel-split:not(.is-active)::after, .mobile-architecture-page-template .panel-hover-right .panel-split:not(.is-active)::after {
+    content: '';
+    background-color: rgba(0, 0, 3, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; } }
+
+@media (min-width: 1024px) {
+  .mobile-architecture-page-template .panel-hover-left .panel-left {
+    width: 85%; } }
+
+@media (min-width: 1024px) {
+  .mobile-architecture-page-template .panel-hover-left .panel-right {
+    width: 15%; } }
+
+@media (min-width: 1024px) {
+  .mobile-architecture-page-template .panel-hover-right .panel-left {
+    width: 15%; } }
+
+@media (min-width: 1024px) {
+  .mobile-architecture-page-template .panel-hover-right .panel-right {
+    width: 85%; } }
+
+.mobile-architecture-page-template .pointer-control {
+  background-color: #ffffff;
+  border-radius: 100%;
+  border: 10px solid rgba(0, 0, 3, 0.1);
+  margin-left: -37px;
+  width: 74px;
+  height: 74px;
+  transition: all 1000ms ease-in-out;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  bottom: 50%;
+  left: 50%; }
+  @media (min-width: 64em) {
+    .mobile-architecture-page-template .pointer-control {
+      display: flex; } }
+  @media (min-width: 1024px) {
+    .mobile-architecture-page-template .pointer-control.move-right {
+      left: 85%;
+      right: 15%; }
+    .mobile-architecture-page-template .pointer-control.move-left {
+      left: 15%;
+      right: 85%; } }
+
+@media (min-width: 64em) {
+  .mobile-architecture-page-template .section-copy-columns {
+    -moz-column-count: 2;
+         column-count: 2;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem; } }
+
+.mobile-architecture-page-template .featured-specific {
+  min-height: 120px; }
+
+@media (min-width: 1024px) {
+  .mobile-architecture-page-template .panel-content {
+    flex-direction: column; } }
+
+@media (min-width: 1500px) {
+  .mobile-architecture-page-template .panel-content {
+    flex-direction: row; } }
+
+.mobile-architecture-page-template .panel-right .panel-content {
+  align-content: flex-end; }
+  @media (min-width: 1024px) {
+    .mobile-architecture-page-template .panel-right .panel-content .large-order-2 {
+      order: 1; } }
+  @media (min-width: 1500px) {
+    .mobile-architecture-page-template .panel-right .panel-content {
+      flex-direction: row; }
+      .mobile-architecture-page-template .panel-right .panel-content .large-order-2 {
+        order: 2; } }
+
+.mobile-architecture-page-template .panel-left .panel-content {
+  align-content: flex-start; }
+
+.mobile-architecture-page-template .aos-animate {
+  overflow: hidden; }
+
+.mobile-architecture-page-template .chained-delay:nth-child(1) {
+  transition-delay: 0.25s; }
+
+.mobile-architecture-page-template .chained-delay:nth-child(2) {
+  transition-delay: 0.5s; }
+
+.mobile-architecture-page-template .chained-delay:nth-child(3) {
+  transition-delay: 0.75s; }
+
+.mobile-architecture-page-template .chained-delay:nth-child(4) {
+  transition-delay: 1s; }
+
+.mobile-architecture-page-template .chained-delay:nth-child(5) {
+  transition-delay: 1.25s; }
+
+.mobile-architecture-page-template .chained-delay:nth-child(6) {
+  transition-delay: 1.5s; }
+
+.mobile-architecture-page-template .chained-delay:nth-child(7) {
+  transition-delay: 1.75s; }
+
+.mobile-architecture-page-template .chained-delay:nth-child(8) {
+  transition-delay: 2s; }
+
+.mobile-architecture-page-template .chained-delay:nth-child(9) {
+  transition-delay: 2.25s; }
+
+.mobile-architecture-page-template .chained-delay:nth-child(10) {
+  transition-delay: 2.5s; }
+
+/*# sourceMappingURL=mobile-architecture.min.css.map */

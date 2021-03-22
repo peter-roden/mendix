@@ -1,0 +1,10 @@
+@font-face {
+	font-family: "PermanentMarker";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Alma Mono Regular"), local("PermanentMarker-Regular"),
+		url("/wp-content/themes/mendix/ui/fonts/PermanentMarker-Regular.woff2") format("woff2"),
+		url("/wp-content/themes/mendix/ui/fonts/PermanentMarker-Regular.woff") format("woff");
+	/* Latin glyphs */
+	unicode-range: none;
+}

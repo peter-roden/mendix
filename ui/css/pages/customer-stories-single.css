@@ -1,0 +1,129 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+[class*=heading].blue {
+  color: #0CABF9; }
+
+.customerStories__banner {
+  position: relative;
+  height: 16rem;
+  overflow: hidden; }
+  .customerStories__banner .playContainer {
+    padding-top: 8rem; }
+
+.customerStories__bullets {
+  list-style-type: disc;
+  margin: 1rem; }
+
+.customerStories__intro {
+  margin-bottom: 3rem;
+  margin-top: 10rem;
+  position: relative;
+  z-index: 1; }
+
+@media screen and (max-width: 39.9375em) {
+  .customerStories__intro {
+    margin-top: 0; } }
+
+.customerStories__intro__values {
+  border-left: 6px solid #0CABF9;
+  padding: 0 1rem 1rem 1rem; }
+
+.customerStories__logo img {
+  max-width: 180px; }
+
+.headCopyFigure {
+  margin-bottom: 3rem;
+  position: relative; }
+
+.headCopyFigure__textWrapped {
+  margin: 2rem 0;
+  position: relative;
+  display: block; }
+
+.headCopyFigure__textWrapped figcaption {
+  position: absolute;
+  color: white;
+  left: 1rem;
+  font-weight: bold;
+  bottom: 1rem;
+  text-shadow: 1px 1px black; }
+
+.pullquote {
+  overflow: hidden;
+  margin-bottom: 4rem; }
+
+.underlinedHeading {
+  padding-bottom: 3.5rem;
+  margin-bottom: 1.5rem;
+  position: relative; }
+  .underlinedHeading::after {
+    content: "";
+    background-color: #000003;
+    bottom: 20px;
+    height: 5px;
+    left: 0;
+    position: absolute;
+    width: 52px; }
+
+.pullquote__heading {
+  font-size: 2.2rem; }
+
+#allStories {
+  position: relative;
+  z-index: 1;
+  margin-top: -32px; }
+
+@media (min-width: 40em) {
+  .pullquote.is-video-background {
+    margin-top: 3rem;
+    height: 700px; }
+    .pullquote.is-video-background h2,
+    .pullquote.is-video-background p,
+    .pullquote.is-video-background .heading {
+      color: white;
+      text-shadow: 1px 1px black; } }
+
+@media (min-width: 64em) {
+  .customerStories__banner {
+    height: 800px;
+    margin-bottom: -38rem; }
+    .customerStories__banner .playContainer {
+      padding-top: 12rem; }
+  .headCopyFigure__textWrapped {
+    min-height: 230px;
+    float: right;
+    position: relative;
+    transform: translate(4rem, 0);
+    width: 21rem; }
+  .headCopyFigure__textWrapped img {
+    height: 230px;
+    left: 0;
+    max-width: 440px;
+    position: absolute;
+    top: 0;
+    width: 440px; }
+  .large-border-all {
+    border-radius: 6px;
+    border: 1px solid #e6e7e9; }
+  .pullquote.is-video-background {
+    margin-bottom: -5rem; }
+    .pullquote.is-video-background + .headCopyFigure .bg-white {
+      padding-top: 3rem; }
+  .pullquote__heading {
+    font-size: 3rem;
+    padding: 0;
+    text-indent: -.55em; } }

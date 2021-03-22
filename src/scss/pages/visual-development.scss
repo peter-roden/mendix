@@ -1,0 +1,222 @@
+@import '../abstracts/dir';
+
+.visualDev__plans {
+    @media (min-width: $foundation-large) {
+        margin-bottom: 9rem;
+    }
+}
+
+#collabDev {
+
+    background-color: $gray-l;
+
+    .features-block {
+
+        .accordion-item {
+
+            border-bottom: 1px solid $gray-m;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            .accordion-title {
+                position: relative;
+            }
+
+            .accordion-content {
+                display: none;
+
+                p {
+                    margin-top: 0 !important;
+                }
+
+                @media (min-width: $foundation-large) {
+                    img {
+                        width: 678px;
+                        max-width: 678px;
+                        position: absolute;
+                        right: 0;
+                        top: 10rem;
+                    }
+                }
+
+            }
+
+            [class*='chevron-'] {
+                margin-left: 4%;
+
+                &::before {
+                    border-width: .1rem .1rem 0 0;
+                    height: .6rem;
+                    top: .5em;
+                    width: .6rem;
+                }
+            }
+
+            &.is-active {
+                .chevron-right::before {
+                    transform: rotate(135deg);
+                }
+            }
+
+            @media (max-width: $foundation-small-max) {
+                a {
+                    font-size: 1.15rem;
+                }
+            }
+        }
+    }
+}
+
+
+#reusableDev {
+
+
+    .app-store--container {
+
+        background-position: center right;
+        background-repeat: no-repeat;
+
+        @media screen and (max-width: $foundation-medium-max) {
+            background-position: 140% center;
+            background-size: 60%;
+        }
+
+        @media screen and (max-width: $foundation-small-max) {
+            background-image: none !important;
+        }
+
+    }
+
+    @media (min-width: $foundation-large) {
+        .app-store--figure {
+            height: 525px;
+            overflow: visible;
+
+            img {
+                height: 525px;
+                left: -40%;
+                position: absolute;
+                width: 760px;
+                max-width: 760px;
+            }
+        }
+    }
+
+
+}
+
+
+/* Horizontal tabs */
+
+.tabs {
+    margin: 0;
+    background: #fefefe;
+    list-style-type: none;
+    padding: 0 1rem;
+}
+
+.tabs::before,
+.tabs::after {
+    display: table;
+    content: ' ';
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+}
+
+.tabs-title {
+    float: left;
+    margin-top: 0 !important;
+
+    &.is-active {
+        border-bottom: 4px solid $black;
+
+        &:focus,
+        &:hover {
+            border-bottom: 4px solid $black;
+        }
+    }
+
+    &:focus,
+    &:hover {
+        border-bottom: 4px solid $gray-m;
+    }
+}
+
+.tabs-title a:focus,
+.tabs-title a[aria-selected='true'] {
+    color: $black;
+    text-decoration: none;
+}
+
+[data-whatinput='mouse'] .tabs-title>a {
+    outline: 0;
+}
+
+.tabs-title a {
+    display: block;
+    line-height: 1;
+    color: $gray-m;
+    padding: $spacing-2 0 $spacing-25;
+
+    &:focus,
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.tabs-content {
+    transition: all 0.5s ease;
+}
+
+.tabs-panel.is-active {
+    display: block;
+}
+
+.tabs-panel {
+    display: none;
+    padding: 1rem;
+    position: relative;
+
+    img {
+        max-height: 410px;
+    }
+
+}
+
+.tabs-panel--info {
+    position: absolute;
+    top: 112%;
+}
+
+.middle-align-images {
+    img {
+        max-height: 100%;
+    }
+
+}
+
+@media (min-width: $foundation-large) {
+    .large-heading2 {
+        font-size: 3.75rem;
+    }
+}
+
+@media (min-width: $foundation-medium) {
+    .middle-align-images {
+        height: 140px;
+
+        img {
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

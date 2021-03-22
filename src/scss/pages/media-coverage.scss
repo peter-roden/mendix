@@ -1,0 +1,21 @@
+@import '../abstracts/dir';
+
+body {
+    background-color: $gray-l;
+}
+
+.mediaCoverageCard {
+	@include cardBase;
+
+	padding: 2rem;
+}
+
+.mediaCoverageCard__figure {
+	$height: 80px;
+	height: $height;
+
+	img {
+		margin-top: $height/2;
+		transform: translate(0, -50%);
+	}
+}

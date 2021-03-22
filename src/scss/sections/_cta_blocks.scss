@@ -1,0 +1,24 @@
+@import '../abstracts/dir';
+
+.ctaBlocks__item__text {
+
+	padding: 3rem 1rem 4rem;
+
+}
+
+
+@media (min-width: $medium) {
+	.ctaBlocks__item {
+		position: relative;
+		min-height: 28em;
+
+}
+
+	.ctaBlocks__item__text {
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+		width: 100%;
+	}
+}

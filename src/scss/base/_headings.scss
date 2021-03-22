@@ -1,0 +1,223 @@
+.lighterXL,
+.normalXL,
+.headingXL {
+    @include headingXL;
+}
+
+.lighter1,
+.normal1,
+.heading1 {
+    @media (max-width: $foundation-small-max) {
+        @include heading2;
+    }
+    @include heading1;
+}
+
+.lighter2,
+.normal2,
+.heading2 {
+    @include heading2;
+}
+
+.lighter3,
+.normal3,
+.heading3 {
+    @include heading3;
+}
+
+.lighter4,
+.normal4,
+.heading4 {
+    @include heading4;
+}
+
+.lighter5,
+.normal5,
+.heading5 {
+    @include heading5;
+}
+
+.lighter6,
+.normal6,
+.heading6 {
+    @include heading6;
+}
+
+.lighter7,
+.normal7,
+.heading7 {
+    @include heading7;
+}
+
+.copy {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        color: $color-heading;
+        font-family: $font-accent;
+        font-weight: 700;
+    }
+
+    //NERF the sizes of headers with copy tags
+    //mostly contains the blog posts
+    h1 {
+        @include heading2;
+    }
+
+    h2 {
+        @include heading3;
+    }
+
+    h3 {
+        @include heading4;
+    }
+
+    h4 {
+        @include heading5;
+    }
+
+    h5 {
+        @include heading6;
+    }
+
+    h6 {
+        @include heading6;
+    }
+}
+
+
+@media (max-width: $foundation-small-max) {
+
+    .small-only-lighter1,
+    .small-only-normal1,
+    .small-only-heading1 {
+        @include heading1;
+    }
+
+    .small-only-lighter2,
+    .small-only-normal2,
+    .small-only-heading2 {
+        @include heading2;
+    }
+
+    .small-only-lighter3,
+    .small-only-normal3,
+    .small-only-heading3 {
+        @include heading3;
+    }
+
+    .small-only-lighter4,
+    .small-only-normal4,
+    .small-only-heading4 {
+        @include heading4;
+    }
+
+    .small-only-lighter5,
+    .small-only-normal5,
+    .small-only-heading5 {
+        @include heading5;
+    }
+}
+
+@media (min-width: $foundation-medium) {
+
+    .medium-lighter1,
+    .medium-normal1,
+    .medium-heading1 {
+        @include heading1;
+    }
+
+    .medium-lighter2,
+    .medium-normal2,
+    .medium-heading2 {
+        @include heading2;
+    }
+
+    .medium-lighter3,
+    .medium-normal3,
+    .medium-heading3 {
+        @include heading3;
+    }
+
+    .medium-lighter4,
+    .medium-normal4,
+    .medium-heading4 {
+        @include heading4;
+    }
+
+    .medium-lighter5,
+    .medium-normal5,
+    .medium-heading5 {
+        @include heading5;
+    }
+}
+
+@media (min-width: $foundation-medium),
+(max-width: $foundation-medium-max) {
+
+    .medium-only-lighter1,
+    .medium-only-normal1,
+    .medium-only-heading1 {
+        @include heading1;
+    }
+
+    .medium-only-lighter2,
+    .medium-only-normal2,
+    .medium-only-heading2 {
+        @include heading2;
+    }
+
+    .medium-only-lighter3,
+    .medium-only-normal3,
+    .medium-only-heading3 {
+        @include heading3;
+    }
+
+    .medium-only-lighter4,
+    .medium-only-normal4,
+    .medium-only-heading4 {
+        @include heading4;
+    }
+
+    .medium-only-lighter5,
+    .medium-only-normal5,
+    .medium-only-heading5 {
+        @include heading5;
+    }
+}
+
+@media (min-width: $foundation-large) {
+
+    .large-lighter1,
+    .large-normal1,
+    .large-heading1 {
+        @include heading1;
+    }
+
+    .large-lighter2,
+    .large-normal2,
+    .large-heading2 {
+        @include heading2;
+    }
+
+    .large-lighter3,
+    .large-normal3,
+    .large-heading3 {
+        @include heading3;
+    }
+
+    .large-lighter4,
+    .large-normal4,
+    .large-heading4 {
+        @include heading4;
+    }
+
+    .large-lighter5,
+    .large-normal5,
+    .large-heading5 {
+        @include heading5;
+    }
+}

@@ -1,0 +1,53 @@
+@import '../abstracts/dir';
+
+.category__label {
+    background: white;
+    padding: 0.5em;
+    transition: all 250ms ease;
+    border-bottom: 1px solid $blue;
+    box-shadow: 0 16px 16px rgba($blue, 0.05);
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.category__label:hover {
+    background-color: $blue;
+    border-bottom: 1px solid $black;
+    color: white;
+}
+
+.category__label.checked {
+    background-color: $blue;
+    border-bottom: 1px solid $black;
+    color: white;
+}
+
+.category__checkbox {
+    display: none;
+}
+
+.jobs {
+    background: $gray-l;
+}
+
+.jobs__item {
+	padding: 1rem;
+}
+
+.jobs__card {
+	position: relative;
+	border-radius: 1rem;
+    border-bottom-left-radius: 0;
+    background: white;
+    padding: 2rem;
+	box-shadow: 0 16px 16px rgba($blue, 0.05);
+	
+    height: 100%;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid $blue;
+}
+
+.jobs__card__link {
+    position: absolute;
+    bottom: 2rem;
+}

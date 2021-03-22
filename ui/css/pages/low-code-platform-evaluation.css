@@ -1,0 +1,70 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+.lcpe_header_head {
+  font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 3.25rem;
+  font-weight: bold;
+  line-height: 1.15;
+  margin: 0 auto;
+  max-width: 10em;
+  text-align: center; }
+
+.lcpe_header_subhead {
+  font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 100;
+  line-height: 1.25;
+  margin: 1em auto 0;
+  max-width: 32em;
+  text-align: center; }
+
+@media (min-width: 40em) {
+  .lcpe_header_head {
+    font-size: 4.5rem; }
+  .lcpe_header_subhead {
+    font-size: 1.75rem; } }
+
+.lcpe_evaluations_repeater_image {
+  text-align: center; }
+
+.lcpe_key_questions {
+  background: #f5f5f5;
+  margin-top: 32px;
+  padding: 24px 24px 32px;
+  margin-left: -4px;
+  margin-right: -4px; }
+
+.lcpe_key_questions_heading {
+  color: #666666;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 1.35;
+  text-transform: uppercase; }
+
+.lcpe_key_questions_item {
+  list-style: disc;
+  margin-left: 20px;
+  margin-top: 8px; }
+
+.lcpe_reports_card {
+  background: white;
+  padding: 32px; }
+
+.lcpe_reports_logo {
+  height: 48px;
+  max-width: 200px; }

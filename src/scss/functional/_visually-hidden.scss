@@ -1,0 +1,16 @@
+body:hover .visually-hidden {
+
+    a,
+    button,
+    input {
+        display: none !important;
+    }
+}
+
+.pointer-events-none {
+    pointer-events: none;
+}
+
+.pointer-events-auto {
+    pointer-events: auto;
+}

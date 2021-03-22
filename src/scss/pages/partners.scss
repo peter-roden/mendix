@@ -1,0 +1,42 @@
+@import '../abstracts/dir';
+@import '../partials/filtered-data-cards';
+@import '../partials/filtered-data-categories';
+
+.a11y-dialog__modal {
+    background: white;
+    border-radius: 4px;
+    width: 92%;
+    max-width: 620px;
+}
+
+.block-link {
+    font-size: 18px;
+    font-weight: normal;
+    background-color: #0595db;
+    color: white;
+    width: 100%;
+    padding: 1em 0;
+    text-align: center;
+    display: block;
+    transition: background-color 250ms ease;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+        background-color: #237eaf;
+        text-decoration: none;
+    }
+}
+
+.filteredData--card {
+    line-height: 160px;
+}
+
+p a {
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+        text-decoration: underline;
+    }
+}

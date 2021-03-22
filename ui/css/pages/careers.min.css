@@ -1,0 +1,116 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+.hero__video {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 300ms; }
+  .hero__video.active {
+    opacity: 1;
+    pointer-events: auto; }
+
+.hero__content {
+  transition: opacity 300ms; }
+  .hero__content:not(.active) {
+    opacity: 0;
+    pointer-events: none; }
+
+@media (min-width: 64em) {
+  .benefits__grid .large-1 {
+    width: calc(8.33333% - 1rem); } }
+
+.benefit-icon__box {
+  height: 51px; }
+
+.instagram-image {
+  border: 1px solid #fff; }
+
+.jobFields__box {
+  border: 1px solid #e6e7e9;
+  border-radius: 6px;
+  padding: 1.5rem;
+  transition: background 350ms; }
+  .jobFields__box:focus, .jobFields__box:hover {
+    text-decoration: none;
+    background: #0CABF9;
+    cursor: pointer; }
+    .jobFields__box:focus .field__icon circle,
+    .jobFields__box:focus .field__icon path,
+    .jobFields__box:focus .field__icon rect,
+    .jobFields__box:focus .field__icon polygon,
+    .jobFields__box:focus .field__icon polyline, .jobFields__box:hover .field__icon circle,
+    .jobFields__box:hover .field__icon path,
+    .jobFields__box:hover .field__icon rect,
+    .jobFields__box:hover .field__icon polygon,
+    .jobFields__box:hover .field__icon polyline {
+      stroke: white; }
+    .jobFields__box:focus p, .jobFields__box:hover p {
+      color: white; }
+  .jobFields__box .field__icon circle,
+  .jobFields__box .field__icon path,
+  .jobFields__box .field__icon rect,
+  .jobFields__box .field__icon polygon,
+  .jobFields__box .field__icon polyline {
+    transition: stroke 350ms; }
+  @media (max-width: 39.9375em) {
+    .jobFields__box {
+      padding: 16px;
+      text-align: center; } }
+  .jobFields__box p {
+    font-size: 1.125rem;
+    transition: color 350ms; }
+    @media (max-width: 39.9375em) {
+      .jobFields__box p {
+        font-size: 1rem; } }
+    .jobFields__box p a {
+      color: #000003; }
+      .jobFields__box p a:hover, .jobFields__box p a:focus {
+        text-decoration: none; }
+
+@media (max-width: 39.9375em) {
+  .location--slider .slide__featured {
+    height: 280px;
+    min-height: 280px; } }
+
+@media (min-width: 40em) {
+  .location--slider .slide__featured {
+    height: 400px;
+    min-height: 400px; } }
+
+@media (min-width: 64em) {
+  .location--slider .slide__featured {
+    height: 516px;
+    min-height: 516px; } }
+
+.location--slider .slide__featured img {
+  width: 100%; }
+
+@media (min-width: 64em) {
+  .location--slider .author-info--picture {
+    height: 252px;
+    max-height: 252px;
+    max-width: 252px;
+    width: 252px; } }
+
+.location--slider .slide-count-wrap {
+  font-weight: 700;
+  bottom: -45px;
+  position: absolute; }
+
+#careersLocations {
+  background-color: #000003; }
+
+/*# sourceMappingURL=careers.min.css.map */

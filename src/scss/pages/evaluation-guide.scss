@@ -1,0 +1,131 @@
+// Global stylesheer dependencies
+@import '../abstracts/dir';
+
+// Eval guide nav bar uses top-bar styles
+@import '../pages/evaluation-guide/top-bar';
+@import '../pages/evaluation-guide/sidebar-menu';
+
+// Stylesheers for blocks
+@import '../pages/evaluation-guide/heading-and-subtext-with-repeatable-text-blocks';
+@import '../pages/evaluation-guide/heading-with-repeatable-text-panels';
+@import '../pages/evaluation-guide/heading-with-repeatable-text-cards';
+@import '../pages/evaluation-guide/two-column-text';
+@import '../pages/evaluation-guide/accordion_content';
+@import '../pages/evaluation-guide/image-block';
+
+.single-evaluation_guide, .page-template-evaluation-guide {
+	@include header-sticky-fix;
+}
+
+.eval-guide-menu-container {
+	display: none;
+}
+
+#evaluation-guide-nav {
+	background: $white;
+}
+
+.responsive-eval-guide-menu-container {
+	display: block;
+}
+
+@media screen and (min-width: $foundation-medium) {
+    .eval-guide-menu-container {
+        display: block;
+        padding-top: 45px;
+    }
+
+    .responsive-menu {
+    	display: none;
+    }
+}
+
+// Styles for classes being used in WYSIWYG areas
+.evalguide-toc {
+	p {
+		font-weight: 700;
+	}
+
+	ul {
+		line-height: 0.75em;
+	}
+}
+
+.breadcrumbs {
+	.breadcrumb-text {
+		font-size: 14px;
+		letter-spacing: 0;
+
+		a {
+			color: $gray-2;
+
+			&:hover {
+				color: $blue;
+			}
+		}
+	}
+
+	.active-page {
+		font-weight: 700;
+	}
+
+	+ .page-layouts > .content-section {
+		&:first-child {
+			padding-top: 0px;
+		}
+	}
+}
+
+// Shared styles
+.content-section {
+	padding-top: 45px;
+
+	&:last-child {
+		padding-bottom: 45px;
+	}
+}
+
+.content-box-info {
+	.content-box-info-heading {
+		color: #08080D;
+	}
+
+	.content-box-info-subtext {
+		letter-spacing: 0;
+		margin-top: 22px;
+	}
+}
+
+.entry {
+	@import '../editor-style';
+
+	li {
+		line-height: normal;
+	}
+
+	table {
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+
+	table {
+		color: $gray-2;
+		background: white;
+		border: 1px solid grey;
+		font-size: 12pt;
+		border-collapse: collapse;
+	}
+	table thead th,
+	table tfoot th {
+		color: #333;
+		background: $gray;
+	}
+	table caption {
+		padding:.5em;
+	}
+	table th,
+	table td {
+		padding: .5em;
+		border: 1px solid lightgrey;
+	}
+}

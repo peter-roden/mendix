@@ -1,0 +1,125 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+.post-type-archive-live, .single-live {
+  margin-top: 45px;
+  background: #000; }
+  @media screen and (min-width: 1024px) {
+    .post-type-archive-live, .single-live {
+      margin-top: 80px; } }
+  .post-type-archive-live #content, .single-live #content {
+    margin-bottom: 70px; }
+
+.bg-twitch {
+  background-color: #18181b; }
+
+a.post-link:nth-child(4n+1) .color-overlay {
+  background: linear-gradient(#8680ff, #4d68f5); }
+
+a.post-link:nth-child(4n+2) .color-overlay {
+  background: linear-gradient(#4ec4fe, #9ae79a); }
+
+a.post-link:nth-child(4n+3) .color-overlay {
+  background: linear-gradient(#9ae79a, #ffda65); }
+
+a.post-link:nth-child(4n+4) .color-overlay {
+  background: linear-gradient(#d773f3, #ff878d); }
+
+.user-meta .name {
+  font-size: 18px;
+  font-weight: 700; }
+
+.user-meta .avatar {
+  max-height: 75px;
+  border-radius: 50%; }
+
+.user-meta::after {
+  clear: both;
+  content: '';
+  display: table; }
+
+.host-list li:nth-child(4n+1) .avatar {
+  border: 4px solid #8680ff; }
+
+.host-list li:nth-child(4n+2) .avatar {
+  border: 4px solid #4ec4fe; }
+
+.host-list li:nth-child(4n+3) .avatar {
+  border: 4px solid #9ae79a; }
+
+.host-list li:nth-child(4n+4) .avatar {
+  border: 4px solid #d773f3; }
+
+.post-link {
+  color: #fff; }
+  .post-link .broadcast-featured-image {
+    position: relative; }
+    .post-link .broadcast-featured-image .color-overlay {
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      transition: all 0.3s ease-in-out;
+      mix-blend-mode: overlay;
+      opacity: 1; }
+    .post-link .broadcast-featured-image img {
+      max-width: 100%;
+      -webkit-filter: grayscale(100%);
+      /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%); }
+  .post-link:hover {
+    text-decoration: none;
+    color: #0CABF9; }
+    .post-link:hover .broadcast-featured-image img {
+      -webkit-filter: grayscale(0%);
+      /* Safari 6.0 - 9.0 */
+      filter: grayscale(0%); }
+    .post-link:hover .broadcast-featured-image .color-overlay {
+      opacity: 0; }
+
+.social-links .button {
+  display: inline-block;
+  padding: 0.75em 3em;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  position: relative;
+  font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+  transition: all 300ms ease; }
+  .social-links .button:hover, .social-links .button:focus {
+    text-decoration: none; }
+
+.social-links svg {
+  height: 52px;
+  width: 52px;
+  fill: #fff; }
+
+.social-links a {
+  color: #fff; }
+  .social-links a:hover, .social-links a:focus {
+    text-decoration: none;
+    color: #0CABF9; }
+    .social-links a:hover svg, .social-links a:focus svg {
+      fill: #0CABF9; }
+
+.description {
+  color: #fff;
+  line-height: 1.5em; }
+
+.broadcast-preview .air-time {
+  font-family: "NotoMono";
+  color: #a9adb3; }
+
+/*# sourceMappingURL=mx-live.min.css.map */

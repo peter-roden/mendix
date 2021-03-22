@@ -1,0 +1,164 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+.filteredData--card {
+  border: 1px solid #e6e7e9;
+  border-radius: 6px;
+  overflow: hidden; }
+
+.filteredData--card-copy {
+  color: #383841; }
+  .filteredData--card-copy:focus, .filteredData--card-copy:hover {
+    text-decoration: none; }
+
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+.categories [class*='chevron-'] {
+  margin-left: 8%; }
+  .categories [class*='chevron-']::before {
+    border-width: .1rem .1rem 0 0;
+    height: .6rem;
+    top: .5em;
+    width: .6rem; }
+
+.categories .category__menu {
+  display: none; }
+
+.categories.open .category__menu {
+  display: block; }
+
+.categories.open .chevron-right::before {
+  transform: rotate(135deg); }
+
+.categories label {
+  display: block;
+  line-height: 2;
+  margin-top: 8px; }
+  .categories label:focus, .categories label:hover {
+    color: #0CABF9;
+    cursor: pointer; }
+  .categories label.selected {
+    color: #0CABF9; }
+
+.categories legend {
+  color: #000003;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  width: 100%; }
+  .categories legend:focus, .categories legend:hover {
+    cursor: pointer; }
+
+.callout-card {
+  min-height: 100%; }
+  .callout-card .callout-card__link-box {
+    background: white;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 3, 0.2);
+    min-height: 100%;
+    text-decoration: none; }
+    .callout-card .callout-card__link-box:hover, .callout-card .callout-card__link-box:focus {
+      outline: 1px solid #0CABF9; }
+    .callout-card .callout-card__link-box .callout-card__text {
+      padding: 8px 16px 0; }
+    .callout-card .callout-card__link-box .featureImg {
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px; }
+  @media (max-width: 39.9375em) {
+    .callout-card .featureImg {
+      max-height: 160px;
+      -o-object-fit: cover;
+         object-fit: cover; } }
+
+.categories {
+  padding: 15px 0;
+  border-top: 1px solid #f5f5f5; }
+
+.categories:last-of-type {
+  border-bottom: 1px solid #f5f5f5; }
+
+.category-title {
+  display: inline-block;
+  padding-right: 1em;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #0CABF9; }
+
+.category__arrow {
+  display: inline-block;
+  margin-top: -3px;
+  transition: transform 250ms ease; }
+
+.category__checkbox {
+  display: none; }
+
+.category__header {
+  margin-right: 0.5em; }
+
+.icon-text img {
+  float: left;
+  margin-top: 10px; }
+
+.icon-text p {
+  display: inline;
+  float: left;
+  margin-top: 10px;
+  padding-left: 10px;
+  letter-spacing: 0;
+  color: #383841; }
+
+.refine-category-by {
+  cursor: pointer;
+  text-align: left;
+  width: 100%; }
+
+#noResults {
+  display: none; }
+
+.view {
+  color: #383841; }
+  .view:focus, .view:hover {
+    color: #0CABF9; }

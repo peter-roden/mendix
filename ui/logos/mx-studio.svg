@@ -1,0 +1,102 @@
+<svg width="767" height="693" 
+	xmlns="http://www.w3.org/2000/svg" 
+	xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="a">
+			<stop stop-color="#8673FF" offset="0%"/>
+			<stop stop-color="#1FC0FF" offset="100%"/>
+		</linearGradient>
+		<linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="c">
+			<stop stop-opacity="0" offset="0%"/>
+			<stop offset="100%"/>
+		</linearGradient>
+		<path d="M106.5 0h299C464.318 0 512 47.682 512 106.5v299c0 58.818-47.682 106.5-106.5 106.5H0V106.5C0 47.682 47.682 0 106.5 0z" id="b"/>
+		<filter x="-.4%" y="-.4%" width="100.8%" height="100.8%" filterUnits="objectBoundingBox" id="d">
+			<feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"/>
+			<feOffset dy="-2" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+			<feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/>
+			<feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.284137228 0" in="shadowInnerInner1"/>
+		</filter>
+		<linearGradient x1="24.825%" y1="34.36%" x2="59.26%" y2="62.856%" id="g">
+			<stop stop-color="#FAFCFF" offset="0%"/>
+			<stop stop-color="#F5F9FE" offset="41.871%"/>
+			<stop stop-color="#F3F3F3" offset="100%"/>
+		</linearGradient>
+		<path d="M341.164 0h-47.107l-17.858 35.759L258.343 0h-47.105l40.308 79.457-36.403 71.754V35.913c0-5.26-2.167-12.226-4.516-16.372-2.338-4.146-5.394-7.638-9.18-10.478-3.792-2.835-8.245-5.01-13.365-6.529C182.957 1.017 177.61.256 172.044.256c-9.8 0-18.154 1.567-25.055 4.708-6.906 3.139-13.145 8.046-18.702 14.724-3.798-6.069-8.918-10.829-15.376-14.273C106.451 1.977 98.993.256 90.537.256c-8.911 0-16.602 1.36-23.054 4.099-6.465 2.736-12.03 7.548-16.709 14.423h-.663V.256H3.006v158.658H50.11V53.224c0-.328.033-.622.04-.944v-7.475h.012c.08-9.459 7.953-17.109 17.673-17.109 9.72 0 17.595 7.65 17.673 17.11h.014v7.82H85.5c.003.206.024.389.024.597v105.69h47.105V44.806h.014c.078-9.459 7.954-17.109 17.673-17.109 9.717 0 17.593 7.65 17.673 17.11h.015v7.82l.035 106.288h90.305l17.856-35.76 17.858 35.76h47.107l-40.308-79.457L341.164 0" id="f"/>
+		<filter x="-2.4%" y="-2.5%" width="104.7%" height="110.1%" filterUnits="objectBoundingBox" id="e">
+			<feOffset dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
+			<feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+			<feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.20703125 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+			<feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter2"/>
+			<feGaussianBlur stdDeviation="1" in="shadowOffsetOuter2" result="shadowBlurOuter2"/>
+			<feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.285920516 0" in="shadowBlurOuter2" result="shadowMatrixOuter2"/>
+			<feMerge>
+				<feMergeNode in="shadowMatrixOuter1"/>
+				<feMergeNode in="shadowMatrixOuter2"/>
+			</feMerge>
+		</filter>
+		<filter x="-2.1%" y="-1.9%" width="104.1%" height="108.8%" filterUnits="objectBoundingBox" id="h">
+			<feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"/>
+			<feOffset dy="4" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+			<feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/>
+			<feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" in="shadowInnerInner1" result="shadowMatrixInner1"/>
+			<feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner2"/>
+			<feOffset dy="-2" in="shadowBlurInner2" result="shadowOffsetInner2"/>
+			<feComposite in="shadowOffsetInner2" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner2"/>
+			<feColorMatrix values="0 0 0 0 0.537254902 0 0 0 0 0.650980392 0 0 0 0 0.745098039 0 0 0 1 0" in="shadowInnerInner2" result="shadowMatrixInner2"/>
+			<feMerge>
+				<feMergeNode in="shadowMatrixInner1"/>
+				<feMergeNode in="shadowMatrixInner2"/>
+			</feMerge>
+		</filter>
+		<linearGradient x1="24.825%" y1="46.874%" x2="59.26%" y2="52.57%" id="k">
+			<stop stop-color="#FAFCFF" offset="0%"/>
+			<stop stop-color="#F5F9FE" offset="41.871%"/>
+			<stop stop-color="#F3F3F3" offset="100%"/>
+		</linearGradient>
+		<path d="M14.708.95c7.767 0 12.964 4.284 15.02 7.425l-3.54 6.225h-.344c-2.17-3.426-6.053-7.024-10.965-7.024-3.998 0-6.054 2.113-6.054 4.683 0 3.084 2.685 4.283 9.024 5.997 7.424 1.941 13.707 4.283 13.707 12.278 0 7.71-5.94 11.765-14.335 11.765-8.224 0-14.164-4.055-16.848-7.595L3.8 27.85h.342c2.399 3.37 6.968 7.596 13.022 7.596 4.511 0 7.196-1.542 7.196-4.74 0-3.884-3.941-4.798-9.995-6.397-7.653-2.056-12.793-4.797-12.793-11.993C1.572 6.091 6.655.951 14.708.951zm48.43 7.368H51.944v33.296h-7.31V8.318h-11.08V1.636h29.584v6.682zm35.866-6.682V26.88c0 8.853-5.026 15.42-15.534 15.42-10.509 0-15.763-6.567-15.763-15.42V1.636h7.31V26.48c0 5.425 2.57 9.023 8.453 9.023 5.825 0 8.28-3.598 8.28-9.023V1.636h7.254zm8.28 0h14.279c11.707 0 18.447 6.168 18.447 19.99 0 13.763-6.74 19.988-18.733 19.988h-13.992V1.636zm7.311 6.682v26.557h7.539c7.139 0 10.622-4.855 10.622-13.364 0-8.224-2.912-13.193-10.508-13.193h-7.653zm39.293 33.296h-7.31V1.636h7.31v39.978zM178.845.951c10.851 0 18.333 9.595 18.333 20.788 0 11.023-5.94 20.56-18.333 20.56-12.45 0-18.39-9.537-18.39-20.56 0-11.193 7.482-20.788 18.39-20.788zm0 6.568c-7.196 0-11.08 6.739-11.08 14.106 0 7.824 3.827 13.821 11.08 13.821 7.196 0 11.08-5.882 11.08-13.82 0-7.425-3.941-14.107-11.08-14.107z" id="j"/>
+		<filter x="-5.6%" y="-16.9%" width="111.2%" height="153.2%" filterUnits="objectBoundingBox" id="i">
+			<feOffset dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
+			<feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+			<feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25551792 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+			<feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter2"/>
+			<feGaussianBlur stdDeviation="1" in="shadowOffsetOuter2" result="shadowBlurOuter2"/>
+			<feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.285920516 0" in="shadowBlurOuter2" result="shadowMatrixOuter2"/>
+			<feMerge>
+				<feMergeNode in="shadowMatrixOuter1"/>
+				<feMergeNode in="shadowMatrixOuter2"/>
+			</feMerge>
+		</filter>
+		<filter x="-4.6%" y="-12.1%" width="109.1%" height="143.5%" filterUnits="objectBoundingBox" id="l">
+			<feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"/>
+			<feOffset dy="4" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+			<feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/>
+			<feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" in="shadowInnerInner1" result="shadowMatrixInner1"/>
+			<feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner2"/>
+			<feOffset dy="-2" in="shadowBlurInner2" result="shadowOffsetInner2"/>
+			<feComposite in="shadowOffsetInner2" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner2"/>
+			<feColorMatrix values="0 0 0 0 0.537254902 0 0 0 0 0.650980392 0 0 0 0 0.745098039 0 0 0 0.501174607 0" in="shadowInnerInner2" result="shadowMatrixInner2"/>
+			<feMerge>
+				<feMergeNode in="shadowMatrixInner1"/>
+				<feMergeNode in="shadowMatrixInner2"/>
+			</feMerge>
+		</filter>
+	</defs>
+	<g transform="translate(128 91)" fill="none" fill-rule="evenodd">
+		<use fill="url(#a)" xlink:href="#b"/>
+		<use fill-opacity=".1" fill="url(#c)" style="mix-blend-mode:overlay" xlink:href="#b"/>
+		<use fill="#000" filter="url(#d)" xlink:href="#b"/>
+		<g transform="translate(87.17 130.754)" fill-rule="nonzero">
+			<use fill="#000" filter="url(#e)" xlink:href="#f"/>
+			<use fill="#FFF" xlink:href="#f"/>
+			<use fill="url(#g)" xlink:href="#f"/>
+			<use fill="#000" filter="url(#h)" xlink:href="#f"/>
+			<g transform="translate(0 197.35)">
+				<use fill="#000" filter="url(#i)" xlink:href="#j"/>
+				<use fill="#FFF" xlink:href="#j"/>
+				<use fill="url(#k)" xlink:href="#j"/>
+				<use fill="#000" filter="url(#l)" xlink:href="#j"/>
+			</g>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,39 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+.form-container__img {
+  max-width: 420px; }
+
+.form-container {
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+
+.form-container-after {
+  padding-top: 2rem;
+  padding-bottom: 4rem; }
+
+@media (min-width: 64em) {
+  .form-container {
+    background: white;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 3, 0.2);
+    transform: translatey(-3rem); }
+  .form-container-after {
+    margin-top: -9rem;
+    padding-top: 7rem;
+    padding-bottom: 4rem; } }
+
+/*# sourceMappingURL=seo-high-target.min.css.map */

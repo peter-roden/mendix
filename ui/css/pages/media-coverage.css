@@ -1,0 +1,29 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+body {
+  background-color: #f5f5f5; }
+
+.mediaCoverageCard {
+  background-color: white;
+  position: relative;
+  padding: 2rem; }
+
+.mediaCoverageCard__figure {
+  height: 80px; }
+  .mediaCoverageCard__figure img {
+    margin-top: 40px;
+    transform: translate(0, -50%); }

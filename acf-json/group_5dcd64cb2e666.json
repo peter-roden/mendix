@@ -1,0 +1,164 @@
+{
+    "key": "group_5dcd64cb2e666",
+    "title": "Post Type Solution Provider",
+    "fields": [
+        {
+            "key": "field_5dcd64cb4056d",
+            "label": "Solution Provider",
+            "name": "category_solution_provider_group",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_5dcd75db64934",
+                    "label": "Type",
+                    "name": "type",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Application Services": "Application Services",
+                        "SaaS\/ISV": "SaaS\/ISV",
+                        "Strategy Consulting": "Strategy Consulting"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 1,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_5dcd761164935",
+                    "label": "Location",
+                    "name": "location",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Americas": "Americas",
+                        "Europe": "Europe",
+                        "Asia": "Asia",
+                        "Africa & Middle East": "Africa & Middle East"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 1,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_5dcd762f64936",
+                    "label": "Industry",
+                    "name": "industry",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Education": "Education",
+                        "Financial Services": "Financial Services",
+                        "Insurance": "Insurance",
+                        "Life Sciences": "Life Sciences",
+                        "Logistics": "Logistics",
+                        "Manufacturing": "Manufacturing",
+                        "Professional Services": "Professional Services",
+                        "Public Sector": "Public Sector",
+                        "Retail": "Retail",
+                        "Telecom": "Telecom",
+                        "Utilities": "Utilities"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 1,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_5dcd64cb4770a",
+                    "label": "Logo",
+                    "name": "logo",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "post-thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5dcd64cb47785",
+                    "label": "Link",
+                    "name": "link",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "solution_provider"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1607038105
+}

@@ -1,0 +1,119 @@
+@import '../abstracts/dir';
+
+.slick-dots {
+	position: absolute;
+	bottom: -2rem;
+	display: block;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+}
+
+.bottom-dots {
+	.slick-dots,
+	.slick-bars {
+		bottom: 2rem;
+	}
+}
+
+.slick-dots li {
+	position: relative;
+	display: inline-block;
+	margin: 0 4px;
+	padding: 0;
+	cursor: pointer;
+
+	&.slick-active button {
+		background: $body;
+	}
+}
+
+.slick-dots li button {
+	font-size: 0;
+	line-height: 0;
+	display: block;
+	width: 16px;
+	height: 16px;
+	color: transparent;
+	border: 1px solid $body;
+	border-radius: 100%;
+	outline: none;
+	transition: background 150ms ease;
+	background: transparent;
+}
+
+.white {
+	.slick-dots li button {
+		border: 1px solid white;
+	}
+
+	.slick-dots li.slick-active button {
+		background: white;
+	}
+}
+
+.slick-bars {
+	display: inline-block;
+	position: absolute;
+	width: 100%;
+	bottom: -3rem;
+	text-align: center;
+}
+
+.slick-bars li {
+	mix-blend-mode: screen;
+	cursor: pointer;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-right: 0.5rem;
+	font-size: 0;
+	transition: width 250ms ease;
+	position: relative;
+
+	button {
+		width: 100%;
+		transform-origin: center;
+		opacity: 1;
+	}
+
+	button::before {
+		content: '';
+		width: 100%;
+		display: block;
+		position: absolute;
+		height: 4px;
+		background-color: $color-body;
+		opacity: 1;
+		transform: translate(0, 14px);
+		transform-origin: center;
+		transition: opacity 200ms;
+
+		.white & {
+			background-color: white;
+		}
+	}
+
+	&:first-of-type button {
+		transform-origin: left;
+	}
+
+	&:last-of-type button {
+		transform-origin: right;
+	}
+
+	&:hover,
+	&:focus {
+		button {
+			opacity: 1;
+		}
+	}
+
+	&.slick-active {
+		width: 5rem;
+
+		button::before {
+			background-color: $blue;
+		}
+	}
+}

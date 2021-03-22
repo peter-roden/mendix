@@ -1,0 +1,25 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+.filteredData--card {
+  border: 1px solid #e6e7e9;
+  border-radius: 6px;
+  overflow: hidden; }
+
+.filteredData--card-copy {
+  color: #383841; }
+  .filteredData--card-copy:focus, .filteredData--card-copy:hover {
+    text-decoration: none; }

@@ -1,0 +1,103 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+* + * {
+  margin-top: 1em; }
+
+.content {
+  color: #383841;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 18px; }
+
+h1,
+h2 {
+  font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #383841;
+  font-size: 2em;
+  line-height: 1.25;
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+  position: relative; }
+  h1::after,
+  h2::after {
+    content: "";
+    background-color: #000003;
+    bottom: 0;
+    height: 5px;
+    left: 0;
+    position: absolute;
+    width: 52px; }
+  h1 + p,
+  h1 + ul,
+  h1 + ol,
+  h2 + p,
+  h2 + ul,
+  h2 + ol {
+    margin-top: 2rem; }
+
+h3,
+h4 {
+  color: #383841;
+  font-family: "Patron", sans-serif;
+  font-weight: bold;
+  margin-top: 2rem; }
+
+h3 {
+  font-size: 1.3125em; }
+
+h4 {
+  font-size: 1em; }
+
+ul,
+ol {
+  padding-left: 0.5rem; }
+
+ul li {
+  margin-left: 1rem; }
+  ul li::before {
+    content: "\2022";
+    color: #0CABF9;
+    display: inline-block;
+    font-weight: bold;
+    margin-left: -1rem;
+    width: 1rem; }
+
+ol li {
+  margin-left: 1rem;
+  list-style-type: decimal; }
+
+blockquote {
+  color: #0CABF9;
+  font-family: "Patron", sans-serif;
+  font-size: 2.25em;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 1.25;
+  margin: 2rem 1rem 3rem;
+  text-align: center; }
+
+.kicker {
+  font-family: "Patron", sans-serif;
+  font-size: 0.875em;
+  letter-spacing: 2;
+  margin-top: 3rem;
+  text-transform: uppercase; }
+  .kicker + h1,
+  .kicker + h2,
+  .kicker + h3,
+  .kicker + h4 {
+    margin-top: 0.25rem; }

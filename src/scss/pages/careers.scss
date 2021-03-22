@@ -1,0 +1,144 @@
+@import '../abstracts/dir';
+
+.hero__video {
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 300ms;
+
+    &.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+.hero__content {
+    transition: opacity 300ms;
+
+    &:not(.active) {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.benefits__grid {
+
+    @media (min-width: $foundation-large) {
+        .large-1 {
+            width: calc(8.33333% - 1rem);
+        }
+    }
+}
+
+.benefit-icon__box {
+    height: 51px;
+}
+
+.instagram-image {
+    border: 1px solid #fff;
+}
+
+.jobFields__box {
+    border: 1px solid $color-border;
+    border-radius: 6px;
+    padding: 1.5rem;
+    transition: background 350ms;
+
+    &:focus,
+    &:hover {
+		text-decoration: none;
+        background: $blue;
+        cursor: pointer;
+
+        .field__icon {
+
+            circle,
+            path,
+            rect,
+            polygon,
+            polyline {
+                stroke: white;
+            }
+        }
+
+        p {
+            color: white;
+        }
+    }
+
+    .field__icon {
+
+        circle,
+        path,
+        rect,
+        polygon,
+        polyline {
+            transition: stroke 350ms;
+        }
+    }
+
+    @media (max-width: $foundation-small-max) {
+        padding: $spacing-1;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.125rem;
+        transition: color 350ms;
+
+        @media (max-width: $foundation-small-max) {
+            font-size: 1rem;
+        }
+
+        a {
+            color: $black;
+
+            &:hover,
+            &:focus {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.location--slider {
+    .slide__featured {
+        @media (max-width: $foundation-small-max) {
+            height: 280px;
+            min-height: 280px;
+        }
+
+        @media (min-width: $foundation-medium) {
+            height: 400px;
+            min-height: 400px;
+        }
+
+        @media (min-width: $foundation-large) {
+            height: 516px;
+            min-height: 516px;
+        }
+
+    }
+
+    .slide__featured img {
+        width: 100%;
+    }
+
+    .author-info--picture {
+        @media (min-width: $foundation-large) {
+            height: 252px;
+            max-height: 252px;
+            max-width: 252px;
+            width: 252px;
+        }
+    }
+
+    .slide-count-wrap {
+        font-weight: 700;
+        bottom: -45px;
+        position: absolute;
+    }
+}
+
+#careersLocations {
+    background-color: $black;
+}

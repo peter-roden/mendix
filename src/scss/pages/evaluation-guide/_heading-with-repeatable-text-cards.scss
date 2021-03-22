@@ -1,0 +1,54 @@
+.heading-with-repeatable-text-cards {
+	background: $gray-l;
+
+	.grid-of-cards {
+		margin-top: 1em;
+	}
+
+	.panel {
+		padding: 45px 40px;
+		margin-top: 20px;
+		background: $white;
+
+		@media screen and (min-width: $foundation-large) {
+			&:first-child {
+				margin-top: 0px;
+			}
+
+			&:nth-child(2) {
+				margin-top: 0px;
+			}
+
+			&:nth-child(3) {
+				margin-top: 0px;
+			}
+		}
+
+		.content-block-heading {
+			margin-top: 35px;
+			color: $blue;
+			font-size: 20px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+		}
+
+		.content-block-text {
+			@import '../editor-style';
+
+			margin-top: 20px;
+			color: #666666;
+			letter-spacing: 0;
+		}
+
+		.content-block-link {
+			margin-top: 21px;
+			text-transform: uppercase;
+		}
+
+		&.card-link {
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}

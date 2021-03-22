@@ -1,0 +1,152 @@
+{
+    "key": "group_5fa42a67635a2",
+    "title": "Section Marketo Form",
+    "fields": [
+        {
+            "key": "field_5fa42a679fb4f",
+            "label": "Marketo Form ID",
+            "name": "section_marketo_form_id",
+            "type": "text",
+            "instructions": "If this field exists, a standard marketo form section will appear ont he bottom of the page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "translations": "translate"
+        },
+        {
+            "key": "field_5fa42a679fb56",
+            "label": "Form Heading",
+            "name": "section_marketo_form_heading",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5fa42a679fb4f",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Contact an expert",
+            "placeholder": "Contact an expert",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "translations": "translate"
+        },
+        {
+            "key": "field_5fa42a679fb60",
+            "label": "Form Subheading",
+            "name": "section_marketo_form_subheading",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5fa42a679fb4f",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Ready to get started with Mendix? Fill this out and we’ll reach out shortly.",
+            "placeholder": "Ready to get started with Mendix? Fill this out and we’ll reach out shortly.",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "translations": "translate"
+        },
+        {
+            "key": "field_5fa42f26137ac",
+            "label": "Confirmation Dialog Heading",
+            "name": "section_marketo_form_confirm_heading",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5fa42a679fb4f",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Thank You",
+            "placeholder": "Thank You",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "translations": "translate"
+        },
+        {
+            "key": "field_5fa42f74137ad",
+            "label": "Confirmation Dialog Body",
+            "name": "section_marketo_form_confirm_body",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5fa42a679fb4f",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "A member of our team will be in touch with you shortly.",
+            "placeholder": "A member of our team will be in touch with you shortly.",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "translations": "translate"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_parent",
+                "operator": "==",
+                "value": "55744"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1604604517
+}

@@ -1,0 +1,429 @@
+{
+    "key": "group_5e6f97bf37377",
+    "title": "PB Sections",
+    "fields": [
+        {
+            "key": "field_5e6f980335b91",
+            "label": "Sections",
+            "name": "pb_sections",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_5e6fb249b317c",
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "Add Section to Page",
+            "sub_fields": [
+                {
+                    "key": "field_5e6fb249b317c",
+                    "label": "ID",
+                    "name": "id",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "camelCasePlease",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5e6fb1ac8079c",
+                    "label": "Row Type",
+                    "name": "row_element_type",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "header": "Header",
+                        "section": "Section",
+                        "aside": "Aside",
+                        "footer": "Footer",
+                        "page": "Page",
+                        "relationship": "Relationship"
+                    },
+                    "allow_null": 0,
+                    "default_value": "section",
+                    "layout": "horizontal",
+                    "return_format": "value",
+                    "translations": "copy_once"
+                },
+                {
+                    "key": "field_5ea31c5f8cc91",
+                    "label": "Page",
+                    "name": "page",
+                    "type": "post_object",
+                    "instructions": "Replace this section with a page. The page\/post_object will use the data (including ACF within) and display according to the template via the Wordpress template hierarchy.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5e6fb1ac8079c",
+                                "operator": "==",
+                                "value": "page"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": "",
+                    "taxonomy": "",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "return_format": "object",
+                    "translations": "copy_once",
+                    "ui": 1
+                },
+                {
+                    "key": "field_5fbd6aec54a7c",
+                    "label": "Relationship",
+                    "name": "relationship",
+                    "type": "relationship",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5e6fb1ac8079c",
+                                "operator": "==",
+                                "value": "relationship"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": "",
+                    "taxonomy": "",
+                    "filters": [
+                        "search",
+                        "post_type",
+                        "taxonomy"
+                    ],
+                    "elements": "",
+                    "min": "",
+                    "max": "",
+                    "return_format": "object",
+                    "translations": "copy_once"
+                },
+                {
+                    "key": "field_5efa5ee1f8ff9",
+                    "label": "Background",
+                    "name": "",
+                    "type": "accordion",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5e6fb1ac8079c",
+                                "operator": "!=",
+                                "value": "page"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "open": 0,
+                    "multi_expand": 0,
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_5efa46401dcf9",
+                    "label": "Background Group",
+                    "name": "background_group",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5e6fb1ac8079c",
+                                "operator": "!=",
+                                "value": "page"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5efa45e81dcf7",
+                            "label": "Type",
+                            "name": "type",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "white": "White",
+                                "off-white": "Off White",
+                                "blue": "Brand",
+                                "brand-dark": "Dark",
+                                "gradient": "Gradient",
+                                "black": "Black",
+                                "color": "Color Selector",
+                                "image": "Image"
+                            },
+                            "allow_null": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_5efa46211dcf8",
+                            "label": "Is White Text",
+                            "name": "is_white_text",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_5efa467d1dcfa",
+                            "label": "Color",
+                            "name": "color",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5efa45e81dcf7",
+                                        "operator": "==",
+                                        "value": "color"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#0CABF9"
+                        },
+                        {
+                            "key": "field_5efa46bf1dcfc",
+                            "label": "Image",
+                            "name": "image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5efa45e81dcf7",
+                                        "operator": "==",
+                                        "value": "image"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "post-thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "translations": "copy_once"
+                        },
+                        {
+                            "key": "field_5efa46e41dcfd",
+                            "label": "Overlay",
+                            "name": "overlay",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5efa45e81dcf7",
+                                        "operator": "==",
+                                        "value": "image"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "none": "None",
+                                "black-fadeout": "Black Fadeout",
+                                "black": "Black",
+                                "blue-gradient": "Blue Gradient"
+                            },
+                            "allow_null": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_5efa46f91dcfe",
+                            "label": "Overlay Opacity",
+                            "name": "overlay_opacity",
+                            "type": "range",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5efa46e41dcfd",
+                                        "operator": "==",
+                                        "value": "black"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5efa46e41dcfd",
+                                        "operator": "==",
+                                        "value": "blue-gradient"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "0.5",
+                            "min": 0,
+                            "max": 1,
+                            "step": "0.1",
+                            "prepend": "",
+                            "append": "",
+                            "translations": "copy_once"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_5ef3d18be684a",
+                    "label": "Rows",
+                    "name": "",
+                    "type": "accordion",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5e6fb1ac8079c",
+                                "operator": "!=",
+                                "value": "page"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "open": 0,
+                    "multi_expand": 0,
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_5e6fb260b317e",
+                    "label": "Rows",
+                    "name": "elements",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5e6fb1ac8079c",
+                                "operator": "!=",
+                                "value": "page"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "group_5e6f999e556f0"
+                    ],
+                    "display": "seamless",
+                    "layout": "row",
+                    "prefix_label": 0,
+                    "prefix_name": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-builder\/page-builder.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Sections are the top level Page Builder markup type",
+    "modified": 1606254507
+}

@@ -1,0 +1,73 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+.staff-slider {
+  height: 650px;
+  overflow: hidden; }
+  .staff-slider .btn-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .staff-slider .slide__quote {
+    transition: opacity 300ms ease;
+    opacity: 0; }
+  .staff-slider .slide__info {
+    font-size: 0.8rem; }
+    @media (min-width: 40em) {
+      .staff-slider .slide__info p {
+        padding: 0 2.5rem; } }
+  .staff-slider .slick-dots {
+    bottom: 4rem;
+    position: relative; }
+    .staff-slider .slick-dots button::before {
+      background: #ccc; }
+  .staff-slider .slick-list {
+    height: 650px; }
+  .staff-slider .slick-slide {
+    height: 430px;
+    width: 285px; }
+    .staff-slider .slick-slide:focus, .staff-slider .slick-slide:hover {
+      cursor: pointer; }
+  .staff-slider .slick-center {
+    margin-top: 0; }
+    .staff-slider .slick-center .slide__quote {
+      opacity: 1; }
+    .staff-slider .slick-center .slide__featured {
+      border: 1px solid white;
+      z-index: 1;
+      transform: scale(1.2); }
+    .staff-slider .slick-center .slide__info {
+      font-size: .875rem;
+      margin-top: 4rem; }
+      @media (min-width: 40em) {
+        .staff-slider .slick-center .slide__info p {
+          padding: 0; } }
+  .staff-slider .slick-slide.slick-center {
+    margin-top: 0; }
+  .staff-slider .slick-slider div {
+    transition: none; }
+  .staff-slider .slick-track {
+    margin-top: 3rem; }
+  .staff-slider .slide__featured {
+    border: 1px solid white;
+    height: 428px;
+    transition: all 0.2s ease;
+    width: 285px; }
+    .staff-slider .slide__featured img {
+      display: block;
+      max-width: 100%;
+      height: auto; }

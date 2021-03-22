@@ -1,0 +1,142 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+.page-template-demos2020 #siteHeader {
+  z-index: 1000; }
+
+.page-template-demos2020 .hero--dynamic__ctas a {
+  display: inline-block;
+  padding: 0.75em 3em;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  position: relative;
+  font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+  transition: all 300ms ease;
+  background-color: #0baaf9;
+  background-image: linear-gradient(90deg, #0d2dd1, #0baaf9);
+  background-size: 200% 100%;
+  background-position: 5% 0%;
+  border: 1px solid transparent;
+  color: white; }
+
+.page-template-demos2020 .hero--dynamic__ctas a:hover {
+  background-color: #0baaf9;
+  color: #fff; }
+
+#featured-demos {
+  background-color: #000000; }
+  #featured-demos h2 {
+    color: #ffffff; }
+
+#start-today .bg-white {
+  background-color: transparent; }
+
+#start-today h1 {
+  color: #ffffff; }
+
+#start-today p {
+  color: #ffffff;
+  font-weight: 500; }
+
+#start-today a {
+  color: #ffffff;
+  text-decoration: underline; }
+
+#start-today .btn-primary {
+  background-color: white;
+  background-size: 300% 100%;
+  background-image: linear-gradient(90deg, white 35%, #0baaf9, #0d2dd1);
+  color: #000003;
+  text-decoration: none; }
+
+#start-today .btn-primary:hover {
+  background-color: #0baaf9;
+  color: white; }
+
+.demo-card {
+  background-color: white;
+  position: relative;
+  padding-bottom: 5rem;
+  transition: border-color 300ms ease; }
+  .demo-card:hover .demo-card__heading, .demo-card:focus .demo-card__heading {
+    color: #0CABF9; }
+  .demo-card:hover .overlay, .demo-card:focus .overlay {
+    opacity: 1; }
+  .demo-card:hover .btn-play, .demo-card:focus .btn-play {
+    opacity: 1; }
+  .demo-card:hover .demo-card__image .overlay, .demo-card:focus .demo-card__image .overlay {
+    display: block; }
+  .demo-card .full-size-link {
+    width: 100%;
+    height: 100%;
+    z-index: 20; }
+    .demo-card .full-size-link:hover, .demo-card .full-size-link:focus, .demo-card .full-size-link:focus-within {
+      border: 3px solid #0CABF9; }
+  .demo-card .btn-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 250ms;
+    transform: translate(-50%, -50%); }
+  @media (hover: none) {
+    .demo-card .btn-play {
+      opacity: 1; } }
+
+.demo-card__body {
+  padding: 2rem 1.5rem; }
+
+.demo-card__bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 1.5rem 2rem;
+  width: 100%; }
+
+.demo-card__image {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 56.25%; }
+  .demo-card__image .overlay {
+    transition: opacity 250ms;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+  @media (hover: none) {
+    .demo-card__image .overlay {
+      opacity: 1; } }
+
+#bottomCTA .cell {
+  width: 100%; }
+
+#bottomCTA .align-middle {
+  text-align: left; }
+
+#bottomCTA .align-center {
+  justify-content: left; }
+
+#bottomCTA a {
+  margin-top: -75px;
+  float: right; }
+
+@media (max-width: 63.9375em) {
+  #bottomCTA a {
+    margin-top: 25px;
+    float: left; } }

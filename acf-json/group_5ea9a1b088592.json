@@ -1,0 +1,237 @@
+{
+    "key": "group_5ea9a1b088592",
+    "title": "Category Podcast",
+    "fields": [
+        {
+            "key": "field_5ea9a1c29737b",
+            "label": "Transistor Episode ID",
+            "name": "transistor_ep_id",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ea9a2869737e",
+                        "operator": "==",
+                        "value": "numbered"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "310dbf37",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5eb048b3327fc",
+            "label": "Show Notes",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5eb0486bcef5f",
+            "label": "Show Notes",
+            "name": "show_notes",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "text",
+            "media_upload": 1,
+            "translations": "translate",
+            "toolbar": "full",
+            "delay": 0
+        },
+        {
+            "key": "field_5ee3832092bbf",
+            "label": "Show Synopsis",
+            "name": "",
+            "type": "accordion",
+            "instructions": "The title and text in this section will only be displayed in individual podcast details page and not in the summary page of all podcasts.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5ee3a371ff1f9",
+            "label": "Do you have Synopsis to add?",
+            "name": "do_you_have_synopsis_to_add",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "translations": "copy_once",
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5ee383ac92bc1",
+            "label": "Synopsis Title",
+            "name": "synopsis_title",
+            "type": "text",
+            "instructions": "Title which will appear right appear above the synopsis info and below the podcast viewer in the individual podcast details page",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ee3a371ff1f9",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "translations": "translate"
+        },
+        {
+            "key": "field_5ee3834792bc0",
+            "label": "Synopsis Body Text",
+            "name": "synopsis_body_text",
+            "type": "wysiwyg",
+            "instructions": "Use this to show multi paragraph information on the individual podcast details page.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ee3a371ff1f9",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "text",
+            "media_upload": 0,
+            "translations": "translate",
+            "toolbar": "full",
+            "delay": 0
+        },
+        {
+            "key": "field_5eb048c2327fd",
+            "label": "Transcript",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5eb0487d638d2",
+            "label": "Transcript",
+            "name": "transcript",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "text",
+            "media_upload": 1,
+            "translations": "translate",
+            "toolbar": "full",
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_category",
+                "operator": "==",
+                "value": "category:podcast"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": true,
+    "description": "",
+    "modified": 1593709655
+}

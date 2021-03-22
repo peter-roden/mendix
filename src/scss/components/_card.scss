@@ -1,0 +1,73 @@
+.card {
+	@include cardBase;
+	display: block;
+	padding: 1rem;
+}
+
+a.card {
+	color: inherit;
+	border: 1px solid transparent;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		border: 1px solid $blue;
+	}
+}
+
+li {
+	&.card-block {
+		&[class*='bg-image-'] {
+			background-clip: content-box;
+		}
+
+		&.bg-partial-white {
+			background-color: #183344;
+		}
+
+		&.transparent-white {
+			background-color: rgba(255, 255, 255, 0.4);
+			background-clip: content-box;
+		}
+	}
+}
+
+.childPagesCard {
+	padding: 2rem 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 2px;
+	text-align: center;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	background-color: red;
+	}
+
+.childPagesCard__button {
+	margin-top: $grid * 3;
+}
+
+.type-post {
+	margin-bottom: $grid * 3;
+}
+
+.bottom-bar {
+	
+	.type-post {
+		background: white; 
+	}
+
+	.post__text {
+		padding: $grid * 2 $grid * 2 $grid * 3;
+	}
+}
+
+.post__preview-image {
+	display: block;
+	height: 200px;
+	width: 100%;
+}

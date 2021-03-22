@@ -1,0 +1,471 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+.chained-delay:nth-child(1) {
+  transition-delay: 0.25s; }
+
+.chained-delay:nth-child(2) {
+  transition-delay: 0.5s; }
+
+.chained-delay:nth-child(3) {
+  transition-delay: 0.75s; }
+
+.chained-delay:nth-child(4) {
+  transition-delay: 1s; }
+
+.chained-delay:nth-child(5) {
+  transition-delay: 1.25s; }
+
+.chained-delay:nth-child(6) {
+  transition-delay: 1.5s; }
+
+.chained-delay:nth-child(7) {
+  transition-delay: 1.75s; }
+
+.chained-delay:nth-child(8) {
+  transition-delay: 2s; }
+
+.chained-delay:nth-child(9) {
+  transition-delay: 2.25s; }
+
+.chained-delay:nth-child(10) {
+  transition-delay: 2.5s; }
+
+header .hero--dynamic__subheading p {
+  font-size: 28px;
+  margin-top: 32px; }
+
+header .hero--dynamic__ctas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 45px; }
+
+header .hero--dynamic__ctas a.btn-primary {
+  background-color: #0D2DD1;
+  background-image: linear-gradient(-222deg, #0D2DD1 0%, #0CABF9 100%);
+  width: 35%;
+  display: inline-block;
+  padding: 0.75em 3em;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  position: relative;
+  font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+  transition: all 300ms ease;
+  background-size: 200% 100%;
+  background-position: 5% 0%;
+  border: 1px solid transparent;
+  color: white; }
+
+header .hero--dynamic__ctas a.btn-primary:hover {
+  color: white;
+  background-position: 95% 100%;
+  text-decoration: none; }
+
+header .hero--dynamic__ctas a.btn-outline {
+  width: 100%;
+  border: none;
+  padding: 0;
+  transition: none; }
+
+header .hero--dynamic__ctas a.btn-outline:hover {
+  border: none;
+  background-color: transparent;
+  color: #0cabf9; }
+
+header .hero--dynamic__ctas a.btn-outline .button-watch {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+header .hero--dynamic__ctas .btn-outline .button-watch span.btn-play {
+  content: "";
+  height: 58px;
+  width: 58px;
+  min-width: 58px;
+  background-size: contain;
+  transition: transform 250ms ease, opacity 250ms;
+  opacity: 0.8;
+  background-image: url(/wp-content/themes/mendix/ui/icons/play.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transform-origin: center; }
+
+header .hero--dynamic__ctas a.btn-outline .button-watch span.watch:hover {
+  color: #0cabf9;
+  transition: .4s;
+  text-decoration: none;
+  background: none; }
+
+.platform-overview-hero-container #hero {
+  background-position: bottom center; }
+  .platform-overview-hero-container #hero h2 {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 400; }
+  .platform-overview-hero-container #hero .ctas {
+    margin-top: 45px; }
+    .platform-overview-hero-container #hero .ctas a {
+      margin: 1em; }
+      @media (min-width: 64em) {
+        .platform-overview-hero-container #hero .ctas a {
+          margin: 0 20px 0 0; }
+          .platform-overview-hero-container #hero .ctas a:last-of-type {
+            margin-right: 0; } }
+  .platform-overview-hero-container #hero .videos {
+    vertical-align: middle;
+    padding-top: 20px; }
+  .platform-overview-hero-container #hero .video-copy {
+    height: 58px; }
+    .platform-overview-hero-container #hero .video-copy:hover {
+      text-decoration: none; }
+  .platform-overview-hero-container #hero .btn-play {
+    height: 58px;
+    width: 58px;
+    min-width: 58px;
+    background-size: contain;
+    display: inline-block; }
+  .platform-overview-hero-container #hero .btn-play-group__text {
+    display: inline-block;
+    color: #ffffff;
+    position: relative;
+    bottom: 20px; }
+    .platform-overview-hero-container #hero .btn-play-group__text:hover {
+      color: #0CABF9;
+      transition: 400ms; }
+
+.platform-overview-page-template {
+  background: #000000; }
+  @media (min-width: 64em) {
+    .platform-overview-page-template .tabbed-content-header {
+      font-size: 48px; } }
+  .platform-overview-page-template .tabbed-content-sub-text {
+    max-width: 775px;
+    margin-top: 35px;
+    margin-bottom: 35px; }
+  .platform-overview-page-template .tabbed-content {
+    background: #000000; }
+  .platform-overview-page-template #tabbed-content .nav-pill {
+    background: #183344;
+    text-align: center;
+    line-height: 1.5;
+    width: auto;
+    margin: 1em auto 0; }
+    @media (min-width: 1260px) {
+      .platform-overview-page-template #tabbed-content .nav-pill {
+        line-height: 2.45; } }
+    .platform-overview-page-template #tabbed-content .nav-pill .tabbed-content-nav__text {
+      font-size: 18px; }
+    .platform-overview-page-template #tabbed-content .nav-pill:hover {
+      background-color: #0cabf9; }
+    .platform-overview-page-template #tabbed-content .nav-pill:last-child {
+      margin-right: 0; }
+    @media (min-width: 1260px) {
+      .platform-overview-page-template #tabbed-content .nav-pill {
+        margin-right: 1%;
+        max-width: 32%;
+        width: 100%; } }
+  .platform-overview-page-template #tabbed-content .nav-pill.active {
+    background-color: #0cabf9; }
+  .platform-overview-page-template #tabbed-content .tab-content-text-blocks-title {
+    margin-top: 1em;
+    font-weight: 700; }
+  .platform-overview-page-template #tabbed-content .tab-content-text-blocks {
+    text-align: left; }
+    .platform-overview-page-template #tabbed-content .tab-content-text-blocks .arrow-linl {
+      margin-top: 1em;
+      display: block; }
+  .platform-overview-page-template #tabbed-content a.arrow-link:hover {
+    color: #4EC4FE; }
+  .platform-overview-page-template #tabbed-content .image-container {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  .platform-overview-page-template #tabbed-content .tab-content-text-blocks-title {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  .platform-overview-page-template .slick-carousel-slider #slider {
+    background: #183344; }
+    .platform-overview-page-template .slick-carousel-slider #slider .slick-dots li button {
+      border: 1px solid #FFFFFF; }
+    .platform-overview-page-template .slick-carousel-slider #slider .slick-dots li button::before {
+      border: 1px solid white; }
+    .platform-overview-page-template .slick-carousel-slider #slider .slick-dots li.slick-active button::before {
+      background: white; }
+    .platform-overview-page-template .slick-carousel-slider #slider .slick-dots li.slick-active button {
+      background: #FFFFFF; }
+  .platform-overview-page-template .tabbed-case-studies-tab-container {
+    background: #f1f1f1; }
+    .platform-overview-page-template .tabbed-case-studies-tab-container .tabbed-case-study-title {
+      font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      line-height: 1.1; }
+    .platform-overview-page-template .tabbed-case-studies-tab-container .tab-case-studies__image {
+      margin-top: 2em;
+      margin-bottom: 2em;
+      position: relative; }
+      .platform-overview-page-template .tabbed-case-studies-tab-container .tab-case-studies__image .image,
+      .platform-overview-page-template .tabbed-case-studies-tab-container .tab-case-studies__image .vidyard-video {
+        position: relative;
+        z-index: 2; }
+      .platform-overview-page-template .tabbed-case-studies-tab-container .tab-case-studies__image .supporting-text {
+        width: 95%;
+        background: #ffffff;
+        text-align: left;
+        padding: 20px;
+        color: #626366;
+        font-size: 14px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        margin: auto; }
+        @media (min-width: 64em) {
+          .platform-overview-page-template .tabbed-case-studies-tab-container .tab-case-studies__image .supporting-text {
+            position: absolute;
+            bottom: -45px;
+            left: -20%; } }
+        .platform-overview-page-template .tabbed-case-studies-tab-container .tab-case-studies__image .supporting-text .impact {
+          margin-bottom: 15px;
+          font-size: 16px; }
+        .platform-overview-page-template .tabbed-case-studies-tab-container .tab-case-studies__image .supporting-text .stat .tabbed-case-study-stat {
+          font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+          font-weight: bold;
+          line-height: 1.1;
+          font-size: 54px;
+          color: #08293b; }
+        .platform-overview-page-template .tabbed-case-studies-tab-container .tab-case-studies__image .supporting-text .stat .tabbed-case-study-stat-label {
+          font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+          font-weight: bold;
+          line-height: 1.1;
+          font-size: 32px;
+          color: #08293b; }
+        .platform-overview-page-template .tabbed-case-studies-tab-container .tab-case-studies__image .supporting-text .text {
+          padding-right: 38%; }
+    .platform-overview-page-template .tabbed-case-studies-tab-container .tabbed-case-study-text {
+      margin-top: 32px; }
+    @media (min-width: 64em) {
+      .platform-overview-page-template .tabbed-case-studies-tab-container {
+        position: relative; }
+        .platform-overview-page-template .tabbed-case-studies-tab-container .tab-collection {
+          padding-bottom: 630px; }
+        .platform-overview-page-template .tabbed-case-studies-tab-container .tab-case-studies {
+          position: absolute;
+          transition: opacity 500ms ease 400ms;
+          left: 50%;
+          top: 600px;
+          transform: translateX(-50%) translateY(-50%); }
+          .platform-overview-page-template .tabbed-case-studies-tab-container .tab-case-studies .tab-case-studies__text {
+            transition: transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 400ms; }
+          .platform-overview-page-template .tabbed-case-studies-tab-container .tab-case-studies .tab-case-studies__image {
+            transition: transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 400ms; }
+        .platform-overview-page-template .tabbed-case-studies-tab-container .tab-link {
+          cursor: pointer; }
+        .platform-overview-page-template .tabbed-case-studies-tab-container .tab-link:hover,
+        .platform-overview-page-template .tabbed-case-studies-tab-container .tab-link:focus {
+          text-decoration: none; }
+          .platform-overview-page-template .tabbed-case-studies-tab-container .tab-link:hover .tabbed-case-studies-nav__text,
+          .platform-overview-page-template .tabbed-case-studies-tab-container .tab-link:focus .tabbed-case-studies-nav__text {
+            border-bottom-color: #0CABF9; }
+        .platform-overview-page-template .tabbed-case-studies-tab-container .tab-link.active .tabbed-case-studies-nav__text {
+          border-bottom-color: #000003; }
+        .platform-overview-page-template .tabbed-case-studies-tab-container .tabbed-case-studies-nav__text {
+          margin-top: 1.5rem;
+          margin-left: 0;
+          display: inline-block;
+          margin-bottom: 2rem;
+          opacity: 0.3;
+          color: #000000;
+          position: relative;
+          padding-bottom: 23px;
+          font-size: 24px; }
+          .platform-overview-page-template .tabbed-case-studies-tab-container .tabbed-case-studies-nav__text:after {
+            content: '';
+            position: absolute;
+            border-bottom: 5px solid #000000;
+            bottom: 0;
+            opacity: 0;
+            width: 90%;
+            display: block;
+            margin-top: 10px; }
+          .platform-overview-page-template .tabbed-case-studies-tab-container .tabbed-case-studies-nav__text.active {
+            opacity: 1; }
+            .platform-overview-page-template .tabbed-case-studies-tab-container .tabbed-case-studies-nav__text.active:after {
+              opacity: 1; }
+        .platform-overview-page-template .tabbed-case-studies-tab-container .tabbed-case-study-text {
+          font-size: 24px;
+          font-weight: 100;
+          color: #606060;
+          margin-top: 65px;
+          padding-right: 100px; }
+        .platform-overview-page-template .tabbed-case-studies-tab-container .impact {
+          color: #1a3b4e;
+          font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+          font-weight: bold;
+          line-height: 1.1; }
+        .platform-overview-page-template .tabbed-case-studies-tab-container .tabbed-case-study-cta {
+          font-size: 14px; }
+        .platform-overview-page-template .tabbed-case-studies-tab-container .tab-case-studies:not(.active) {
+          opacity: 0;
+          transition: opacity 550ms ease;
+          pointer-events: none; }
+          .platform-overview-page-template .tabbed-case-studies-tab-container .tab-case-studies:not(.active) .tab-case-studies__text {
+            transition: transform 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transform: translate(-100px, 0); }
+          .platform-overview-page-template .tabbed-case-studies-tab-container .tab-case-studies:not(.active) .tab-case-studies__image {
+            transition: transform 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transform: translate(100px, 0); } }
+  .platform-overview-page-template #featured-reports {
+    background: #ffffff;
+    background-size: cover; }
+    .platform-overview-page-template #featured-reports .featured-report-header {
+      font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      line-height: 1.1;
+      margin-bottom: 40px;
+      text-align: center;
+      color: #ffffff;
+      font-size: 2.5rem;
+      line-height: 1.2; }
+    .platform-overview-page-template #featured-reports .featured-report {
+      background: #ffffff;
+      padding: 40px 30px;
+      margin-right: 1em; }
+      .platform-overview-page-template #featured-reports .featured-report .logo {
+        margin-bottom: 28px; }
+      .platform-overview-page-template #featured-reports .featured-report .text {
+        font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        line-height: 1.1;
+        font-size: 20px; }
+      .platform-overview-page-template #featured-reports .featured-report a {
+        display: block;
+        margin-top: 35px; }
+      .platform-overview-page-template #featured-reports .featured-report .forrester-logo-grey,
+      .platform-overview-page-template #featured-reports .featured-report .forrester-logo-grey-1 {
+        height: 34px;
+        width: auto; }
+      @media (min-width: 64em) {
+        .platform-overview-page-template #featured-reports .featured-report {
+          width: calc(33.33333% - 24px);
+          margin-left: 12px;
+          margin-right: 12px; } }
+  .platform-overview-page-template #side-by-side-ctas .side-by-side-ctas-header {
+    font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 50px;
+    font-size: 48px; }
+  .platform-overview-page-template #side-by-side-ctas .side-by-side-ctas .cta {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 25px;
+    margin-bottom: 2em; }
+    .platform-overview-page-template #side-by-side-ctas .side-by-side-ctas .cta .cta-header {
+      font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      line-height: 1.1;
+      font-size: 32px; }
+    .platform-overview-page-template #side-by-side-ctas .side-by-side-ctas .cta .cta-text {
+      font-size: 18px; }
+    @media (min-width: 64em) {
+      .platform-overview-page-template #side-by-side-ctas .side-by-side-ctas .cta {
+        width: calc(50% - 36px);
+        margin-left: 18px;
+        margin-right: 18px;
+        height: 413px;
+        padding: 0 55px; }
+        .platform-overview-page-template #side-by-side-ctas .side-by-side-ctas .cta:first-child {
+          margin-left: 0;
+          margin-bottom: 0; }
+        .platform-overview-page-template #side-by-side-ctas .side-by-side-ctas .cta:last-child {
+          margin-right: 0; } }
+
+html.magnifying > body {
+  overflow-x: hidden !important; }
+  html.magnifying > body .slick-list {
+    overflow: visible !important; }
+
+.magnify,
+.magnify > .magnify-lens,
+.magnify-mobile,
+.lens-mobile {
+  /* Reset */
+  min-width: 0;
+  min-height: 0;
+  -webkit-animation: none;
+          animation: none;
+  border: none;
+  float: none;
+  margin: 0;
+  opacity: 1;
+  outline: none;
+  overflow: visible;
+  padding: 0;
+  text-indent: 0;
+  transform: none;
+  transition: none; }
+
+.magnify {
+  position: relative;
+  width: auto;
+  height: auto;
+  box-shadow: none;
+  display: inline-block;
+  z-index: inherit; }
+
+.magnify > .magnify-lens {
+  /* Magnifying lens */
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  /* Multiple box shadows to achieve the glass lens effect */
+  box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 0 0 7px 7px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  cursor: none;
+  display: none;
+  z-index: 99; }
+
+.magnify > .magnify-lens.loading {
+  background: #333 !important;
+  opacity: 0.8; }
+
+.magnify > .magnify-lens.loading:after {
+  /* Loading text */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  content: 'Loading...';
+  font: italic normal 16px/1 Calibri, sans-serif;
+  letter-spacing: 1px;
+  margin-top: -8px;
+  text-align: center;
+  text-shadow: 0 0 2px rgba(51, 51, 51, 0.8);
+  text-transform: none; }
+
+#bottomCTA .cell {
+  display: flex;
+  align-items: center;
+  width: 100%; }
+
+#bottomCTA .bottom_cta_text_group,
+#bottomCTA .bottom_cta_cta_group {
+  width: 50%;
+  text-align: left; }
+
+#bottomCTA .bottom_cta_text_group p {
+  margin-right: 20%; }
+
+/*# sourceMappingURL=platform-2020.min.css.map */

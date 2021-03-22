@@ -1,0 +1,191 @@
+@mixin brand-gradient {
+    $dark: $blue-dark;
+    $light: $blue;
+    background-color: $dark;
+    background-image: linear-gradient(-222deg, $dark 0%, $light 100%);
+}
+
+@mixin absolute-stack {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin absolute-cover {
+    @include absolute-stack;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin cardBase {
+    background-color: white;
+    position: relative;
+}
+
+@mixin clearfix {
+    &::after {
+        clear: both;
+        content: '';
+        display: table;
+    }
+}
+
+@mixin hero100VH($paddingSmall: 0, $paddingLarge: 0) {
+	@media (min-width: $foundation-large) {
+		overflow: hidden;
+
+		$minHeight: 50rem;
+		$maxHeight: 70rem;
+
+		@media (max-height: $minHeight) {
+			padding: $paddingSmall;
+		}
+
+		@media (min-height: $minHeight) {
+          height: 100vh;
+          .hero100vh-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    @media (min-height: $maxHeight) {
+     height: auto;
+     min-height: $maxHeight;
+ }
+}
+}
+
+/// Mixin to create a srcset type swap for background images
+///
+/// @param {String} $path - Path to file
+/// @param {String} $filetype ['jpg'] File type to append
+///
+/// @example scss - Usage
+///   .banner {
+///     @include background2x('../images/platform/features-banner', 'png');
+///   }
+///
+/// @example css - CSS output
+///    .banner {
+///      background-image: url(#{$path}.#{$fileType});
+///    }
+///
+///    @media (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
+///        .banner {
+///            background-image: url(#{$path}@2x.#{$fileType});
+///        }
+///    }
+@mixin background2x($path: '', $fileType: 'jpg') {
+    background-image: url(#{$path}.#{$fileType});
+
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+        background-image: url(#{$path}@2x.#{$fileType});
+    }
+}
+
+/// Mixin for reuse in overriding Marketo styles. Sets the contianers around
+/// the first and last name input fields to a percentage (a numbrer less than 50%)
+/// so the input fields can be side by side.
+///
+/// @param {Int} $patinputWidthh
+///
+/// @example scss - Usage
+///   #marketoForm9999 {
+///     @include firstAndLastWidth(48%);
+///   }
+/// @example css - CSS output
+///   #marketoForm9999 {
+///     @media screen and (min-width: $foundation-medium) {
+///       .rowFirstName {
+///         margin-right: 4%;
+///       }
+///
+///       .rowFirstName,
+///       .rowLastName {
+///         display: inline-block;
+///         width: 47%;
+///       }
+///     }
+///   }
+@mixin firstAndLastWidth($inputWidth) {
+    @media screen and (min-width: $foundation-medium) {
+        .rowFirstName {
+            margin-right: 4%;
+        }
+
+        .rowFirstName,
+        .rowLastName {
+            display: inline-block;
+            width: $inputWidth;
+        }
+    }
+}
+
+/// Mixin to create underlined effect on headers
+@mixin header-underline($color: $blue-xxl) {
+    background-image: linear-gradient(120deg, $color 0%, $color 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.25em;
+    background-position: 1px 80%;
+    display: inline;
+
+    .safari & {
+        background-position: 1px 85%;
+    }
+}
+
+@mixin outline-text($color: $black, $shadowColor: #000, $width: 1px) {
+    color: $color;
+	text-shadow: -$width -$width 0 $shadowColor, 0 -$width 0 $shadowColor, $width -$width 0 $shadowColor,
+	$width 0 0 $shadowColor, $width $width 0 $shadowColor, 0 $width 0 $shadowColor, -$width $width 0 $shadowColor,
+	-$width 0 0 $shadowColor;
+}
+
+@mixin small-caps{
+	font-family: $font-accent;
+	font-weight: bold;
+	font-size: 1rem;
+	letter-spacing: 3;
+	text-transform: uppercase;
+}
+
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+@mixin admin-sticky-fix($offset: 0) {
+    $narrow-offset: 46px;
+    $wide-offset: 32px;
+
+    @if $offset != 0 and type-of($offset) == 'number' {
+        $narrow-offset: $narrow-offset + $offset;
+        $wide-offset: $wide-offset + $offset;
+    }
+
+    .admin-bar & {
+        top: $narrow-offset !important;
+
+        @media screen and (min-width: 783px) {
+            top: $wide-offset !important;
+        }
+    }
+}
+
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+@mixin header-sticky-fix {
+    margin-top: 45px;
+
+    @media screen and (min-width: 1024px) {
+        margin-top: 80px;
+    }
+}

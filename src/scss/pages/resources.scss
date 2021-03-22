@@ -1,0 +1,98 @@
+@import '../abstracts/dir';
+@import '../partials/filtered-data-cards';
+@import '../partials/filtered-data-categories';
+
+.callout-card {
+	min-height: 100%;
+
+	.callout-card__link-box {
+		background: white;
+		display: block;
+		border-radius: 4px;
+		box-shadow: $box-shadow;
+		min-height:100%;
+		text-decoration: none;
+
+		&:hover, &:focus { outline: 1px solid $blue;}
+		.callout-card__text {
+			padding: 8px 16px 0;
+		}
+
+		.featureImg {
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;
+		}
+	}
+	@media (max-width: $foundation-small-max){
+		.featureImg {
+			max-height: 160px;
+			object-fit: cover;
+		}
+	}
+}
+.categories {
+	padding: 15px 0;
+	border-top: 1px solid $gray-l;
+}
+
+.categories:last-of-type {
+	border-bottom: 1px solid $gray-l;
+}
+
+.category-title {
+	display: inline-block;
+	padding-right: 1em;
+	letter-spacing: 0;
+	text-transform: uppercase;
+	color: $blue;
+}
+
+.category__arrow {
+	display: inline-block;
+	margin-top: -3px;
+	transition: transform 250ms ease;
+}
+
+.category__checkbox {
+	display: none;
+}
+
+.category__header {
+	margin-right: 0.5em;
+}
+
+.icon-text {
+	img {
+		float: left;
+		margin-top: 10px;
+	}
+
+	p {
+		display: inline;
+		float: left;
+		margin-top: 10px;
+		padding-left: 10px;
+		letter-spacing: 0;
+		color: $color-body;
+	}
+}
+
+.refine-category-by {
+	cursor: pointer;
+	// text-align: right;
+	text-align: left; //  Overriding Steph's change ffrom a month ago
+	width: 100%;
+}
+
+#noResults {
+	display: none;
+}
+
+.view {
+	color: $color-body;
+
+	&:focus,
+	&:hover {
+		color: $blue;
+	}
+}

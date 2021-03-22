@@ -1,0 +1,229 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes moveRight {
+  0% {
+    left: 0;
+    transform: translateX(0); }
+  100% {
+    left: 80%;
+    transform: translateX(-80%); } }
+
+@keyframes moveRight {
+  0% {
+    left: 0;
+    transform: translateX(0); }
+  100% {
+    left: 80%;
+    transform: translateX(-80%); } }
+
+@media screen and (min-width: 40em) {
+  #top-phone-row {
+    margin-top: -125px; } }
+
+.bottom-cta .btn-primary {
+  transition: all .3s ease; }
+  .bottom-cta .btn-primary:focus, .bottom-cta .btn-primary:hover {
+    background-color: #2091d3;
+    background-image: linear-gradient(90deg, #2091d3, #3253cd); }
+    .bottom-cta .btn-primary:focus::before, .bottom-cta .btn-primary:hover::before {
+      opacity: 1;
+      transition: opacity 100ms ease, transform 350ms ease;
+      transform: translate(-50%, -50%) scaleX(1); }
+
+@media (min-width: 64em) {
+  .panel-split-container {
+    display: flex; } }
+
+.panel-title {
+  background-color: #5b5b6a; }
+  @media (min-width: 64em) {
+    .panel-title {
+      margin: auto;
+      width: auto;
+      display: inline-block;
+      position: absolute;
+      top: 8%;
+      left: 50%;
+      transform: translateX(-50%); } }
+
+@media (min-width: 64em) {
+  .panel-split-container .large-heading1 {
+    font-size: 2.625em; } }
+
+@media (max-width: 1024px) {
+  .panel-split-container .panel-extra-container {
+    margin: auto;
+    display: flex; } }
+
+.panel-split {
+  width: 100%; }
+  @media (min-width: 64em) {
+    .panel-split {
+      border: 1px solid #ffffff;
+      width: 50%;
+      display: flex;
+      overflow: hidden;
+      transition: 1000ms all ease-in-out; } }
+  .panel-split.panel-left::before, .panel-split.panel-right::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+  .panel-split.panel-left {
+    border-width: 0 1px 0 0; }
+    .panel-split.panel-left::before {
+      background-color: rgba(12, 171, 249, 0.55); }
+  .panel-split.panel-right {
+    border-width: 0 0 0 1px; }
+    .panel-split.panel-right::before {
+      background-color: rgba(0, 0, 3, 0.55); }
+
+@media (min-width: 64em) {
+  .panel-content {
+    width: 1200px;
+    min-width: 1200px; } }
+
+@media (min-width: 64em) {
+  .panel-entry {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1000ms ease-in-out; }
+    .panel-entry.expanded {
+      max-height: 350px; } }
+
+.panel-extras {
+  margin-top: 2em;
+  transition: 1000ms opacity ease-in-out; }
+  @media (min-width: 64em) {
+    .panel-extras.fade-in {
+      -webkit-animation: fadeIn 1000ms 0.25s;
+              animation: fadeIn 1000ms 0.25s; }
+    .panel-extras.fade-out {
+      opacity: 0; } }
+  @media (min-width: 1500px) {
+    .panel-extras {
+      margin-top: 0; } }
+
+@media (min-width: 1024px) {
+  .panel-hover-left .panel-split:not(.is-active)::after, .panel-hover-right .panel-split:not(.is-active)::after {
+    content: '';
+    background-color: rgba(0, 0, 3, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; } }
+
+@media (min-width: 1024px) {
+  .panel-hover-left .panel-left {
+    width: 85%; } }
+
+@media (min-width: 1024px) {
+  .panel-hover-left .panel-right {
+    width: 15%; } }
+
+@media (min-width: 1024px) {
+  .panel-hover-right .panel-left {
+    width: 15%; } }
+
+@media (min-width: 1024px) {
+  .panel-hover-right .panel-right {
+    width: 85%; } }
+
+.pointer-control {
+  background-color: #ffffff;
+  border-radius: 100%;
+  border: 10px solid rgba(0, 0, 3, 0.1);
+  margin-left: -37px;
+  width: 74px;
+  height: 74px;
+  transition: all 1000ms ease-in-out;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  bottom: 50%;
+  left: 50%; }
+  @media (min-width: 64em) {
+    .pointer-control {
+      display: flex; } }
+  @media (min-width: 1024px) {
+    .pointer-control.move-right {
+      left: 85%;
+      right: 15%; }
+    .pointer-control.move-left {
+      left: 15%;
+      right: 85%; } }
+
+@media (min-width: 64em) {
+  .section-copy-columns {
+    -moz-column-count: 2;
+         column-count: 2;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem; } }
+
+.featured-specific {
+  min-height: 120px; }
+
+@media (min-width: 1024px) {
+  .panel-content {
+    flex-direction: column; } }
+
+@media (min-width: 1500px) {
+  .panel-content {
+    flex-direction: row; } }
+
+.panel-right .panel-content {
+  align-content: flex-end; }
+  @media (min-width: 1024px) {
+    .panel-right .panel-content .large-order-2 {
+      order: 1; } }
+  @media (min-width: 1500px) {
+    .panel-right .panel-content {
+      flex-direction: row; }
+      .panel-right .panel-content .large-order-2 {
+        order: 2; } }
+
+.panel-left .panel-content {
+  align-content: flex-start; }

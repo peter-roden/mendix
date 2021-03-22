@@ -1,0 +1,23 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+@media (min-width: 64em) {
+  .first-reports {
+    position: relative;
+    margin-top: -4rem;
+    margin-bottom: -4rem; } }
+
+/*# sourceMappingURL=analyst-coverage.min.css.map */

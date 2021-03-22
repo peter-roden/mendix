@@ -1,0 +1,217 @@
+@import '../abstracts/_dir';
+
+$pricing_dark: $black;
+$background-color-gray: #dde1e3;
+$border-color-gray: #ccc;
+$box_color: #7d7;
+$box_bg: mix(white, $box_color, 80%);
+
+.bg-blue-light {
+	background-color: #eef9fe;
+	margin-top: $spacing-2;
+	margin-bottom: $spacing-3;
+}
+
+.box {
+	border: 1px solid $box_color;
+	background-color: $box_bg;
+	padding: $spacing-2 $spacing-1;
+
+	li {
+		transform: translate(-5px, 0);
+	}
+}
+
+@media (max-width: $medium-max) {
+	.edition {
+		text-align: center;
+		padding: $spacing-1;
+		cursor: pointer;
+		transition: all 250ms ease;
+		border: 1px solid $color-heading;
+
+		&:hover,
+		&focus {
+			background-color: $blue-xl;
+		}
+	}
+
+	.edition a {
+		text-decoration: none;
+		color: $color-body;
+	}
+
+	.edition.is-active {
+		background-color: $blue;
+	}
+
+	.edition.is-active a {
+		color: white;
+	}
+
+	.icon-cell {
+		flex: 0 1 27px;
+		text-align: center;
+	}
+
+	.icon-type-bk {
+		color: $gray;
+	}
+
+	.pricing-tabbed__item {
+		padding: $spacing-25 0;
+		position: relative;
+	}
+
+	.secondRow {
+		display: none;
+	}
+
+	.tabs-panel {
+		display: none;
+	}
+
+	.tabs-panel.is-active {
+		display: block;
+	}
+}
+
+@media (min-width: $medium) {
+	.box {
+		padding: 3rem 0;
+	}
+}
+
+@media (min-width: $large) {
+	td,
+	th {
+		padding: $spacing-1;
+		vertical-align: middle;
+		text-align: center;
+		text-align: center;
+	}
+
+	td {
+		border: 1px solid $border-color-gray;
+	}
+
+	td:first-of-type,
+	th:first-of-type {
+		font-weight: bold;
+		border: 0;
+		border-bottom: 1px solid $border-color-gray;
+		text-align: left;
+	}
+
+	td:nth-of-type(3),
+	td:nth-of-type(4) {
+		background: $background-color-gray;
+	}
+
+	td:nth-of-type(5) {
+		background: $blue-xxxl;
+	}
+
+	th:not(.edition) {
+		padding-top: $spacing-3;
+	}
+
+	.edition:first-of-type {
+		border: 0;
+	}
+
+	.edition:nth-of-type(2) {
+		border: 1px solid $border-color-gray;
+	}
+
+	.edition:nth-of-type(3),
+	.edition:nth-of-type(4) {
+		color: white;
+		background: $pricing_dark;
+	}
+
+	.edition:nth-of-type(3) {
+		border-right: 1px solid white;
+	}
+
+	.edition:nth-of-type(5) {
+		color: white;
+		background: $blue;
+	}
+
+	.price:not(:first-of-type) {
+		vertical-align: middle;
+	}
+
+	.pricing-tabbed__card {
+		display: none;
+	}
+
+	.secondRow {
+		display: block;
+		font-weight: lighter;
+		font-size: 0.8em;
+	}
+	.box {
+		.text-height {
+			height: 180px;
+		}
+	}
+}
+
+/*****************************************
+	CTA for ROI Calculator
+******************************************/
+
+.ROICalculatorCTA {
+	background: #06145c;
+	overflow: hidden;
+
+	.btn-primary {
+		color: #06145c;
+	}
+
+	.btn-primary:hover,
+	.btn-primary:focus {
+		background: #ff6161;
+		color: #06145c;
+	}
+
+	@media screen and (max-width: $foundation-small-max) {
+		.ROICalculatorCTA__grid,
+		.ROICalculatorCTA__lines {
+			display: none;
+		}
+	}
+
+	@media screen and (min-width: $foundation-medium) {
+		background-image: none !important;
+
+		.ROICalculatorCTA__grid {
+			left: 29%;
+			width: 803px;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+
+		.ROICalculatorCTA__lines {
+			bottom: 0;
+			height: 100%;
+			left: 39%;
+			min-width: 559px;
+			position: absolute;
+			width: auto;
+		}
+	}
+
+	@media screen and (min-width: $foundation-large) {
+		.ROICalculatorCTA__grid {
+			left: 39%;
+		}
+
+		.ROICalculatorCTA__lines {
+			left: 45%;
+		}
+	}
+}

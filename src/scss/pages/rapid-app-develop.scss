@@ -1,0 +1,58 @@
+@import '../abstracts/dir';
+
+@media (max-width: 1400px) {
+    .customer-success #customers .tabbedBillboard__openquote {
+
+    }
+}
+
+.customer-success {
+    background: #183344;
+
+    #customers {
+        background: #183344;
+
+        .tabbedBillboard__openquote {
+
+            @media (max-width: 1020px) {
+                top: 5rem;
+                left: 20rem;
+            }
+            @media (min-width: 1025px) and (max-width: 1150px) {
+                top: 5rem;
+                left: 35rem;
+            }
+
+            top: 5.5rem;
+            left: 40rem;
+        }
+    }
+}
+
+.benefits-panel {
+    background: $gray;
+}
+
+.rad-manual {
+    .section-padding {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+.rising-demand {
+
+    h2:after {
+        content: "";
+        display: block;
+        margin: 0 auto;
+        margin-left: 0px;
+        width: 30%;
+        padding-top: 3rem;
+        border-bottom: 5px solid white;
+    }
+
+    p {
+        padding-top: 1rem;
+    }
+}

@@ -1,0 +1,19 @@
+@import '../abstracts/dir';
+
+.csm__block {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: white;
+}
+
+.csm__block__body,
+.csm__block__heading {
+    color: $color-heading !important;
+    text-transform: uppercase;
+}
+
+@media (min-width: $medium) {
+    .csm__block {
+        padding: 1rem 2rem 2rem;
+    }
+}

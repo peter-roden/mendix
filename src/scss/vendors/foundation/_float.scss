@@ -1,0 +1,81 @@
+/**
+ * Foundation Float Classes
+ * Version 6.3.1
+ * https://foundation.zurb.com/sites/download.html/
+ * Licensed under MIT Open Source
+ */
+
+.float-left {
+  float: left !important;
+}
+
+.float-right {
+  float: right !important;
+}
+
+.center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+@media screen and (max-width: $foundation-small-max) {
+  .small-only-float-left {
+    float: left;
+  }
+
+  .small-only-float-right {
+    float: right;
+  }
+
+  .small-only-center {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $foundation-medium) {
+  .medium-float-left {
+    float: left;
+  }
+
+  .medium-float-right {
+    float: right;
+  }
+
+  .medium-center {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $foundation-large) {
+  .large-float-left {
+    float: left;
+  }
+
+  .large-float-right {
+    float: right;
+  }
+
+  .large-center {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.clearfix::before,
+.clearfix::after {
+  display: table;
+  content: ' ';
+  flex-basis: 0;
+  order: 1;
+}
+
+.clearfix::after {
+  clear: both;
+}

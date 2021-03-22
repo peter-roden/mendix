@@ -1,0 +1,30 @@
+@import '../abstracts/dir';
+
+.form-container__img {
+    max-width: 420px;
+}
+
+.form-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.form-container-after {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+@media (min-width: $foundation-large) {
+    .form-container {
+        background: white;
+        padding: 2rem;
+        box-shadow: $box-shadow;
+        transform: translatey(-3rem);
+    }
+
+    .form-container-after {
+        margin-top: -9rem;
+        padding-top: 7rem;
+        padding-bottom: 4rem;
+    }
+}

@@ -1,0 +1,165 @@
+@import '../abstracts/dir';
+
+@mixin typescale1 {
+	font-size: 3.052rem;
+	line-height: 1.15;
+
+	@media (min-width: $large) {
+		font-size: 4.209rem;
+	}
+}
+
+@mixin typescale2 {
+	font-size: 2.441rem;
+	line-height: 1.15;
+
+	@media (min-width: $large) {
+		font-size: 3.157rem;
+	}
+}
+
+@mixin typescale3 {
+	font-size: 1.953rem;
+	line-height: 1.3;
+
+	@media (min-width: $large) {
+		font-size: 2.369rem;
+	}
+}
+
+@mixin typescale4 {
+	font-size: 1.563rem;
+	line-height: 1.35;
+
+	@media (min-width: $large) {
+		font-size: 1.777rem;
+	}
+}
+
+@mixin typescale5 {
+	font-size: 1.25rem;
+	line-height: 1.5;
+
+	@media (min-width: $large) {
+		font-size: 1.333rem;
+	}
+}
+
+.hero--dynamic {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+
+	.btn-outline,
+	.btn-play-inline,
+	.btn-primary {
+		margin-top: 16px;
+		margin-right: 16px;
+	}
+
+	.text-left {
+		.btn-outline,
+		.btn-play-inline,
+		.btn-primary {
+			//margin left and right creates a left hang to visual align rounded edge with text
+			margin-left: -4px;
+			margin-right: 16px + 4px;
+		}
+	}
+}
+
+.hero--dynamic__ctas {
+	margin-top: 16px;
+}
+
+.hero--dynamic__kicker {
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-weight: bold;
+
+	& + * {
+		margin-top: 8px;
+	}
+}
+
+.hero__headline {
+	@include typescale1();
+	font-family: $font-accent;
+	font-weight: bold;
+}
+
+.hero--dynamic__anchors {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+
+	li:not(:last-of-type) {
+		border-right: 1px solid $blue;
+	}
+
+	li a {
+		padding: 16px;
+		text-decoration: none;
+		display: block;
+		width: 100%;
+		background-color: white;
+
+		&:hover,
+		&:focus {
+			color: white;
+			background-color: $blue;
+		}
+	}
+}
+
+.hero--dynamic__logo_strip .grid-x {
+	margin-top: 24px;
+	border-top: 1px solid white;
+}
+
+.hero--dynamic__subheading {
+	margin-top: 16px;
+
+	@include typescale5();
+}
+
+.hero--dynamic__logos {
+	img {
+		max-width: 140px;
+		max-height: 55px;
+		margin-right: 1rem;
+		margin-left: 1rem;
+	}
+}
+
+.hero--dynamic__navigation {
+	position: relative;
+	margin-top: 16px;
+
+	a {
+		@include typescale4();
+		font-weight: bold;
+		display: inline-block;
+		color: white;
+		margin-right: 16px;
+		border-bottom: 3px solid transparent;
+		padding-bottom: 8px;
+		text-decoration: none;
+		transition: border 150ms;
+
+		&:focus,
+		&:hover {
+			text-decoration: none;
+			color: white;
+			border-color: white;
+		}
+
+		&.active {
+			border-color: $blue;
+		}
+	}
+}

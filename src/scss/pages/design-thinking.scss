@@ -1,0 +1,28 @@
+@import '../abstracts/dir';
+
+.principle__cell {
+    max-width: 50%;
+
+    @media screen and (min-width: $foundation-medium) {
+        max-width: 25%;
+    }
+
+    @media screen and (min-width: $foundation-large) {
+        max-width: 20%;
+    }
+}
+
+.banner__fg {
+    position: absolute;
+    top: 10rem;
+    max-height: 600px;
+    right: 0;
+
+    @media screen and (max-width: $foundation-medium-max) {
+        display: none;
+    }
+
+    @media screen and (min-width: 74rem) {
+        max-height: 750px;
+    }
+}

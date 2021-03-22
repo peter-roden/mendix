@@ -1,0 +1,131 @@
+{
+    "key": "group_5edfc3e096dbf",
+    "title": "Mendix World Session",
+    "fields": [
+        {
+            "key": "field_5edfc3e65ac48",
+            "label": "Session Group",
+            "name": "session_group",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "group1": "Lead the way",
+                "group3": "Discover what's possible",
+                "group2": "Build the future"
+            },
+            "allow_null": 0,
+            "default_value": "group1",
+            "layout": "vertical",
+            "return_format": "value",
+            "translations": "copy_once"
+        },
+        {
+            "key": "field_5eea52430eefb",
+            "label": "Session Presenters",
+            "name": "session_presenters",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5eea524d0eefc",
+                    "label": "Name",
+                    "name": "name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "translations": "translate"
+                },
+                {
+                    "key": "field_5eea52510eefd",
+                    "label": "Job Title",
+                    "name": "job_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "translations": "translate"
+                }
+            ]
+        },
+        {
+            "key": "field_5edfc466ed570",
+            "label": "Session Details",
+            "name": "session_details",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "About the spectrum of cloud strategies (private, hybrid, public) and the criteria that can help you determine which is right for you. How to get the most out of your cloud strategy to keep cost and risk low, and more quickly deploy your applications. Realistically, Sam and Frodo would never have made it. There’s just no way.The components of Mendix’s multi-cloud offerings.",
+            "tabs": "text",
+            "media_upload": 0,
+            "translations": "translate",
+            "toolbar": "full",
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "mxw_category:session"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "modified": 1604982914
+}

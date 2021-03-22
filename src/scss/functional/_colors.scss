@@ -1,0 +1,23 @@
+.blue {
+    color: $blue;
+}
+
+.body {
+    color: $color-body;
+}
+
+.gray {
+    color: $gray-m;
+} 
+
+.blue-dark {
+    color: $blue-dark;
+}
+
+.white {
+    color: white;
+
+    &>* {
+        color: white;
+    }
+}

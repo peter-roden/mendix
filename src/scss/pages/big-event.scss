@@ -1,0 +1,48 @@
+@import '../abstracts/_dir';
+
+body {
+    background-color: $gray-l;
+}
+
+.headshot {
+    padding-bottom: 95%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.headshot__caption {
+    padding: 0.5rem 1rem;
+    background: $blue;
+    width: 100%;
+    color: white;
+
+    a {
+        color: white;
+    }
+}
+
+.aside-card {
+    padding: 3rem 2rem;
+    margin-right: -1rem;
+    margin-left: -1rem;
+}
+
+.sub-card {
+    border-top: 1px solid white;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.medium-banner-overlap {
+    margin-top: 3rem;
+}
+
+@media (min-width: $foundation-medium) {
+    .medium-banner-overlap {
+        position: relative;
+        margin-top: -16rem;
+        margin-top: -16rem;
+    }
+}

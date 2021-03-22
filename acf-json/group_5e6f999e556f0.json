@@ -1,0 +1,1683 @@
+{
+    "key": "group_5e6f999e556f0",
+    "title": "PB Rows",
+    "fields": [
+        {
+            "key": "field_5e6f9a8032d60",
+            "label": "Rows",
+            "name": "pb_flexible_rows",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_5e822148170da": {
+                    "key": "layout_5e822148170da",
+                    "name": "include_template",
+                    "label": "Include PHP Template",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e8221f6170dc",
+                            "label": "Message",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Advanced — Include PHP partial from the current theme using locate_template() from the \/page-builder\/partials\/ folder. Will require custom development work. Useful for one time items, new objects. Vetted items should be converted to a reusable item (e.g. includable post object, or new ACF row item).\r\n\r\nIf a card size is selected, the post will be place within a grid card, otherwise it will be full width.",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_5e822292170dd",
+                            "label": "File Name",
+                            "name": "filename",
+                            "type": "text",
+                            "instructions": "File name only, the path will be prepended.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "file_name.php",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5e823b2e2fa36": {
+                    "key": "layout_5e823b2e2fa36",
+                    "name": "include_post_object",
+                    "label": "Include Post",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e823b2e2fa37",
+                            "label": "Message",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Advanced: Include a page or post object within this section. Will pull in the associated post or page template within the row.",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_5e823b2e2fa38",
+                            "label": "Posts",
+                            "name": "post_object",
+                            "type": "relationship",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5e6f9a8032d60",
+                                        "operator": "!=empty"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": "",
+                            "taxonomy": "",
+                            "filters": [
+                                "search",
+                                "post_type",
+                                "taxonomy"
+                            ],
+                            "elements": "",
+                            "min": "",
+                            "max": "",
+                            "return_format": "object",
+                            "translations": "copy_once"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5ea89f1510b46": {
+                    "key": "layout_5ea89f1510b46",
+                    "name": "include_page",
+                    "label": "Include Page",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ea89f1510b47",
+                            "label": "Message",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Advanced: Include a page or post object within this section. Will pull in the associated post or page template within the row.",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_5ea89f1510b48",
+                            "label": "Posts",
+                            "name": "post_object",
+                            "type": "post_object",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5e6f9a8032d60",
+                                        "operator": "!=empty"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": "",
+                            "taxonomy": "",
+                            "allow_null": 0,
+                            "multiple": 1,
+                            "return_format": "object",
+                            "translations": "copy_once",
+                            "ui": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5e6f9c8625c1b": {
+                    "key": "layout_5e6f9c8625c1b",
+                    "name": "breadcrumbs",
+                    "label": "Breadcrumbs",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e78cededba1d",
+                            "label": "Message",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Breadcrumbs will appear based on page hierarchy. There are no styling options.",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5e6f9a8671efc": {
+                    "key": "layout_5e6f9a8671efc",
+                    "name": "kicker",
+                    "label": "Kicker",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e6f9a8a32d61",
+                            "label": "Text",
+                            "name": "text",
+                            "type": "text",
+                            "instructions": "SMALL CAPS kicker",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5f04f0d33dd2a",
+                            "label": "Text Align",
+                            "name": "text_align",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "inherit": "Inherit",
+                                "left": "Left",
+                                "center": "Center",
+                                "right": "Right"
+                            },
+                            "allow_null": 0,
+                            "default_value": "inherit",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5e727c38a8a3d": {
+                    "key": "layout_5e727c38a8a3d",
+                    "name": "heading",
+                    "label": "Heading",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e7a573666b80",
+                            "label": "Use Page Title",
+                            "name": "use_page_title",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Fill the text field with the page\/post title",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_5e7a575866b81",
+                            "label": "Screen Reader Only",
+                            "name": "screen_reader_only",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Heading will be hidden visually, but available for screen readers and the HTML outline",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_5e7a577266b82",
+                            "label": "Text",
+                            "name": "text",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5e7a573666b80",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5e7a7812da97f",
+                            "label": "Alignment",
+                            "name": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5e7a6945d9e82",
+                            "label": "Text Align",
+                            "name": "text_align",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "Left": "Left",
+                                "Center": "Center",
+                                "Right": "Right"
+                            },
+                            "allow_null": 0,
+                            "default_value": "Left",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_5e7a69c9d9e84",
+                            "label": "Column Alignment",
+                            "name": "column_alignment",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "Left": "Left",
+                                "Center": "Center"
+                            },
+                            "allow_null": 0,
+                            "default_value": "Left",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_5e7a69f2d9e85",
+                            "label": "Large Column Size",
+                            "name": "column_size_large",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "12": "12",
+                                "10": "10",
+                                "8": "8",
+                                "6": "6"
+                            },
+                            "allow_null": 0,
+                            "default_value": 6,
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_5e7a69fdd9e86",
+                            "label": "Large Text Align",
+                            "name": "text_align_large",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "Inherit": "Inherit",
+                                "Left": "Left",
+                                "Center": "Center",
+                                "Right": "Right"
+                            },
+                            "allow_null": 0,
+                            "default_value": "Inherit",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5e727a79999f7": {
+                    "key": "layout_5e727a79999f7",
+                    "name": "subheading",
+                    "label": "Subheading",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e7a5839f6482",
+                            "label": "Text",
+                            "name": "text",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 3,
+                            "new_lines": "wpautop"
+                        },
+                        {
+                            "key": "field_5e7a77fdda97e",
+                            "label": "Alignment",
+                            "name": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5e7a6a46d9e89",
+                            "label": "Text Align",
+                            "name": "text_align",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "Left": "Left",
+                                "Center": "Center",
+                                "Right": "Right"
+                            },
+                            "allow_null": 0,
+                            "default_value": "Left",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_5e7a6a36d9e87",
+                            "label": "Column Alignment",
+                            "name": "column_alignment",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "Left": "Left",
+                                "Center": "Center"
+                            },
+                            "allow_null": 0,
+                            "default_value": "Left",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_5e7a6a49d9e8a",
+                            "label": "Large Column Size",
+                            "name": "column_size_large",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "12": "12",
+                                "10": "10",
+                                "8": "8",
+                                "6": "6"
+                            },
+                            "allow_null": 0,
+                            "default_value": 6,
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_5e7a6a4dd9e8b",
+                            "label": "Large Text Align",
+                            "name": "text_align_large",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "Inherit": "Inherit",
+                                "Left": "Left",
+                                "Center": "Center",
+                                "Right": "Right"
+                            },
+                            "allow_null": 0,
+                            "default_value": "Inherit",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5e989ec5635ee": {
+                    "key": "layout_5e989ec5635ee",
+                    "name": "link",
+                    "label": "Link",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e989ec5635ef",
+                            "label": "Options",
+                            "name": "options",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "Inherit": "Inherit",
+                                "Set": "Set"
+                            },
+                            "allow_null": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_5e989ecb635f2",
+                            "label": "Type",
+                            "name": "type",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5e989ec5635ef",
+                                        "operator": "!=",
+                                        "value": "Inherit"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "Inherit": "Inherit",
+                                "Link": "Link",
+                                "CTA": "CTA"
+                            },
+                            "allow_null": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_5e989ec5635f0",
+                            "label": "Column Alignment",
+                            "name": "column_alignment",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5e989ec5635ef",
+                                        "operator": "!=",
+                                        "value": "Inherit"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "Left": "Left",
+                                "Center": "Center"
+                            },
+                            "allow_null": 0,
+                            "default_value": "Left",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_5e989f19635f3",
+                            "label": "Attribute Event",
+                            "name": "attribute_event",
+                            "type": "text",
+                            "instructions": "Add data-event attribute",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "MyEventName",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5e989ec5635f1",
+                            "label": "Link",
+                            "name": "link",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5e74e8ac858fe": {
+                    "key": "layout_5e74e8ac858fe",
+                    "name": "card",
+                    "label": "Card",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e7a6af49820f",
+                            "label": "Options",
+                            "name": "options",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "Inherit": "Inherit",
+                                "Set": "Set"
+                            },
+                            "allow_null": 0,
+                            "default_value": "",
+                            "layout": "",
+                            "return_format": ""
+                        },
+                        {
+                            "key": "field_5ea89a3a635e1",
+                            "label": "Text Align",
+                            "name": "text_align",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5e7a6af49820f",
+                                        "operator": "!=",
+                                        "value": "Inherit"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "inherit": "Inherit",
+                                "left": "Left",
+                                "center": "Center"
+                            },
+                            "allow_null": 0,
+                            "default_value": "inherit",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_5f091be26c2d7",
+                            "label": "Horizontal Alignment",
+                            "name": "horizontal_alignment",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5e7a6af49820f",
+                                        "operator": "!=",
+                                        "value": "Inherit"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "inherit": "Inherit",
+                                "top": "Left",
+                                "center": "Center",
+                                "right": "Right",
+                                "justify": "Justify"
+                            },
+                            "allow_null": 0,
+                            "default_value": "inherit",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_5e7a6b9e98212",
+                            "label": "Background",
+                            "name": "background",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5e7a6af49820f",
+                                        "operator": "!=",
+                                        "value": "Inherit"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "None": "None",
+                                "White": "White",
+                                "Gray": "Gray",
+                                "Image": "Image"
+                            },
+                            "allow_null": 0,
+                            "default_value": "None",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_5e7a6bf898213",
+                            "label": "Background Image",
+                            "name": "card_background_image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5e7a6af49820f",
+                                        "operator": "!=",
+                                        "value": "Inherit"
+                                    },
+                                    {
+                                        "field": "field_5e7a6b9e98212",
+                                        "operator": "==",
+                                        "value": "Image"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5e7a6b6598211",
+                            "label": "Elements",
+                            "name": "elements",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5e7a234de54fb"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5efbd8cde62a7": {
+                    "key": "layout_5efbd8cde62a7",
+                    "name": "column",
+                    "label": "Column",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5efbd8cde62a8",
+                            "label": "Options",
+                            "name": "options",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "Inherit": "Inherit",
+                                "Set": "Set"
+                            },
+                            "allow_null": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value",
+                            "translations": "copy_once"
+                        },
+                        {
+                            "key": "field_5efbd8ece62b2",
+                            "label": "Vertical Alignment",
+                            "name": "vertical_alignment",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5efbd8cde62a8",
+                                        "operator": "!=",
+                                        "value": "Inherit"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "inherit": "Inherit",
+                                "top": "Top",
+                                "middle": "Middle"
+                            },
+                            "allow_null": 0,
+                            "default_value": "inherit",
+                            "layout": "horizontal",
+                            "return_format": "value",
+                            "translations": "copy_once"
+                        },
+                        {
+                            "key": "field_5efbde53393db",
+                            "label": "Horizontal Alignment",
+                            "name": "horizontal_alignment",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5efbd8cde62a8",
+                                        "operator": "!=",
+                                        "value": "Inherit"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "inherit": "Inherit",
+                                "top": "Left",
+                                "center": "Center",
+                                "right": "Right",
+                                "justify": "Justify"
+                            },
+                            "allow_null": 0,
+                            "default_value": "inherit",
+                            "layout": "horizontal",
+                            "return_format": "value",
+                            "translations": "copy_once"
+                        },
+                        {
+                            "key": "field_5f47cb8ac527d",
+                            "label": "Column Align",
+                            "name": "text_align_large",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "Inherit": "Inherit",
+                                "Left": "Left",
+                                "Center": "Center",
+                                "Right": "Right"
+                            },
+                            "allow_null": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value",
+                            "translations": "copy_once"
+                        },
+                        {
+                            "key": "field_5efbdb6eb0639",
+                            "label": "Column Size",
+                            "name": "column_size",
+                            "type": "group",
+                            "instructions": "0 will inherit column size from the previous breakpoint.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "table",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5efbdc213d529",
+                                    "label": "Small",
+                                    "name": "small",
+                                    "type": "range",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": 12,
+                                    "min": 1,
+                                    "max": 12,
+                                    "step": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "translations": "copy_once"
+                                },
+                                {
+                                    "key": "field_5efbdb7bb063a",
+                                    "label": "Medium",
+                                    "name": "medium",
+                                    "type": "range",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5e6f9a8032d60",
+                                                "operator": "!=empty"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": 0,
+                                    "min": 0,
+                                    "max": 12,
+                                    "step": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "translations": "copy_once"
+                                },
+                                {
+                                    "key": "field_5efbdb8eb063b",
+                                    "label": "Large",
+                                    "name": "large",
+                                    "type": "range",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5e6f9a8032d60",
+                                                "operator": "!=empty"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": 0,
+                                    "min": 0,
+                                    "max": 12,
+                                    "step": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "translations": "copy_once"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5efbd8cde62ab",
+                            "label": "Elements",
+                            "name": "elements",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5e7a234de54fb"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5e7a6c3498215": {
+                    "key": "layout_5e7a6c3498215",
+                    "name": "column_alternating",
+                    "label": "Column Alternating",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e7a6c3498216",
+                            "label": "Options",
+                            "name": "options",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "Inherit": "Inherit",
+                                "Set": "Set"
+                            },
+                            "allow_null": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_5e7a6c539821a",
+                            "label": "Large Column Size",
+                            "name": "large_column_size",
+                            "type": "button_group",
+                            "instructions": "Options with \"\/\" alternate sizes.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5e7a6c3498216",
+                                        "operator": "!=",
+                                        "value": "Inherit"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "6": "6",
+                                "65": "6\/5",
+                                "5": "5"
+                            },
+                            "allow_null": 0,
+                            "default_value": 6,
+                            "layout": "horizontal",
+                            "return_format": "value",
+                            "translations": "copy_once"
+                        },
+                        {
+                            "key": "field_5ea8a01b194d5",
+                            "label": "Column Ordering",
+                            "name": "column_ordering",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5e7a6c3498216",
+                                        "operator": "!=",
+                                        "value": "Inherit"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "inherit": "Inherit",
+                                "alternate": "Alternate",
+                                "alternate-reverse": "Alternate Reverse"
+                            },
+                            "allow_null": 0,
+                            "default_value": "inherit",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_5f47da6ed8c67",
+                            "label": "Vertical Alignment",
+                            "name": "vertical_alignment",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5e7a6c3498216",
+                                        "operator": "!=",
+                                        "value": "Inherit"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "inherit": "Inherit",
+                                "top": "Top",
+                                "middle": "Middle"
+                            },
+                            "allow_null": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value",
+                            "translations": "copy_once"
+                        },
+                        {
+                            "key": "field_5e7a6c3498219",
+                            "label": "Elements",
+                            "name": "elements",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5e7a234de54fb"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5e7b85c3e119d": {
+                    "key": "layout_5e7b85c3e119d",
+                    "name": "billboard",
+                    "label": "Billboard",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e8361a40e04d",
+                            "label": "Options",
+                            "name": "options",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "Inherit": "Inherit",
+                                "Set": "Set"
+                            },
+                            "allow_null": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_5e835ff80e04c",
+                            "label": "Billboard Image Area Height",
+                            "name": "height",
+                            "type": "number",
+                            "instructions": "Pixel height value for billboard. Default 600px.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5e8361a40e04d",
+                                        "operator": "==",
+                                        "value": "Set"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 600,
+                            "placeholder": 600,
+                            "prepend": "",
+                            "append": "",
+                            "min": "",
+                            "max": "",
+                            "step": ""
+                        },
+                        {
+                            "key": "field_5e8382cc7bb6e",
+                            "label": "Tab Heading",
+                            "name": "heading",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5e82640b6ade1",
+                            "label": "Additional Tab Contents",
+                            "name": "tab",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5e7a234de54fb"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 1,
+                            "prefix_name": 1
+                        },
+                        {
+                            "key": "field_5e835f7d0e04b",
+                            "label": "Image or Video",
+                            "name": "file",
+                            "type": "file",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5e6f9a8032d60",
+                                        "operator": "!=empty"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "library": "all",
+                            "min_size": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5ef7d2cb48348": {
+                    "key": "layout_5ef7d2cb48348",
+                    "name": "accordion",
+                    "label": "Accordion",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ef7d2d648349",
+                            "label": "Expandable Section",
+                            "name": "expandable_section",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5ef7d2f04834a",
+                                    "label": "Heading",
+                                    "name": "heading",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": "",
+                                    "translations": "translate"
+                                },
+                                {
+                                    "key": "field_5ef7d3014834b",
+                                    "label": "Description",
+                                    "name": "description",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": "",
+                                    "translations": "translate"
+                                },
+                                {
+                                    "key": "field_5ef7d30e4834c",
+                                    "label": "Icon",
+                                    "name": "icon",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "url",
+                                    "preview_size": "medium",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
+                                    "translations": "copy_once"
+                                },
+                                {
+                                    "key": "field_5ef7d31c4834d",
+                                    "label": "Screenshot",
+                                    "name": "screenshot",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "medium",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
+                                    "translations": "copy_once"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5efbe11d28c8e": {
+                    "key": "layout_5efbe11d28c8e",
+                    "name": "anchorLinks",
+                    "label": "AnchorLinks",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5efbe12428c8f",
+                            "label": "links",
+                            "name": "links",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5efbe14328c90",
+                                    "label": "Link",
+                                    "name": "link",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "translations": "copy_once"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5f0911042024a": {
+                    "key": "layout_5f0911042024a",
+                    "name": "horizontalrule",
+                    "label": "Horizontal Rule",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f0911042024b",
+                            "label": "Pixel Height",
+                            "name": "margin_top",
+                            "type": "button_group",
+                            "instructions": "Increments of 8px",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "0": "0",
+                                "32": "32",
+                                "64": "64",
+                                "96": "96"
+                            },
+                            "allow_null": 0,
+                            "default_value": 0,
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5f092d2685a19": {
+                    "key": "layout_5f092d2685a19",
+                    "name": "css",
+                    "label": "CSS",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f092d6285a1b",
+                            "label": "Message",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Add CSS that will be scoped to this section's ID",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_5f092d2685a1a",
+                            "label": "CSS",
+                            "name": "css",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add to Section",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "modified": 1607372549
+}

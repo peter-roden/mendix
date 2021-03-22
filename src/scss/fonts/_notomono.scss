@@ -1,0 +1,16 @@
+@font-face {
+	font-family: "NotoMono";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Alma Mono Regular"), local("NotoMono-Regular"),
+		url("/wp-content/themes/mendix/ui/fonts/NotoMono-Regular.woff2") format("woff2"),
+		url("/wp-content/themes/mendix/ui/fonts/NotoMono-Regular.woff") format("woff");
+	/* Latin glyphs */
+	unicode-range: none;
+}
+
+.monospace {
+	font-family: "NotoMono";
+	font-style: normal;
+	font-weight: 400;
+}

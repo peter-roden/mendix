@@ -1,0 +1,53 @@
+//TODO 
+//replace with an svg... I don't trust the CSS versions anymore.
+
+//CSS chevrons, usually overriden in a another file to adjust style to a templates design
+//overriding the width, height, and border-width are the main style changes. 
+.chevron-down::before,
+.chevron-left::before,
+.chevron-right::before,
+.chevron::before {
+    position: relative;
+    z-index: 9;
+    top: 0.15em;
+    left: 0.15em;
+    display: inline-block;
+    content: '';
+    transform: rotate(-45deg);
+    vertical-align: top;
+    width: 3rem;
+    height: 3rem;
+    border-width: 1rem 1rem 0 0;
+    border-style: solid;
+}
+
+[class*='copy'] {
+
+    .chevron-down::before,
+    .chevron-left::before,
+    .chevron-right::before,
+    .chevron::before {
+        border-color: inherit;
+        top: 0.5em;
+        width: 0.7em;
+        height: 0.7em;
+        border-width: .075em .075em 0 0;
+    }
+}
+
+.chevron-right::before {
+    left: 0;
+
+    transform: rotate(45deg);
+}
+
+.chevron-left::before {
+    left: 0;
+    transform: rotate(-135deg);
+}
+
+.chevron-down::before {
+    top: 0;
+
+    transform: rotate(135deg);
+}

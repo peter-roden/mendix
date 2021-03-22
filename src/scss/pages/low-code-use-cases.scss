@@ -1,0 +1,160 @@
+@import '../abstracts/dir';
+
+body {
+	background: black;
+}
+
+.lcuc-head {
+	font-family: $font-accent;
+	font-weight: bold;
+	font-size: 62/16 * 1rem;
+	line-height: 1.15;
+	margin-top: 1rem !important;
+	color: white;
+}
+
+.lcuc-subhead {
+	color: white;
+	font-family: $font-accent;
+	font-size: 28/16 * 1rem;
+	font-weight: normal;
+	line-height: 1.25;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0.5rem;
+	max-width: 30em;
+}
+
+.lcuc-intro {
+	color: white;
+	font-size: 20/16 * 1rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2rem;
+	max-width: 38em;
+}
+
+.lcuc-uc {
+	color: white;
+
+	&::after {
+		content: '';
+		display: block;
+		margin: 72px auto 0;
+		border-bottom: 1px solid white;
+		width: 100%;
+	}
+
+	&:first-of-type {
+		padding-top: 0;
+	}
+
+	&:last-of-type::after {
+		border-bottom: none;
+	}
+
+	@media (min-width: $foundation-large) {
+		padding-top: 56px;
+
+		&::after {
+			max-width: 400px;
+		}
+	}
+}
+
+.lcuc-uc-head {
+	font-family: $font-accent;
+	font-weight: bold;
+	font-size: 40/16 * 1rem;
+}
+
+.lcuc-uc-paragraph {
+	margin-top: 1rem;
+	margin-bottom: 2.5rem;
+}
+
+.lcuc-kicker,
+.lcuc-uc-kicker {
+	color: white;
+	font-size: 1rem;
+	font-family: $font-accent;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.lcuc-uc-kicker {
+	margin-bottom: 2rem;
+}
+
+.waves-container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 0;
+	top: 0;
+	left: 0;
+}
+
+.waves {
+	position: absolute;
+	width: 110rem;
+	top: 0;
+	left: 50%;
+	transform: translate3d(-50%, 0, -100px);
+	max-width: 110rem;
+
+	@media (min-width: 110rem) {
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-image: linear-gradient(
+				90deg,
+				black,
+				transparent 25% 75%,
+				black
+			);
+		}
+	}
+}
+
+.wave {
+	position: relative;
+	margin-top: 10%;
+
+	img {
+		width: 100%;
+		min-width: $foundation-large;
+		object-fit: cover;
+		object-position: center;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: linear-gradient(black, transparent, black);
+	}
+
+	&:nth-of-type(1) {
+		margin-top: 0;
+	}
+
+	&:nth-of-type(3) {
+		transform: scaleX(-1);
+	}
+
+	@media (max-width: $foundation-small-max) {
+		&:nth-of-type(2),
+		&:nth-of-type(3) {
+			display: none;
+		}
+	}
+}

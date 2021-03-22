@@ -1,0 +1,59 @@
+// borders for one side of an element
+.border-all {
+    border: solid 2px $color-border;
+}
+
+.border-top {
+    border-top: solid 2px $color-border;
+}
+
+.border-right {
+    border-right: solid 2px $color-border;
+}
+
+.border-bottom {
+    border-bottom: solid 2px $color-border;
+}
+
+.border-left {
+    border-left: solid 2px $color-border;
+}
+
+.border-radius {
+    border-radius: 4px;
+}
+
+.border-color-blue {
+    border-color: $blue;
+}
+
+.border-color-white {
+    border-color: white;
+}
+
+.border-width-4 {
+    border-width: 4px;
+}
+
+@media screen and (min-width: $foundation-medium) {
+    .medium-border-all {
+        border: solid 1px $color-border;
+    }
+
+    .medium-border-top {
+        border-top: solid 1px $color-border;
+    }
+
+    .medium-border-right {
+        border-right: solid 1px $color-border;
+    }
+
+    .medium-border-bottom {
+        border-bottom: solid 1px $color-border;
+    }
+
+    .medium-border-left {
+        border-left: solid 1px $color-border;
+    }
+
+}

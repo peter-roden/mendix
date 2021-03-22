@@ -1,0 +1,9 @@
+.overflow-hidden {
+    overflow: hidden;
+}
+
+@media screen and (min-width: $foundation-medium) {
+    .medium-overflow-hidden {
+        overflow: hidden;
+    }
+}

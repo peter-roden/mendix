@@ -1,0 +1,243 @@
+/**
+  Generate spacing from 0 to $spacing-5 for a prefix and property.
+  e.g.
+    .ma0  { margin: 0 }
+    .ma25 { margin: $spacing-1 }
+    .ma1  { margin: $spacing-1 }
+*/
+@mixin generateSpacingClasses($prefix, $name, $property, $property2:false) {
+    .#{$prefix + $name}0 {
+        #{$property}: 0;
+
+        @if $property2 {
+            #{$property2}: 0;
+        }
+    }
+
+    .#{$prefix + $name}25 {
+        #{$property}: $spacing-25;
+
+        @if $property2 {
+            #{$property2}: $spacing-25;
+        }
+    }
+
+    .#{$prefix + $name}50 {
+        #{$property}: $spacing-50;
+
+        @if $property2 {
+            #{$property2}: $spacing-50;
+        }
+    }
+
+    .#{$prefix + $name}1 {
+        #{$property}: $spacing-1;
+
+        @if $property2 {
+            #{$property2}: $spacing-1;
+        }
+    }
+
+    .#{$prefix + $name}2 {
+        #{$property}: $spacing-2;
+
+        @if $property2 {
+            #{$property2}: $spacing-2;
+        }
+    }
+
+    .#{$prefix + $name}3 {
+        #{$property}: $spacing-3;
+
+        @if $property2 {
+            #{$property2}: $spacing-3;
+        }
+    }
+
+    .#{$prefix + $name}4 {
+        #{$property}: $spacing-4;
+
+        @if $property2 {
+            #{$property2}: $spacing-4;
+        }
+    }
+
+    .#{$prefix + $name}5 {
+        #{$property}: $spacing-5;
+
+        @if $property2 {
+            #{$property2}: $spacing-5;
+        }
+    }
+}
+
+@mixin generateGutter($name, $padding) {
+    .#{$name}:nth-child(odd) {
+        padding-right: $padding;
+    }
+
+    .#{$name}:nth-child(even) {
+        padding-left: $padding;
+    }
+}
+
+@mixin sectionPadding3 {
+    padding-top: $spacing-4;
+    padding-bottom: $spacing-4;
+
+    @media screen and (max-width: 1024px) {
+        padding-top: $spacing-3;
+        padding-bottom: $spacing-3;
+    }
+}
+
+.section-padding {
+    @include sectionPadding3
+}
+
+.section-padding:not([class*='bg-'])+.section-padding:not([class*='bg-']) {
+    padding-top: $spacing-4;
+}
+
+@include generateSpacingClasses('', ma, margin);
+@include generateSpacingClasses('', mt, margin-top);
+@include generateSpacingClasses('', mr, margin-right);
+@include generateSpacingClasses('', mb, margin-bottom);
+@include generateSpacingClasses('', ml, margin-left);
+@include generateSpacingClasses('', mh, margin-left, margin-right);
+@include generateSpacingClasses('', mv, margin-top, margin-bottom);
+@include generateSpacingClasses('', pa, padding);
+@include generateSpacingClasses('', pt, padding-top);
+@include generateSpacingClasses('', pr, padding-right);
+@include generateSpacingClasses('', pb, padding-bottom);
+@include generateSpacingClasses('', pl, padding-left);
+@include generateSpacingClasses('', ph, padding-left, padding-right);
+@include generateSpacingClasses('', pv, padding-top, padding-bottom);
+
+.children-mt1>* {
+    margin-top: $spacing-1;
+}
+
+.children-mt2>* {
+    margin-top: $spacing-2;
+}
+
+.children-mt3>* {
+    margin-top: $spacing-3;
+}
+
+[class*=btn].hang-left {
+    margin-left: -4px;
+}
+
+.hang-left-1 {
+    margin-left: -$spacing-1;
+}
+
+.row.mh0 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.mt-1 {
+    margin-top: -$spacing-1;
+    margin-bottom: -$spacing-1;
+}
+
+.mt-2 {
+    margin-top: -$spacing-2;
+    margin-bottom: -$spacing-2;
+}
+
+.mt-3 {
+    margin-top: -$spacing-3;
+    margin-bottom: -$spacing-3;
+}
+
+.mt-4 {
+    margin-top: -$spacing-4;
+    margin-bottom: -$spacing-4;
+}
+
+@media print,
+screen and (max-width: $foundation-small-max) {
+    @include generateSpacingClasses('small-only-', ma, margin);
+    @include generateSpacingClasses('small-only-', mt, margin-top);
+    @include generateSpacingClasses('small-only-', mr, margin-right);
+    @include generateSpacingClasses('small-only-', mb, margin-bottom);
+    @include generateSpacingClasses('small-only-', ml, margin-left);
+    @include generateSpacingClasses('small-only-', mh, margin-left, margin-right);
+    @include generateSpacingClasses('small-only-', mv, margin-top, margin-bottom);
+    @include generateSpacingClasses('small-only-', pa, padding);
+    @include generateSpacingClasses('small-only-', pt, padding-top);
+    @include generateSpacingClasses('small-only-', pr, padding-right);
+    @include generateSpacingClasses('small-only-', pb, padding-bottom);
+    @include generateSpacingClasses('small-only-', pl, padding-left);
+    @include generateSpacingClasses('small-only-', ph, padding-left, padding-right);
+    @include generateSpacingClasses('small-only-', pv, padding-top, padding-bottom);
+}
+
+@media print,
+screen and (min-width: $foundation-medium) {
+    @include generateSpacingClasses('medium-', ma, margin);
+    @include generateSpacingClasses('medium-', mt, margin-top);
+    @include generateSpacingClasses('medium-', mr, margin-right);
+    @include generateSpacingClasses('medium-', mb, margin-bottom);
+    @include generateSpacingClasses('medium-', ml, margin-left);
+    @include generateSpacingClasses('medium-', mh, margin-left, margin-right);
+    @include generateSpacingClasses('medium-', mv, margin-top, margin-bottom);
+    @include generateSpacingClasses('medium-', pa, padding);
+    @include generateSpacingClasses('medium-', pt, padding-top);
+    @include generateSpacingClasses('medium-', pr, padding-right);
+    @include generateSpacingClasses('medium-', pb, padding-bottom);
+    @include generateSpacingClasses('medium-', pl, padding-left);
+    @include generateSpacingClasses('medium-', ph, padding-left, padding-right);
+    @include generateSpacingClasses('medium-', pv, padding-top, padding-bottom);
+}
+
+@media print,
+screen and (min-width: $foundation-medium) and (max-width: $foundation-medium-max) {
+    @include generateSpacingClasses('medium-only-', ma, margin);
+    @include generateSpacingClasses('medium-only-', mt, margin-top);
+    @include generateSpacingClasses('medium-only-', mr, margin-right);
+    @include generateSpacingClasses('medium-only-', mb, margin-bottom);
+    @include generateSpacingClasses('medium-only-', ml, margin-left);
+    @include generateSpacingClasses('medium-only-', mh, margin-left, margin-right);
+    @include generateSpacingClasses('medium-only-', mv, margin-top, margin-bottom);
+    @include generateSpacingClasses('medium-only-', pa, padding);
+    @include generateSpacingClasses('medium-only-', pt, padding-top);
+    @include generateSpacingClasses('medium-only-', pr, padding-right);
+    @include generateSpacingClasses('medium-only-', pb, padding-bottom);
+    @include generateSpacingClasses('medium-only-', pl, padding-left);
+    @include generateSpacingClasses('medium-only-', ph, padding-left, padding-right);
+    @include generateSpacingClasses('medium-only-', pv, padding-top, padding-bottom);
+}
+
+@media print,
+screen and (min-width: $foundation-large) {
+    @include generateSpacingClasses('large-', ma, margin);
+    @include generateSpacingClasses('large-', mt, margin-top);
+    @include generateSpacingClasses('large-', mr, margin-right);
+    @include generateSpacingClasses('large-', mb, margin-bottom);
+    @include generateSpacingClasses('large-', ml, margin-left);
+    @include generateSpacingClasses('large-', mh, margin-left, margin-right);
+    @include generateSpacingClasses('large-', mv, margin-top, margin-bottom);
+    @include generateSpacingClasses('large-', pa, padding);
+    @include generateSpacingClasses('large-', pt, padding-top);
+    @include generateSpacingClasses('large-', pr, padding-right);
+    @include generateSpacingClasses('large-', pb, padding-bottom);
+    @include generateSpacingClasses('large-', pl, padding-left);
+    @include generateSpacingClasses('large-', ph, padding-left, padding-right);
+    @include generateSpacingClasses('large-', pv, padding-top, padding-bottom);
+}
+
+.copy,
+.copy-sm {
+    &.mt0 {
+        margin-top: 0;
+    }
+
+    &.mt50 {
+        margin-top: $spacing-50;
+    }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="21px" viewBox="0 0 34 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Private-Cloud-_mid-slider" transform="translate(-616.000000, -1227.000000)" stroke="#FFFFFF" stroke-width="1.275">
+            <g id="Graphic" transform="translate(205.000000, 1026.000000)">
+                <g id="Slider-module" transform="translate(388.000000, 7.000000)">
+                    <g id="Group" transform="translate(40.500000, 204.000000) scale(1, -1) translate(-40.500000, -204.000000) translate(24.000000, 194.000000)">
+                        <path d="M22.1,0 L32.0951056,9.18340371 C32.2262872,9.30376051 32.3,9.46710236 32.3,9.63743393 C32.3,9.80776549 32.2262872,9.97110734 32.0951056,10.0914641 L22.1,19.2748679" id="Shape"></path>
+                        <path d="M0,0 L9.99510564,9.18340371 C10.1262872,9.30376051 10.2,9.46710236 10.2,9.63743393 C10.2,9.80776549 10.1262872,9.97110734 9.99510564,10.0914641 L0,19.2748679" id="Shape" transform="translate(5.100000, 9.637434) scale(-1, 1) translate(-5.100000, -9.637434) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

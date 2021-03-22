@@ -1,0 +1,243 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+header .border-top {
+  border: none; }
+
+.main-content-headline {
+  padding-top: 58px;
+  font-family: Patron;
+  font-size: 48px;
+  color: #FFFFFF;
+  line-height: 60px; }
+
+.hero-headline {
+  padding-top: 72px;
+  font-family: Patron;
+  font-size: 62px;
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 72px; }
+
+.hero-intro-copy {
+  font-family: Patron;
+  padding-top: 36px;
+  font-size: 28px;
+  color: #FFFFFF;
+  line-height: 34px; }
+
+.content-subheadline {
+  font-family: Patron;
+  padding-top: 50px;
+  font-size: 24px;
+  color: #FFFFFF;
+  line-height: 28px; }
+
+@media (max-width: 63.9375em) {
+  .main-content-headline {
+    padding-top: 30px;
+    font-size: 24px;
+    line-height: 30px; }
+  .post-info .hero-headline {
+    padding-top: 36px;
+    font-size: 30px;
+    line-height: 36px; }
+  .post-info .content-subheadline {
+    padding-top: 25px;
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 20px; } }
+
+#industry-hero li {
+  height: 1000px; }
+
+#industry-hero .main-content-headline {
+  display: block;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase; }
+
+#industry-hero .hero-headline {
+  position: relative;
+  margin: 0 auto;
+  text-align: center; }
+
+#industry-hero .hero-intro-copy {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center; }
+
+#industry-hero .content-subheadline {
+  position: relative;
+  margin: 0 auto;
+  text-align: center; }
+
+#industry-hero .ruler {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 40px; }
+
+#industry-hero .ruler hr {
+  position: relative;
+  width: 125px;
+  text-align: center;
+  margin: 0 auto;
+  color: #ffffff;
+  background-color: #ffffff;
+  height: 3px;
+  border: none; }
+
+#industry-hero .post-info {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center; }
+
+#industry-hero .post-info a.btn-primary {
+  margin-top: 50px; }
+
+@media (max-width: 63.9375em) {
+  #industry-hero li {
+    height: 800px; }
+  #industry-hero .grid-container {
+    margin: 0px 20px; } }
+
+.industry-hero-carousel-dots {
+  margin-top: -100px; }
+
+#blog-landing .pt3 {
+  padding-top: 130px; }
+
+#blog-landing .back-container {
+  position: relative;
+  text-align: left; }
+
+#blog-landing a.back {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0595DB; }
+
+#blog-landing .main-content-headline {
+  padding-top: 30px;
+  padding-bottom: 58px;
+  color: #57585B; }
+
+#blog-landing .pagination {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 60px; }
+
+#blog-landing .pagination a {
+  text-align: left;
+  padding: 5px 10px 5px 10px;
+  border: 1px solid grey;
+  color: #000000; }
+
+#blog-landing .pagination a:hover {
+  color: #FFFFFF;
+  background-color: #0CABF9;
+  text-decoration: none; }
+
+#blog-landing .pagination a.prev {
+  width: auto; }
+
+#blog-landing .pagination a.next {
+  width: auto; }
+
+#blog-landing .pagination span {
+  text-align: left;
+  padding: 5px 10px 5px 10px;
+  border: 1px solid grey;
+  color: #000000; }
+
+#blog-landing .pagination span.current {
+  color: #ffffff;
+  background-color: #171F30; }
+
+@media (max-width: 63.9375em) {
+  #blog-landing {
+    margin: 0px 20px; } }
+
+#post-featured {
+  height: 380px;
+  width: 30.5%;
+  margin-left: 16px;
+  padding: 20px;
+  background-color: #0595DB; }
+  #post-featured h3 {
+    color: #FFFFFF; }
+  #post-featured a {
+    display: block;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    font-weight: 600;
+    color: #FFFFFF; }
+
+@media (max-width: 63.9375em) {
+  #post-featured {
+    width: 46%;
+    padding-left: 16px;
+    padding-right: 32px; }
+    #post-featured li.card-3 {
+      padding-left: 16px; } }
+
+@media (max-width: 63.9375em) {
+  #post-featured {
+    width: 93%;
+    margin-left: 1rem;
+    margin-right: 1rem; } }
+
+@media (max-width: 63.9375em) {
+  #blog-landing li.card-3 {
+    padding-left: 30px;
+    padding-right: 0px; } }
+
+@media (max-width: 39.9375em) {
+  #blog-landing li.card-3 {
+    padding-left: 1rem;
+    padding-right: 1rem; } }
+
+.nav-next {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px; }
+
+#bottomCTA .cell {
+  width: 100%; }
+
+#bottomCTA .align-middle {
+  text-align: left; }
+
+#bottomCTA .align-center {
+  justify-content: left; }
+
+#bottomCTA a {
+  margin-top: -75px;
+  float: right; }
+
+@media (max-width: 63.9375em) {
+  #bottomCTA a {
+    margin-top: 25px;
+    float: left; } }
+
+/*# sourceMappingURL=blog-insurance.min.css.map */

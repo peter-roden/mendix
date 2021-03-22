@@ -1,0 +1,16 @@
+@import '../abstracts/dir';
+
+.filteredData--card {
+    border: 1px solid $color-border;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.filteredData--card-copy {
+    color: $color-body;
+
+    &:focus,
+    &:hover {
+        text-decoration: none;
+    }
+}

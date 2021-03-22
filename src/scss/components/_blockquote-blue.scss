@@ -1,0 +1,78 @@
+@import '../abstracts/dir';
+
+.blockquote-blue {
+	position: relative;
+	background: $blue-xxxl;
+	padding: $spacing-3 $spacing-2;
+
+	cite {
+		font-style: italic;
+	}
+
+	cite,
+	p {
+		font-size: inherit;
+		font-weight: lighter;
+	}
+
+	cite,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	ol,
+	p,
+	ul {
+		padding: 0;
+		color: $color-body;
+	}
+
+	p::after,
+	p::before {
+		content: '';
+	}
+
+	&::after,
+	&::before {
+		background: $blue;
+		border-radius: 50%;
+		color: white;
+		display: block;
+		font-size: 80px;
+		height: 60px;
+		line-height: 92px;
+		position: absolute;
+		transform: none;
+		width: 60px;
+	}
+
+	&::before {
+		left: $spacing-1;
+		padding-left: 14px;
+		top: -1.6rem;
+	}
+
+	&::after {
+		bottom: -1.7rem;
+		padding-left: 18px;
+		right: $spacing-1;
+	}
+
+	@media screen and (min-width: 900px) {
+		padding: $spacing-4 $spacing-3;
+
+		&::before {
+			left: $spacing-2;
+			padding-left: 14px;
+			top: -1.6rem;
+		}
+
+		&::after {
+			bottom: -1.7rem;
+			padding-left: 18px;
+			right: 3rem;
+		}
+	}
+}

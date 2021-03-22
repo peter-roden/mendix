@@ -1,0 +1,43 @@
+@mixin heading {
+	font-family: $font-accent;
+	font-weight: bold;
+	color: $color-heading;
+}
+
+@mixin headingXL {
+    font-size: 7.5rem;
+    line-height: 1;
+}
+
+@mixin heading1 {
+    font-size: 4.25rem;
+    line-height: 1.1;
+}
+
+@mixin heading2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+@mixin heading3 {
+    font-size: 2rem;
+    line-height: 1.25;
+}
+
+@mixin heading4 {
+    font-size: 1.5rem;
+    line-height: 1.3333;
+}
+
+@mixin heading5 {
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+@mixin heading6 {
+    font-size: 1.15rem;
+}
+
+@mixin heading7 {
+    font-size: 1rem;
+}

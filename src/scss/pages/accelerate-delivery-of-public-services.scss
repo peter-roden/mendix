@@ -1,0 +1,75 @@
+@import '../abstracts/dir';
+
+$content-max-width: 90rem;
+$mobile-break: 1024px;
+//colors
+$mw-black: #171717;
+$mw-blue-l:#00ffff;
+$mw-blue: #000051;
+$mw-gray: #e7eaec;
+$mw-orange: #F99B1D;
+
+.header {
+    background-image: url('https://www.mendix.com/wp-content/uploads/SanAntonio_background-2.jpg');
+    background-repeat: no-repeat;
+	background-size: cover !important;
+	padding-top: 4rem;
+}
+
+body {
+    background: #000000; /*black*/;
+}
+
+.blue {
+    color: $mw-blue-l;
+}
+
+
+
+div[id^=mktoCheckbox] [type=checkbox] {
+    vertical-align: middle;
+    display: inline-block;
+    transform: translate(0, 4px);
+}
+
+.mktoFieldDescriptor {
+    margin-top: -1.5rem;
+}
+
+.mktoErrorMsg {
+  font-size: 14px; 
+}
+
+.mxw-form {
+    margin-top: 2rem;
+
+    label {
+        color: #55c5fb;
+        font-size: 0.8rem;
+        transform: translate(0.5rem, .8em);
+        display: inline-block;
+        padding: 0 4px;
+        background: black;
+    }
+
+    input,
+    select,
+    textarea {
+        background: black;
+
+
+
+        &:focus {
+            border-color: #55c5fb;
+        }
+    }
+}
+
+.header .white a {
+  text-decoration: underline;
+}
+
+.copy li {
+  margin-top: .4em;
+  margin-bottom: 0;
+}

@@ -1,0 +1,58 @@
+@import '../abstracts/dir';
+
+.categories {
+
+    [class*='chevron-'] {
+        margin-left: 8%;
+
+        &::before {
+            border-width: .1rem .1rem 0 0;
+            height: .6rem;
+            top: .5em;
+            width: .6rem;
+        }
+    }
+
+    .category__menu {
+        display: none;
+    }
+
+    &.open {
+        .category__menu {
+            display: block;
+        }
+
+        .chevron-right::before {
+            transform: rotate(135deg);
+        }
+    }
+
+    label {
+        display: block;
+        line-height: 2;
+        margin-top: $spacing-50;
+
+        &:focus,
+        &:hover {
+            color: $blue;
+            cursor: pointer;
+        }
+
+        &.selected {
+            color: $blue;
+        }
+    }
+
+    legend {
+        color: $black;
+        font-size: 1.25rem;
+        line-height: 1.4;
+        width: 100%;
+
+        &:focus,
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+}

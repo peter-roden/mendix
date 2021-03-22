@@ -1,0 +1,46 @@
+// FUNCTIONAL BACKGROUND CLASSES
+.bg-alternating:nth-of-type(odd) {
+    //this class is for pages that have banded color sections
+    //that aare wrapped in php "if" statements
+    background-color: $gray-l;
+}
+
+.bg-aqua {
+    background-color: $aqua-l;
+}
+
+.bg-black {
+    background-color: $black;
+}
+
+.bg-brand,
+.bg-blue {
+    background-color: $blue;
+}
+
+.bg-brand-dark,
+.bg-blue-dark {
+    background-color: $blue-dark;
+}
+
+.bg-brand-light,
+.bg-blue-light {
+    background-color: $blue-xxxl;
+}
+
+.bg-gray {
+    background-color: $gray;
+}
+
+.bg-light {
+    background-color: $gray-l;
+}
+
+.bg-ebook-dem,
+.bg-red-light {
+    background-color: $red-l;
+}
+
+.bg-white {
+    background-color: white;
+}

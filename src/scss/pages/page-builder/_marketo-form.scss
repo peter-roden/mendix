@@ -1,0 +1,140 @@
+$animation-duration: 0.4s;
+@mixin label-inactive() {
+    font-size: 1rem;
+    transform: translateY(0);
+}
+
+@mixin label-active() {
+    font-size: 0.75rem;
+    transform: translateY(-24px);
+}
+.pb_row--marketoform, .pb_marketoform {
+    ::-webkit-input-placeholder { /* WebKit browsers */
+        color:    black;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+       color:    black;
+       opacity:  1;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+       color:    black;
+       opacity:  1;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10+ */
+       color:    black;
+    }
+    .input, input:not([type=checkbox]), select, textarea {
+        background: white;
+        border: 1px solid white;
+        color: black;
+    }
+}
+.pb_row--marketoform1, .pb_marketoform1 {
+
+    .mktoFormCol {
+        display: block;
+        margin-bottom: 16px;
+    }
+    .mktoFieldWrap {
+        background: inherit;
+        // border-radius: 8px 8px 0 0;
+        // overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+    .mktoLabel {
+        @include label-inactive();
+        display: block;
+        font-weight: normal;
+        left: 0;
+        margin: 0;
+        padding: 18px 12px 0;
+        position: absolute;
+        top: 0;
+        transition: all $animation-duration;
+        width: 100%;
+    }
+    .mktoClear {
+        bottom: 0;
+        content: "";
+        display: block;
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        transform: scaleX(0);
+        transition: all $animation-duration;
+        width: 1%;
+    }
+
+    select {
+        &.mktoField {
+            background: inherit;
+            appearance: none;
+            outline: 0;
+            border: 1px solid white;
+            color: white;
+
+            &:focus {
+                & ~ .mktoClear {
+                    transform: scaleX(1);
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .mktoField {
+        &.mktoTextField, &.mktoEmailField {
+            appearance: none;
+            background: inherit;
+            background: white;
+            border: 1px solid white;
+            border-radius: 4px;
+            color: white;
+            display: block;
+            // font-size: 1.2rem;
+            margin-top: 24px;
+            outline: 0;
+            padding: 0 12px;
+            width: 100%;
+
+            // IE 10-11
+            // &:-ms-input-placeholder {
+            //     ~ .mktoLabel {
+            //         @include label-inactive();
+            //     }
+            // }
+            // // All other browsers except Edge
+            // &:placeholder-shown {
+            //     ~ .mktoLabel {
+            //         @include label-inactive();
+            //     }
+            // }
+            &:focus {
+                // & ~ .mktoLabel {
+                //     color: #b11adc;
+                //     @include label-active();
+                // }
+                // // test
+                // & + .mktoLabel {
+                //     color: #b11adc;
+                //     @include label-active();
+                // }
+                // & > .mktoLabel {
+                //     color: #b11adc;
+                //     @include label-active();
+                // }
+                // .mktoLabel & {
+                //     color: #b11adc;
+                //     @include label-active();
+                // }
+                // end test
+                & ~ .mktoClear {
+                    transform: scaleX(1);
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+@import '../abstracts/dir';
+
+.ctabvb { 
+	background-color: $red-l;
+	overflow:hidden; 
+	text-align: center;
+
+	[class*=heading] { 
+		color: white; 
+	}
+
+	.ctabvb_image1 {
+		display: none;
+	}
+	.ctabvb_image2 {
+		margin-bottom: 1rem;
+	}
+
+	@media screen and (min-width: $large) {
+		text-align: left;
+
+		.ctabvb_images {
+			padding-top: 2rem;
+		}
+
+		.ctabvb_image1 {
+			display: block;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+
+			transition: all 700ms ease 100ms;
+			opacity: 0;
+			transform: translate(0, 100px);
+
+			&.active {
+				opacity: 1; 
+				transform: translate(0, 0);
+			}
+		}
+
+		.ctabvb_image2 {
+			transition: all 700ms ease 300ms;
+			opacity: 0;
+			transform: translate(0, 100px);
+			position: absolute;
+			bottom: -160px;
+			left: -20px;
+
+			&.active {
+				opacity: 1; 
+				transform: translate(0, 0);
+			}
+
+		}
+	}
+
+} 

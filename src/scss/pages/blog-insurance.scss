@@ -1,0 +1,269 @@
+@import '../abstracts/dir';
+
+header {
+	.border-top {
+		border: none;
+	}
+}
+
+.main-content-headline {
+	padding-top: 58px;
+	font-family: Patron;
+	font-size: 48px;
+	color: #FFFFFF;
+	line-height: 60px;
+}
+.hero-headline {
+	padding-top: 72px;
+	font-family: Patron;
+	font-size: 62px;
+	font-weight: 600;
+	color: #FFFFFF;
+	line-height: 72px;	
+}
+.hero-intro-copy {
+	font-family: Patron;
+	padding-top:36px;
+	font-size: 28px;
+	color: #FFFFFF;
+	line-height: 34px;	
+}
+.content-subheadline {
+	font-family: Patron;
+	padding-top:50px;
+	font-size: 24px;
+	color: #FFFFFF;
+	line-height: 28px;
+}
+@media (max-width: $foundation-medium-max) {
+	.main-content-headline {
+		padding-top: 30px;
+		font-size: 24px;
+		line-height: 30px;
+	}	
+	.post-info .hero-headline {
+		padding-top: 36px;
+		font-size: 30px;
+		line-height: 36px;	
+	}
+	.post-info .content-subheadline {
+		padding-top:25px;
+		font-size: 16px;
+		color: #FFFFFF;
+		line-height: 20px;	
+	}
+}
+
+#industry-hero {
+	li {
+		height: 1000px;
+	}
+	.main-content-headline {
+		display: block;
+		position: relative;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.hero-headline {
+		position: relative;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.hero-intro-copy {
+		position: relative;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.content-subheadline {
+		position: relative;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.ruler {
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+		padding-top: 40px;
+	}
+	.ruler hr {
+		position: relative;
+		width: 125px;
+		text-align: center;
+		margin: 0 auto;
+		color: #ffffff;	
+		background-color: #ffffff;
+		height: 3px;
+		border: none;
+	}
+	.post-info {
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.post-info a.btn-primary {
+		margin-top: 50px;
+	}
+}
+@media (max-width: $foundation-medium-max) {
+	#industry-hero {
+		li {
+			height: 800px;
+		}
+		.grid-container {
+			margin: 0px 20px;
+		}
+	}
+}
+
+.industry-hero-carousel-dots {
+	margin-top: -100px;
+}
+
+#blog-landing {
+	.pt3 {
+		padding-top: 130px;
+	}
+	.back-container {
+		position: relative;
+		text-align: left;
+	}
+	a.back {
+		display: block;
+		position: relative;
+		font-size: 16px;
+		font-weight: 600;
+		color: #0595DB;
+	}
+	.main-content-headline {
+		padding-top: 30px;
+		padding-bottom: 58px;
+		color: #57585B;
+	}
+	.pagination {
+		text-align: center;
+		margin: 0 auto;
+		padding-top: 30px;
+		padding-bottom: 60px;
+	}
+	.pagination a {
+		text-align: left;
+		padding: 5px 10px 5px 10px;
+		border: 1px solid grey;
+		color: #000000;
+	}
+	.pagination a:hover {
+		color: #FFFFFF;
+		background-color: #0CABF9;
+		text-decoration: none;
+	}
+	.pagination a.prev {
+		width: auto;
+	}
+	.pagination a.next {
+		width: auto;
+	}
+	.pagination span {
+		text-align: left;
+		padding: 5px 10px 5px 10px;
+		border: 1px solid grey;
+		color: #000000;
+	}
+	.pagination span.current {
+		color: #ffffff;
+		background-color: #171F30;
+	}
+}
+
+@media (max-width: $foundation-medium-max) {
+	#blog-landing {
+		margin: 0px 20px;
+	}
+}
+
+#post-featured {
+	height:380px;
+	width: 30.5%;
+	margin-left: 16px;
+	padding: 20px;
+	background-color: #0595DB;
+	h3  {
+		color: #FFFFFF;
+	}
+	a {
+		display: block;
+		width: 100%;
+		padding: 10px 0 10px 0;
+		font-weight: 600;
+		color: #FFFFFF;
+	}
+}
+
+@media (max-width: $foundation-medium-max) {
+	#post-featured  {
+		width: 46%;
+		padding-left: 16px;
+		padding-right: 32px;
+		li.card-3 {
+			padding-left: 16px;
+		}
+	}
+}
+
+@media (max-width: $foundation-medium-max) {
+	#post-featured  {
+		width: 93%;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+}
+
+@media (max-width: $foundation-medium-max) {
+	#blog-landing  {
+		li.card-3 {
+			padding-left: 30px;
+			padding-right: 0px;
+		}
+	}
+}
+
+@media (max-width: $foundation-small-max) {
+	#blog-landing  {
+		li.card-3 {
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+	}
+}
+
+.nav-next {
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#bottomCTA {
+	.cell {
+		width: 100%;
+	}
+	.align-middle {
+		text-align: left;
+	}
+	.align-center {
+		justify-content: left;
+	}
+	a {
+		margin-top: -75px;
+		float:right
+	}
+	@media (max-width: $foundation-medium-max) {
+		a {
+			margin-top: 25px;
+			float:left
+		}
+	}
+}
+

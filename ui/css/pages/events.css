@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+body {
+  background: #f5f5f5; }
+
+.event__card {
+  background-color: white;
+  position: relative;
+  padding: 16px; }
+
+.event__date,
+.event__location {
+  font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 3;
+  text-transform: uppercase; }
+
+.event__description {
+  margin-top: 16px; }
+
+.event__figure img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center; }
+
+.event__title {
+  font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #000003; }
+
+.event__type {
+  padding: 8px 16px;
+  font-weight: 600;
+  background: #0CABF9;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 16px; }
+
+.event__type__icon {
+  margin-right: 8px; }
+
+.all .event__card {
+  padding-top: 64px;
+  height: 100%; }
+
+.all .event__figure {
+  height: 96px; }
+
+.all .event__title {
+  font-size: 1.5rem;
+  line-height: 1.3333;
+  margin-top: 32px;
+  margin-bottom: 16px; }
+
+.all .event__cta {
+  display: inline-block;
+  margin-top: 16px; }
+  .all .event__cta::after {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    content: "→";
+    font-size: 20px;
+    margin-left: 0.2em;
+    display: inline-block;
+    transition: transform 200ms ease; }
+  .all .event__cta:focus, .all .event__cta:hover {
+    text-decoration: none; }
+    .all .event__cta:focus::after, .all .event__cta:hover::after {
+      transform: translate(0.3em, 0); }
+
+.featured .event__cell--text {
+  margin-top: 24px; }
+
+.featured .event__figure img {
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.featured .event__cta {
+  margin-top: 24px; }
+
+.featured .event__date {
+  display: inline-block;
+  border-left: 1px solid black;
+  padding-left: 8px;
+  margin-left: 8px; }
+
+.featured .event__figure {
+  width: 100%;
+  height: 100%; }
+
+.featured .event__location {
+  display: inline-block; }
+
+.featured .event__title {
+  font-size: 2.5rem;
+  line-height: 1.2; }
+
+.featured .event__type {
+  top: 0;
+  left: auto;
+  right: 16px; }
+
+@media (min-width: 40em) {
+  .featured .event__card {
+    display: flex; }
+  .featured .event__cell--image {
+    flex: 0 1 33%; }
+  .featured .event__cell--text {
+    margin-top: 0;
+    padding-left: 16px;
+    flex: 0 1 66%; } }

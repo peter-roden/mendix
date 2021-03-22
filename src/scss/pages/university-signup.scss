@@ -1,0 +1,35 @@
+@import '../abstracts/dir';
+
+.glyph::before {
+    content: url('../ui/svg/logo-glyph.svg');
+}
+
+.heading-subtitle {
+    font-size: .9rem;
+    font-weight: 300 !important;
+}
+
+.trainer__details {
+    position: relative;
+}
+
+.trainer__details::before {
+    content: "";
+    height: 5px;
+    width: 20%;
+    background: $blue;
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+}
+
+
+table {
+    td {
+        padding-bottom: 1rem;
+    }
+
+    td:first-child {
+        padding-right: 1rem;
+    }
+}

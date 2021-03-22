@@ -1,0 +1,72 @@
+@import '../abstracts/dir';
+
+.lcpe_header_head {
+	font-family: $font-accent;
+	font-size: 3.25rem;
+	font-weight: bold;
+	line-height: 1.15;
+	margin: 0 auto;
+	max-width: 10em;
+	text-align: center;
+}
+
+.lcpe_header_subhead {
+	font-family: $font-accent;
+	font-size: 1.4rem;
+	font-weight: 100;
+	line-height: 1.25;
+	margin: 1em auto 0;
+	max-width: 32em;
+	text-align: center;
+}
+
+@media (min-width: $foundation-medium) {
+	.lcpe_header_head {
+		font-size: 4.5rem;
+	}
+
+	.lcpe_header_subhead {
+		font-size: 1.75rem;
+	}
+}
+
+//////////// evalution section
+
+.lcpe_evaluations_repeater_image {
+	text-align: center;
+}
+
+.lcpe_key_questions {
+	background: $gray-l;
+	margin-top: $grid * 4;
+	padding: 24px 24px 32px;
+	margin-left: -4px;
+	margin-right: -4px;
+}
+
+.lcpe_key_questions_heading {
+	color: #666666;
+	font-size: 20/16 * 1rem;
+	font-weight: bold;
+	letter-spacing: 2px;
+	line-height: 1.35;
+	text-transform: uppercase;
+}
+
+.lcpe_key_questions_item {
+	list-style: disc;
+	margin-left: $grid * 2.5;
+	margin-top: $grid;
+}
+
+/////////////// reports section
+
+.lcpe_reports_card {
+	background: white;
+	padding: 32px;
+}
+
+.lcpe_reports_logo {
+	height: 48px;
+	max-width: 200px;
+}

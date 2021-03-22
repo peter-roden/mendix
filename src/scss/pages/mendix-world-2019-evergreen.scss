@@ -1,0 +1,158 @@
+@import '../abstracts/dir';
+
+$content-max-width: 90rem;
+$mobile-break: 1024px;
+//colors
+$mw-black: #171717;
+$mw-blue-light:#B1CBEB;
+$mw-blue: #000051;
+$mw-gray: #e7eaec;
+$mw-orange: #F99B1D;
+
+body {
+    background: $black;
+}
+
+.square {
+	padding-bottom: 100%;
+}
+
+.checkbox {
+    display: block;
+}
+
+[type=checkbox] {
+    display: inline-block;
+    width: 1rem;
+    margin-right: $spacing-50;
+
+    height: 1rem;
+    border: 1px solid white;
+}
+
+.mx-select {
+    position: relative;
+    margin-top: -4px !important;
+
+    :checked {
+        border-color: $black;
+        background: $black;
+
+        &::after {
+            content: "✓";
+            transform: translate(2px, -18px);
+            display: block;
+        }
+
+        &::before {
+            background: white;
+            transform: translate(-1px, -2px);
+            content: "";
+            display: block;
+            width: 1rem;
+            height: 1rem;
+
+        }
+    }
+}
+
+.mx-select.active {
+
+    .mx-select__matte {
+		display: block;
+		cursor: pointer;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 98;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .mx-select__label-container {
+        height: auto;
+        padding-bottom: .5rem;
+    }
+}
+
+.mx-select__label-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: $black;
+    z-index: 99;
+    overflow: hidden;
+    height: 3rem;
+    padding-top: 3rem;
+    border: 1px solid white;
+}
+
+.mx-select__label {
+    cursor: pointer;
+    display: block;
+    padding: $spacing-50 $spacing-1;
+}
+
+.mx-select__legend {
+    cursor: pointer;
+    position: relative;
+    z-index: 100;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 3rem;
+    padding: $spacing-1;
+}
+
+.mx-select__carat {
+    float: right;
+}
+
+.breakout:not(.active) {
+    display: none;
+}
+
+.popup-container [data-src] {
+    padding-bottom: 56.25%;
+    width: 100%;
+}
+
+.banner {
+    padding-top: 8rem;
+    padding-bottom: 16rem;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+	
+	@media (min-width: $large) and (min-height: 40rem) {
+		padding-top: 15rem;
+		padding-bottom: 20rem;
+	}
+}
+
+#keynotes {
+    margin-top: -10rem;
+}
+
+.svg-link {
+    color: white;
+    transition: color 250ms;
+
+    g {
+        transition: stroke 250ms;
+    }
+
+    svg {
+        transform: translate(0, 3px);
+    }
+
+    &:focus,
+    &:hover {
+        color: $mw-orange;
+        text-decoration: none;
+
+        g {
+            stroke: $mw-orange;
+        }
+    }
+}

@@ -1,0 +1,214 @@
+$color-heading-background-color: rgba(black, 0.8);
+
+.btn-header {
+    @include btn-base;
+    color: white;
+    padding: 0.5em 2.5em;
+    border: 1px solid white;
+    white-space: nowrap;
+
+    &:hover,
+    &:focus {
+        color: white;
+        border-color: $blue;
+        background-color: $blue;
+    }
+}
+
+.header__logo {
+    opacity: 1;
+    transition: all 300ms ease;
+
+    &:hover,
+    &:focus {
+        .header__logo__fill {
+            //dirty override of the black color set when mobile header is active
+            fill: $blue !important;
+        }
+    }
+}
+
+.header__logo__fill {
+    transition: fill 250ms;
+}
+
+
+#siteHeader {
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: all;
+    z-index: 9999;
+    @include admin-sticky-fix;
+
+    &.dark #siteHeader__bar,
+    &:hover #siteHeader__bar {
+        background-color: $color-heading-background-color;
+    }
+
+    //must seperate focus-within into a unique declaration
+    //bcause ie and edge will ignore, thus ignoring the :hover too!
+    &:focus-within #siteHeader__bar {
+        background-color: $color-heading-background-color;
+    }
+}
+
+#siteHeader.out-of-view,
+#siteHeader.sticky {
+    position: fixed;
+
+    #siteHeader__bar {
+        background-color: $color-heading-background-color;
+        transition: background-color 1000ms ease;
+    }
+}
+
+.siteHeader-height-observer,
+.siteHeader-sticky-observer {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 1px;
+    z-index: 999;
+}
+
+.siteHeader-height-observer {
+    height: 16rem;
+}
+
+/**
+* header__gutter divs have mouse interaction and thus
+* need some amount of sizing on them.
+*/
+.header__gutter {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.siteHeader__toggle__line {
+    transition: border-color 250ms;
+    display: block;
+    width: 32px;
+    margin-top: 6px;
+    border-bottom: 2px solid white;
+}
+
+.link-svg {
+    display: inline-block;
+    text-align: center;
+    padding: 0 0.5rem;
+    min-width: 40px;
+}
+
+@media (max-width: $small-menu-max) {
+    #siteHeader {
+        position: fixed;
+        z-index: $mobile-menu-z-index;
+    }
+
+    .header__logo {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    #siteHeader__navigation {
+        display: none;
+    }
+
+    .show-for-full-navigation {
+        display: none;
+    }
+
+    #siteHeader.active {
+        &:hover #siteHeader__bar {
+            background-color: white;
+        }
+
+        //must seperate focus-within into a unique declaration
+        //bcause ie and edge will ignore, thus ignoring the :hover too!
+        &:focus-within #siteHeader__bar {
+            background-color: white;
+        }
+    }
+}
+
+@media (min-width: $full-menu) {
+    #siteHeader {
+        position: absolute;
+        transition: transform 300ms ease;
+        width: 100%;
+        z-index: 100;
+    }
+
+    #siteHeader.out-of-view,
+    #siteHeader.sticky {
+        margin-top: -5rem;
+        transition: transform 500ms ease;
+
+        #siteHeader__bar {
+            transition: none;
+        }
+    }
+
+    #siteHeader.out-of-view {
+        transform: translate(0, 0);
+    }
+
+    #siteHeader.sticky {
+        transform: translate(0, 5rem);
+    }
+
+    .header-sticky-observer {
+        height: 75vh;
+    }
+
+    .header-navigation {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .siteHeader__toggle {
+        display: none;
+    }
+
+    .hide-for-full-navigation {
+        display: none;
+    }
+
+    .navigation-sub-menu {
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+    }
+
+    .navigation-top-level__button {
+        color: white;
+        padding: 2rem 1rem;
+        margin: 0 0.5rem;
+        font-family: $font-accent;
+        font-weight: normal;
+    }
+}
+
+.from-opacity-0 {
+    animation-name: from-opacity-0;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes from-opacity-0 {
+    from {
+        opacity: 0;
+    }
+}
+
+// Force sticky behavior on smallest view
+@media screen and (max-width: 600px) {
+    #wpadminbar {
+        position: fixed !important;
+    }
+}

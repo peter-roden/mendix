@@ -1,0 +1,54 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+body {
+  background-color: #f5f5f5; }
+
+.headshot {
+  padding-bottom: 95%;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.headshot__caption {
+  padding: 0.5rem 1rem;
+  background: #0CABF9;
+  width: 100%;
+  color: white; }
+  .headshot__caption a {
+    color: white; }
+
+.aside-card {
+  padding: 3rem 2rem;
+  margin-right: -1rem;
+  margin-left: -1rem; }
+
+.sub-card {
+  border-top: 1px solid white;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.medium-banner-overlap {
+  margin-top: 3rem; }
+
+@media (min-width: 40em) {
+  .medium-banner-overlap {
+    position: relative;
+    margin-top: -16rem;
+    margin-top: -16rem; } }
+
+/*# sourceMappingURL=big-event.min.css.map */

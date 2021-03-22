@@ -1,0 +1,128 @@
+.event__cta,
+.pb_link--cta,
+.mktoButton,
+.btn-primary {
+	@include btn-base;
+
+	$color-1: #0baaf9;
+	$color-2: #0d2dd1;
+
+	background-color: $color-1;
+	background-image: linear-gradient(90deg, $color-2, $color-1);
+
+	background-size: 200% 100%;
+	background-position: 5% 0%;
+	border: 1px solid transparent;
+
+	color: white;
+
+	&:hover,
+	&:focus {
+		color: white;
+		background-position: 95% 100%;
+	}
+
+	.white & {
+		background-color: white;
+		background-size: 300% 100%;
+		background-image: linear-gradient(90deg, white 35%, $color-1, $color-2);
+		color: $black;
+
+		&:hover,
+		&:focus {
+			background-color: $color-1;
+			color: white;
+		}
+	}
+}
+
+.bg-gradient .btn-primary {
+	background-image: none;
+
+	&:hover,
+	&:focus {
+		background-color: $blue-dark;
+	}
+}
+
+.pb_card__bg-image .pb_link--cta,
+.btn-outline {
+	@include btn-base;
+
+	background-color: transparent;
+	background-image: none;
+	border-color: $black;
+	color: $black;
+
+	&:hover,
+	&:focus {
+		background-color: $black;
+		color: white;
+	}
+
+	&.white,
+	.white & {
+		border-color: white;
+		color: white;
+
+		&:hover,
+		&:focus {
+			border-color: white;
+			background-color: white;
+			color: $black;
+		}
+	}
+}
+
+.btn-play {
+	display: inline-block;
+	width: 72px;
+	height: 73px;
+	min-width: 72px; // was getting compressed on small screens
+	position: relative;
+	transition: transform 250ms ease, opacity 250ms;
+	opacity: 0.8;
+	background-image: url(/wp-content/themes/mendix/ui/icons/play.svg);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	transform-origin: center;
+
+	&.blue {
+		background-image: url(/wp-content/themes/mendix/ui/icons/play--blue.svg);
+	}
+
+	&:focus,
+	&:hover {
+		transform: scale(1.05);
+		opacity: 1;
+	}
+}
+
+.btn-play-inline {
+	vertical-align: middle;
+	font-size: 18px;
+
+	&::before {
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		width: 45px;
+		height: 44px;
+		min-width: 45px; // was getting compressed on small screens
+		transition: opacity 250ms;
+		transform: translate(0,-2px);
+		opacity: 0.8;
+		margin-right: $grid * 2;		
+		background-image: url(/wp-content/themes/mendix/ui/icons/play.svg);
+		background-repeat: no-repeat;
+		background-size: 98px 94px;
+		background-position: 50%;
+	}
+	
+	&:focus,
+	&:hover {
+		&::before {
+			opacity: 1;
+		}
+	}
+}

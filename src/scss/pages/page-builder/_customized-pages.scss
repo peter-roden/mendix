@@ -1,0 +1,222 @@
+
+// accordion chevron
+.accordion__heading span {
+    padding-left: 10px;
+}
+[class*=chevron-]:before {
+    border-width: .1rem .1rem 0 0;
+    height: .6rem;
+    top: .5em;
+    width: .6rem;
+}
+
+// marketplace-vendor-program
+.page-id-58381 {
+    #marketPlace .pb_image {
+        margin-left: 8.33%;
+    }
+    @media (max-width: $foundation-medium-max) {
+        #marketPlace .pb_image  {
+            margin-left: 0;
+        }
+    }
+}
+
+// children of solutions gallery
+.parent-pageid-55744 {
+    #Integrations .pb_row--subheading {
+        margin-bottom: 50px;
+    }
+    #solutionCapabilities .bg-gray {
+        background-color: #f5f5f5;
+    }
+    .partial-contact-us {
+        .cell {
+            width: 100%;
+            margin: 0 auto;
+        }
+        h2 {
+            font-size: 40px;
+            line-height: 48px;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        form {
+            width: 66.66%;
+            padding-top: 60px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        form input,
+        form select {
+            font-family: Patron,Open Sans,Helvetica,Arial,sans-serif;
+            font-size: 16px;
+            box-sizing: border-box;
+            width: 100%;
+            height: 2.875rem;
+            margin-bottom: 1.5rem;
+            padding-left: 1em;
+            color: #383841;
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+            background: #fff;
+        }
+        form input[type=checkbox] {
+            width: 10px;
+            height: 10px;
+            margin-bottom: 0px
+        }
+        form .mktoButtonRow {
+            text-align: left;
+        }
+        form .mktoSELECT::after {
+            content: '';
+        }
+        form .mktoRequiredField,
+        form .rowPhone {
+            background: transparent;
+            border: none;
+        }
+        form #LblmktoCheckbox_57960_0{
+            color: #383841;            
+        }
+        form i a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+    }    
+}
+
+//cloud and child pages typography 
+.page-id-57767,
+.parent-pageid-57767 {
+    h2 {
+        font-size: 48px;
+    }
+    h3 {
+        font-size: 32px;
+    }
+    h4 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 20px;
+    }
+    .pb_row--columnalternating .left .pb_heading,
+    .pb_row--columnalternating .left .pb_paragraph,
+    .pb_row--columnalternating .left .pb_link {
+        margin-left: 50px;
+    }
+    .pb_row--columnalternating .right .pb_heading,
+    .pb_row--columnalternating .right .pb_paragraph,
+    .pb_row--columnalternating .right .pb_link {
+        margin-right: 50px;
+    }
+    
+}
+
+// cloud/mendix-for-private-cloud/
+.page-id-57764 {
+    #cloudApproach {
+        padding-bottom: 72px;
+        .panel-split-container {
+            height: 400px;
+        }
+    }
+    #cloudEnterpriseArchitecture {
+        h4 {
+            font-size: 32px;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+// cloud/mendix-cloud/
+.page-id-57762 {
+    #completeCloudaPaaS {
+        h3 {
+            padding-right: 40px;
+        }
+        p {
+            padding-right: 40px;
+        } 
+        .pb_image {
+            margin-bottom: 64px;
+        } 
+    }
+}
+
+// data-hub
+.page-id-58351 {
+    #keyCapabilities {
+        padding-top: 32px;
+        p.pb_kicker {
+            text-transform: capitalize;
+            font-size: 32px;
+            line-height: 32px;
+        }
+
+        ul li {
+            display: flex;
+            flex: 1;
+        }
+        ul li p {
+            height: 120px;
+        }
+    }
+    #dragDrop {
+        .grid-x {
+            align-items: center;
+        }
+    }
+    #unlockLandscape {
+        a {
+            background-color: white;
+            background-size: 300% 100%;
+            background-image: linear-gradient(90deg, white 35%, #0baaf9, #0d2dd1);
+            color: #000003;
+            display: inline-block;
+            padding: 0.75em 3em;
+            border-radius: 999px;
+            position: relative;
+            font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+            transition: all 300ms ease;
+            background-position: 5% 0%;
+            border: 1px solid transparent;
+        }
+        a:hover {
+            background-color: #0baaf9;
+            color: white;
+            background-image: linear-gradient(90deg, white 35%, #0baaf9, #0d2dd1);
+            background-size: 300% 100%;
+            background-position: 95% 100%;
+            text-decoration: none;
+        }
+    }  
+    #achieveGoals{
+        a {
+            background-color: white;
+            background-size: 300% 100%;
+            background-image: linear-gradient(90deg, white 35%, #0baaf9, #0d2dd1);
+            color: #000003;
+            display: inline-block;
+            padding: 0.75em 3em;
+            border-radius: 999px;
+            position: relative;
+            font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+            transition: all 300ms ease;
+            background-position: 5% 0%;
+            border: 1px solid transparent;
+        }
+        a:hover {
+            background-color: #0baaf9;
+            color: white;
+            background-image: linear-gradient(90deg, white 35%, #0baaf9, #0d2dd1);
+            background-size: 300% 100%;
+            background-position: 95% 100%;
+            text-decoration: none;
+        }
+    }
+}

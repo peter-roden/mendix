@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="26px" viewBox="0 0 40 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="WIP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="MX-vs-OS---Idea-A" transform="translate(-702.000000, -3415.000000)" stroke="#9B9B9B" stroke-width="1.5">
+            <g id="Low-Code-Architected" transform="translate(-10.000000, 2190.000000)">
+                <g id="Seamless-Split" transform="translate(10.000000, 977.000000)">
+                    <g id="Group" transform="translate(722.000000, 260.615782) scale(1, -1) translate(-722.000000, -260.615782) translate(703.000000, 249.115782)">
+                        <path d="M26,0 L37.7589478,10.8040044 C37.9132791,10.9456006 38,11.1377675 38,11.3381576 C38,11.5385476 37.9132791,11.7307145 37.7589478,11.8723108 L26,22.6763151" id="Shape"></path>
+                        <path d="M0,0 L11.7589478,10.8040044 C11.9132791,10.9456006 12,11.1377675 12,11.3381576 C12,11.5385476 11.9132791,11.7307145 11.7589478,11.8723108 L0,22.6763151" id="Shape" transform="translate(6.000000, 11.338158) scale(-1, 1) translate(-6.000000, -11.338158) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

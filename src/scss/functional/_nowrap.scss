@@ -1,0 +1,15 @@
+.nowrap {
+    white-space: nowrap;
+}
+
+@media (min-width: $foundation-medium) {
+    .medium-nowrap {
+        white-space: nowrap;
+    }
+}
+
+@media (min-width: $foundation-large) {
+    .large-nowrap {
+        white-space: nowrap;
+    }
+}

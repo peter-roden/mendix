@@ -1,0 +1,52 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+.ctabvb {
+  background-color: #FF6161;
+  overflow: hidden;
+  text-align: center; }
+  .ctabvb [class*=heading] {
+    color: white; }
+  .ctabvb .ctabvb_image1 {
+    display: none; }
+  .ctabvb .ctabvb_image2 {
+    margin-bottom: 1rem; }
+  @media screen and (min-width: 64em) {
+    .ctabvb {
+      text-align: left; }
+      .ctabvb .ctabvb_images {
+        padding-top: 2rem; }
+      .ctabvb .ctabvb_image1 {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transition: all 700ms ease 100ms;
+        opacity: 0;
+        transform: translate(0, 100px); }
+        .ctabvb .ctabvb_image1.active {
+          opacity: 1;
+          transform: translate(0, 0); }
+      .ctabvb .ctabvb_image2 {
+        transition: all 700ms ease 300ms;
+        opacity: 0;
+        transform: translate(0, 100px);
+        position: absolute;
+        bottom: -160px;
+        left: -20px; }
+        .ctabvb .ctabvb_image2.active {
+          opacity: 1;
+          transform: translate(0, 0); } }

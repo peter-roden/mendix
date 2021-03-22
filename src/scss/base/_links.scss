@@ -1,0 +1,99 @@
+a {
+	$hover: mix(black, $color-link, 50%);
+
+	color: $color-link;
+	transition: all 200ms ease;
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+		color: $hover;
+	}
+
+	&:focus-visible {
+		outline: 1px solid black;
+	}
+
+	object {
+		pointer-events: none;
+	}
+}
+
+.white a {
+	$hover: mix(white, $color-link, 50%);
+
+	&:focus,
+	&:hover {
+		color: white;
+		color: $hover;
+	}
+}
+
+p + a {
+	margin-top: $grid * 2;
+	display: inline-block;
+}
+
+.arrow-link {
+	@include arrow-link;
+}
+
+.arrow-link-before {
+	color: white;
+
+	&::before {
+		content: '←';
+		margin-right: 4px;
+		display: inline-block;
+		transition: transform 200ms ease;
+	}
+
+	&:focus,
+	&:hover {
+		color: white;
+		text-decoration: none;
+
+		&::before {
+			transform: translate(-0.3em, 0);
+		}
+	}
+}
+
+a.block-link {
+	display: block;
+	color: $body;
+	height: 100%;
+
+	img {
+		border: 2px solid transparent;
+		transition: border 250ms ease;
+	}
+
+	h2,
+	h3,
+	h4 {
+		transition: color 250ms ease;
+	}
+
+	&:hover,
+	&:focus {
+		outline: none;
+		text-decoration: none;
+		h2,
+		h3,
+		h4 {
+			color: $blue;
+		}
+
+		img {
+			border-color: $blue;
+		}
+	}
+}
+
+.parent_breadcrumb {
+	position: absolute;
+	top: 88px;
+	width: 100%;
+	z-index: 1;
+}

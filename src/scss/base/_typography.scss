@@ -1,0 +1,127 @@
+.gfield_label,
+[class*="heading"] {
+	@include heading;
+
+	.white &,
+	&.white {
+		color: white;
+	}
+
+	.body &,
+	&.body {
+		color: $color-heading;
+	}
+}
+
+[class*="normal"] {
+	font-weight: normal;
+
+	> * {
+		font-weight: normal;
+	}
+}
+
+[class*="lighter"] {
+	font-weight: lighter;
+
+	> * {
+		font-weight: lighter;
+	}
+}
+
+p,
+ul,
+ol,
+blockquote {
+	& + p:not([class*="mt"]) {
+		margin-top: 1em;
+	}
+
+	& + [class*="heading"]:not([class*="mt"]),
+	& + [class*="btn"]:not([class*="mt"]) {
+		margin-top: 2em;
+	}
+}
+
+//spacing
+[class*="heading"] + [class*="normal"] {
+	margin-top: 0.25em;
+}
+
+[class*="heading"] {
+	& + p:not([class*="mt"]) {
+		margin-top: 0.5em;
+	}
+}
+
+figure,
+img {
+	& + [class^="copy"],
+	& + p {
+		margin-top: 2rem;
+	}
+}
+
+.copy {
+	* + * {
+		margin-top: 1em;
+	}
+}
+
+.copy-sm {
+	font-size: 0.875em;
+}
+
+i,
+.italic {
+	font-style: italic;
+
+	> * {
+		font-style: italic;
+	}
+}
+
+b,
+.bold {
+	font-weight: bold;
+
+	> * {
+		font-weight: bold;
+	}
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.small-caps {
+	@include small-caps;
+}
+
+.heading {
+	@include heading;
+}
+
+// .gradient-text {
+// 	background: -webkit-linear-gradient(blue, green);
+// 	-webkit-background-clip: text;
+// 	-webkit-text-fill-color: transparent;
+// 	display: inline-block;
+// }
+
+@supports ((background-clip: text) or (-webkit-background-clip: text)) and
+  ((text-fill-color: transparent) or (-webkit-text-fill-color: transparent)) {
+  .gradient-text {
+    background-image: linear-gradient(to right, #8024FF, #00DA3F);
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+  }
+}
+
+.gradient-text {
+  display: inline-block;
+  color: #a166ab;
+}

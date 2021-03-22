@@ -1,0 +1,47 @@
+/* Color Usage */
+/* Style Defaults */
+/* Spacing */
+/* Breakpoints */
+/**
+* X Height Offsets
+* Used for aligning the top of side by side columns when one colum
+* has an image and the other has text/header
+*/
+/* Easings*/
+/**
+ * Positions element to account for WordPress admin bar "bump"
+ */
+/**
+ * Use to bump down content that lives under sticky header - perfectly!
+ */
+.cta-card {
+  background-color: #f5f5f5;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  transition: all 200ms ease; }
+
+.cta-card:focus,
+.cta-card:hover {
+  text-decoration: none;
+  transform: translateY(-3px);
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 3, 0.2); }
+
+.cta-card__title,
+.cta-card__icon {
+  display: inline-block;
+  transition: all 250ms ease; }
+
+.cta-card__link {
+  position: relative; }
+
+.cta-card__link::after {
+  content: url("/wp-content/themes/mendix/ui/svg/icon-copy-arrow.svg");
+  margin-left: 10px;
+  position: absolute;
+  bottom: -2px; }
+
+@media screen and (min-width: 40em) {
+  .cta-card__image {
+    flex: 0 0 100px; } }
+
+/*# sourceMappingURL=cta-card.min.css.map */

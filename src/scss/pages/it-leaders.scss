@@ -1,0 +1,70 @@
+@import '../abstracts/dir';
+
+.tabbedBillboard__toggle__logo  {
+	max-width: 160px;
+}
+/**
+* Header 
+*/
+.header--persona {
+    background-position: 50% 100%;
+    height: 40rem;
+
+    #rotateText {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        left: 0
+    }
+
+    //fallback for browsers that don't support text-stroke property
+    .heading--outlined {
+        @include outline-text($color: #5b6064);
+        position: relative;
+        height: 0em;
+    }
+
+    @supports((text-stroke: 1px white) or (-webkit-text-stroke: 1px white)) {
+        .heading--outlined {
+            color: transparent;
+            -webkit-text-stroke: 1.5px white;
+            text-stroke: 1.5px white;
+            text-shadow: none;
+            font-weight: bold;
+        }
+    }
+}
+
+.header--persona__cell {
+    margin-top: 8em;
+}
+
+
+@media (min-width: $foundation-large) {
+    .header-persona__copy {
+        max-width: 40%;
+        width: 40%;
+    }
+
+    .header--persona__cell {
+        margin-top: 13em;
+    }
+}
+
+/**
+* Carousel
+*/
+.partners-carousel {
+    pointer-events: none;
+
+    .block {
+        height: 80px;
+    }
+
+    img {
+        max-width: 140px;
+        margin: 50% auto 0;
+        transform: translate(0, -50%);
+    }
+}
